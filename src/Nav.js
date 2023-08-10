@@ -1,27 +1,41 @@
 import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { toggleTheme } from './store/theme';
 
 const Nav = () => {
-    return(
-        <div className='flex border-2 border-blue'>
-            <div className='flex-none border border-red'>
-                Nav Bar
-            </div>
-            <div className='flex-1 border border-black'>
 
-            </div>
-            <div className='flex justify-between flex-initial w-80'>
-                
-                <div>
-                    Home
+    const theme = useSelector((state) => state.switchTheme.active);
+
+    const dispatch = useDispatch();
+
+    return(
+        <div className={`${(theme) && 'dark'}`}>
+            <div className={'flex mx-20 pt-10 border-b-8 border-b-black pb-4 dark:border-b-red'}>
+                <div className='flex-none'>
+                    No Pickles
                 </div>
-                <div>
-                    Work
+                <div className='flex-1'>
                 </div>
-                <div>
-                    Resume
+                <div className='mr-8 cursor-pointer'>
+                    {(theme) ? 
+                        <i onClick={ () => dispatch(toggleTheme())} className="fa-solid fa-sun"></i>
+                    :
+                        <i onClick={ () => dispatch(toggleTheme())} className="fa-solid fa-moon"></i>
+                    }
                 </div>
-                <div>
-                    Contact
+                <div className='flex justify-between flex-initial w-80'>
+                    <div>
+                        Home
+                    </div>
+                    <div>
+                        Work
+                    </div>
+                    <div>
+                        Resume
+                    </div>
+                    <div>
+                        Contact
+                    </div>
                 </div>
             </div>
         </div>
