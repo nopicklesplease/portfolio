@@ -1,23 +1,26 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import Nav from './Nav';
+import { toggleTheme } from './store/theme';
 
 const Home = () => {
 
-    const [darkMode, setDarkMode] = useState(false);
+    const theme = useSelector((state) => state.switchTheme.active);
 
-    const toggleDarkMode = () => {
-        setDarkMode(darkMode => !darkMode);
-    }
-
-    console.log(darkMode);
+    const dispatch = useDispatch();
 
     return(
-        <div className={`w-full h-screen ${darkMode && 'dark'}`}>
-            <div className={'border-2 border-dotted border-indigo-600 rounded-md bg-slate-400 text-stone-50 dark:bg-slate-900 dark:border-solid'}>
-                Testing
+        <div>
+            <div>
+                <Nav />
             </div>
-            <button onClick={ toggleDarkMode }>Toggle Theme</button>
+            <div className={`w-full h-screen ${(theme) && 'dark'}`}>
+                <div className={'border-2 border-dotted border-indigo-600 rounded-md bg-slate-400 text-stone-50 dark:bg-slate-900 dark:border-solid'}>
+                    Testing
+                </div>
+                <button onClick={ () => dispatch(toggleTheme()) }>Toggle Theme</button>
 
-
+            </div>
         </div>
     )
 }
