@@ -12,12 +12,12 @@ const Home = () => {
 
     return(
         <div className={`${(theme) && 'dark'}`}>
-            <div className='w-screen h-screen dark:bg-slate-900 dark:text-white'>
-                <div>
+            <div className='w-screen h-screen dark:bg-slategray dark:text-white'>
+                <div className='mx-20 pt-10'>
                     <Nav />
-                </div>
-                <div>
-                    <Content />
+                    <div>
+                        <Content />
+                    </div>
                 </div>
             </div>
         </div>

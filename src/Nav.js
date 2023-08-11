@@ -10,7 +10,7 @@ const Nav = () => {
 
     return(
         <div className={`${(theme) && 'dark'}`}>
-            <div className={'flex mx-20 pt-10 border-b-8 border-b-black pb-4 dark:border-b-red'}>
+            <div className={'flex border-b-8 border-b-black pb-4 dark:border-b-white'}>
                 <div className='flex-none'>
                     No Pickles
                 </div>
