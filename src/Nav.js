@@ -12,7 +12,7 @@ const Nav = () => {
         <div className={`${(theme) && 'dark'}`}>
             <div className={'flex border-b-8 border-b-black pb-4 dark:border-b-white'}>
                 <div className='flex-none'>
-                    No Pickles
+                    NO PICKLES
                 </div>
                 <div className='flex-1'>
                 </div>
@@ -25,16 +25,16 @@ const Nav = () => {
                 </div>
                 <div className='flex justify-between flex-initial w-80'>
                     <div>
-                        Home
+                        ABOUT
                     </div>
                     <div>
-                        Work
+                        WORK
                     </div>
                     <div>
-                        Resume
+                        RESUME
                     </div>
                     <div>
-                        Contact
+                        CONTACT
                     </div>
                 </div>
             </div>
