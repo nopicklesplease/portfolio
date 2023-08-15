@@ -2,15 +2,15 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import headshot from './headshot.jpeg'
 
-const Content = () => {
+const Contact = () => {
 
     const theme = useSelector((state) => state.switchTheme.active);
 
     return(
         <div className={`flex h-screen ${(theme) && 'dark'}`}>
             <div className='flex-initial bg-blue dark:bg-purple'>
-                <div className='transform -rotate-90 -ml-16 -mr-16 pr-4 align-middle mt-abouttop pt-1 text-white text-6xl font-poppins  font-extralight tracking-wide'>
-                    ABOUT 
+                <div className='transform -rotate-90 -ml-contact -mr-contact pr-4 align-middle mt-contacttop pt-1 text-white text-6xl font-poppins  font-extralight tracking-wide'>
+                    CONTACT
                 </div>
             </div>
             <div className='flex-1 bg-yellow p-6 font-roboto font-light first-line:uppercase first-line:tracking-widest
@@ -29,4 +29,4 @@ const Content = () => {
     )
 };
 
-export default Content;
+export default Contact;

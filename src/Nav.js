@@ -10,7 +10,7 @@ const Nav = () => {
 
     return(
         <div className={`${(theme) && 'dark'}`}>
-            <div className={'flex border-b-8 border-b-black pb-4 items-end font-poppins dark:border-b-white'}>
+            <div className={'flex border-b-8 border-b-black pb-4 items-end font-roboto dark:border-b-white'}>
                 <div className='flex-none text-8xl m-0 tracking-widest font-extralight'>
                     RYAN S.
                 </div>
@@ -23,18 +23,18 @@ const Nav = () => {
                         <i onClick={ () => dispatch(toggleTheme())} className="fa-solid fa-moon fa-lg"></i>
                     }
                 </div>
-                <div className='flex justify-between flex-initial w-80 items-end tracking-wide'>
+                <div className='flex justify-between flex-initial w-96 items-end tracking-wide text-xl font-light'>
                     
-                    <div className='border-b border-b-transparent hover:border-dotted hover:border-b-blue'>
+                    <div className='border-b border-b-transparent hover:border-dotted hover:border-b-blue dark:hover:border-b-purple'>
                         ABOUT
                     </div>
-                    <div className='border-b border-b-transparent hover:border-dotted hover:border-b-blue'>
+                    <div className='border-b border-b-transparent hover:border-dotted hover:border-b-blue dark:hover:border-b-purple'>
                         WORK
                     </div>
-                    <div className='border-b border-b-transparent hover:border-dotted hover:border-b-blue'>
+                    <div className='border-b border-b-transparent hover:border-dotted hover:border-b-blue dark:hover:border-b-purple'>
                         RESUME
                     </div>
-                    <div className='border-b border-b-transparent hover:border-dotted hover:border-b-blue'>
+                    <div className='border-b border-b-transparent hover:border-dotted hover:border-b-blue dark:hover:border-b-purple'>
                         CONTACT
                     </div>
                 </div>

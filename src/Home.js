@@ -2,6 +2,8 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import Nav from './Nav';
 import Content from './Content';
+import Work from './Work';
+import Contact from './Contact';
 
 const Home = () => {
 
@@ -14,6 +16,14 @@ const Home = () => {
                     <Nav />
                     <div>
                         <Content />
+                    </div>
+
+                    <div>
+                        <Work />
+                    </div>
+
+                    <div>
+                        <Contact />
                     </div>
                 </div>
             </div>
