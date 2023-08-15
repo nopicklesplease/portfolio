@@ -13,6 +13,13 @@ module.exports = {
         'slategray': '#212124'
       }
     },
+    fontFamily: {
+      'lato': ['Lato'],
+      'open': ['"Open Sans"'],
+      'oswald': ['Oswald'],
+      'poppins': ['Poppins'],
+      'roboto': ['Roboto']
+    }
   },
   plugins: [],
   darkMode: 'class',
