@@ -11,7 +11,8 @@ module.exports = {
         // 'orange': '#ffba49',
         'orange': '#ffc76e',
         'purple': '#8d6a9f',
-        'slategray': '#212124'
+        'slategray': '#212124',
+        'lightgray': '#cecece'
       },
       spacing:{
         'abouttop': '85px',
@@ -20,6 +21,9 @@ module.exports = {
         'contact': '109.85px',
         'contacttop': '130px',
       },
+      borderWidth: {
+        '50': '30px',
+      }
     },
     fontFamily: {
       'lato': ['Lato'],
@@ -27,7 +31,7 @@ module.exports = {
       'oswald': ['Oswald'],
       'poppins': ['Poppins'],
       'roboto': ['Roboto']
-    }
+    },
   },
   plugins: [],
   darkMode: 'class',
