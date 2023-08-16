@@ -2,6 +2,7 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { toggleTheme } from './store/theme';
 import { Link } from 'react-scroll';
+import Resume from './Ryan-S-Resume.pdf';
 
 const Nav = () => {
 
@@ -26,23 +27,23 @@ const Nav = () => {
                 </div>
                 <div className='flex justify-between flex-initial w-96 items-end tracking-wide text-xl font-light'>
                     
-                    <div className='border-b border-b-transparent hover:border-dotted hover:border-b-blue dark:hover:border-b-purple cursor-pointer'>
-                        <Link activeClass="active" to="about" spy={true} smooth={true} offset={-200} duration={350}>
+                    <div className='border-b-2 border-b-transparent hover:border-solid hover:border-b-blue dark:hover:border-b-purple cursor-pointer'>
+                        <Link activeClass={`${theme ? 'dark-active' : 'active'}`} to="about" spy={true} smooth={true} offset={-200} duration={350}>
                             ABOUT
                         </Link>
                     </div>
-                    <div className='border-b border-b-transparent hover:border-dotted hover:border-b-blue dark:hover:border-b-purple cursor-pointer'>
-                        <Link activeClass="active" to="work" spy={true} smooth={true} offset={-160} duration={350}>
+                    <div className='border-b-2 border-b-transparent hover:border-solid hover:border-b-blue dark:hover:border-b-purple cursor-pointer'>
+                        <Link activeClass={`${theme ? 'dark-active' : 'active'}`} to="work" spy={true} smooth={true} offset={-160} duration={350}>
                             WORK
                         </Link>
                     </div>
-                    <div className='border-b border-b-transparent hover:border-dotted hover:border-b-blue dark:hover:border-b-purple cursor-pointer'>
-                        RESUME
-                    </div>
-                    <div className='border-b border-b-transparent hover:border-dotted hover:border-b-blue dark:hover:border-b-purple cursor-pointer'>
-                        <Link activeClass="active" to="contact" spy={true} smooth={true} offset={-160} duration={350}>
+                    <div className='border-b-2 border-b-transparent hover:border-solid hover:border-b-blue dark:hover:border-b-purple cursor-pointer'>
+                        <Link activeClass={`${theme ? 'dark-active' : 'active'}`} to="contact" spy={true} smooth={true} offset={-160} duration={350}>
                             CONTACT
                         </Link>
+                    </div>
+                    <div className='border-b-2 border-b-transparent hover:border-solid hover:border-b-blue dark:hover:border-b-purple cursor-pointer'>
+                        <a href={ Resume } download>RESUME</a>
                     </div>
                 </div>
             </div>

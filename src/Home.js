@@ -4,6 +4,7 @@ import Nav from './Nav';
 import Content from './Content';
 import Work from './Work';
 import Contact from './Contact';
+import Footer from './Footer';
 
 const Home = () => {
 
@@ -11,7 +12,7 @@ const Home = () => {
 
     return(
         <div className={`${(theme) && 'dark'}`}>
-            <div className='w-screen h-screen bg-white dark:bg-slategray dark:text-white z-50'>
+            <div className='w-screen h-max bg-white dark:bg-slategray dark:text-white z-50'>
                 <div className='mx-20'>
                     <Nav />
                     <div id='about'>                   
@@ -25,6 +26,7 @@ const Home = () => {
                     <div id='contact'>                   
                         <Contact />
                     </div>
+                    <Footer />
                 </div>
             </div>
         </div>
