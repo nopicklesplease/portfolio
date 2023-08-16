@@ -4,6 +4,7 @@ import { TextField, Button } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import emailjs from '@emailjs/browser';
 import SuccessfulEmail from './SuccessfulEmail';
+import * as Scroll from 'react-scroll';
 
 const SaveButtonStyled = styled(Button)({
     '&:hover': {
@@ -31,6 +32,8 @@ const Contact = () => {
         console.log(error.text);
     });
 };
+
+const scroll = Scroll.animateScroll;
 
 console.log(emailSuccess);
 
@@ -68,6 +71,8 @@ console.log(emailSuccess);
                     </SaveButtonStyled>
                     {/* <input type="submit" value="Send" /> */}
                     </form>
+
+                    <i onClick={() => {scroll.scrollToTop()}} className="fa-solid fa-arrow-up-long cursor-pointer"></i>
                     {/* <div>
                         <TextField id="outlined-basic" label="Name" variant="outlined" />
                     </div>
