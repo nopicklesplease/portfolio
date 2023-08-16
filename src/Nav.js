@@ -27,12 +27,12 @@ const Nav = () => {
                 <div className='flex justify-between flex-initial w-96 items-end tracking-wide text-xl font-light'>
                     
                     <div className='border-b border-b-transparent hover:border-dotted hover:border-b-blue dark:hover:border-b-purple cursor-pointer'>
-                        <Link activeClass="active" to="about" spy={true} smooth={true} offset={-200} duration={500}>
+                        <Link activeClass="active" to="about" spy={true} smooth={true} offset={-200} duration={350}>
                             ABOUT
                         </Link>
                     </div>
                     <div className='border-b border-b-transparent hover:border-dotted hover:border-b-blue dark:hover:border-b-purple cursor-pointer'>
-                        <Link activeClass="active" to="work" spy={true} smooth={true} offset={-160} duration={500}>
+                        <Link activeClass="active" to="work" spy={true} smooth={true} offset={-160} duration={350}>
                             WORK
                         </Link>
                     </div>
@@ -40,7 +40,7 @@ const Nav = () => {
                         RESUME
                     </div>
                     <div className='border-b border-b-transparent hover:border-dotted hover:border-b-blue dark:hover:border-b-purple cursor-pointer'>
-                        <Link activeClass="active" to="contact" spy={true} smooth={true} offset={-160} duration={500}>
+                        <Link activeClass="active" to="contact" spy={true} smooth={true} offset={-160} duration={350}>
                             CONTACT
                         </Link>
                     </div>
