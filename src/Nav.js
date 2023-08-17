@@ -18,11 +18,16 @@ const Nav = () => {
                 </div>
                 <div className='flex-1'>
                 </div>
-                <div className='mr-8 cursor-pointer pb-1'>
-                    {(theme) ? 
-                        <i onClick={ () => dispatch(toggleTheme())} className="fa-solid fa-sun fa-lg"></i>
+                <div className='mr-8 pb-1'>
+                    {(theme) ?
+                        <> 
+                        <span className='font-tech text-xs'>DARK MODE</span> <i onClick={ () => dispatch(toggleTheme())} className="fa-solid fa-sun fa-lg ml-2 cursor-pointer"></i>
+                        </>
                     :
-                        <i onClick={ () => dispatch(toggleTheme())} className="fa-solid fa-moon fa-lg"></i>
+                        <>
+                        <span className='font-tech text-xs'>LIGHT MODE</span>
+                            <i onClick={ () => dispatch(toggleTheme())} className="fa-solid fa-moon fa-lg ml-2 cursor-pointer"></i>
+                        </>
                     }
                 </div>
                 <div className='flex justify-between flex-initial w-96 items-end tracking-wide text-xl font-light'>

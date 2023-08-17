@@ -8,11 +8,14 @@ module.exports = {
         'red': '#ff1f25',
         'blue': '#005cef',
         'green': '#20a39e',
+        'offwhite': '#fffbeb',
         // 'orange': '#ffba49',
         'orange': '#ffc76e',
         'purple': '#8d6a9f',
         'slategray': '#212124',
-        'lightgray': '#cecece'
+        'lightgray': '#cecece',
+        'lightergray': '#e6e6e6',
+        'magenta': '#ff48f9',
       },
       spacing:{
         'abouttop': '85px',
@@ -28,6 +31,7 @@ module.exports = {
     fontFamily: {
       'lato': ['Lato'],
       'open': ['"Open Sans"'],
+      'tech': ['"Share Tech Mono"'],
       'oswald': ['Oswald'],
       'poppins': ['Poppins'],
       'roboto': ['Roboto']
