@@ -13,7 +13,6 @@ module.exports = {
         'offwhite': '#fffbeb',
         // 'orange': '#ffba49',
         'darkgray': '#444444',
-        
         'orange': '#ffc03f',
         'purple': '#8d6a9f',
         'slategray': '#212124',

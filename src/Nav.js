@@ -21,12 +21,12 @@ const Nav = () => {
                 <div className='mr-8 pb-1'>
                     {(theme) ?
                         <> 
-                        <span className='font-tech text-xs'>DARK MODE</span> <i onClick={ () => dispatch(toggleTheme())} className="fa-solid fa-moon fa-lg ml-2 cursor-pointer dark:hover:text-yellow"></i>
+                        <span className='font-tech text-xs'>DARK MODE</span> <i onClick={ () => dispatch(toggleTheme())} className="fa-solid fa-moon fa-lg ml-3 cursor-pointer text-yellow dark:hover:text-white"></i>
                         </>
                     :
                         <>
                         <span className='font-tech text-xs pr-1'>LIGHT MODE</span>
-                            <i onClick={ () => dispatch(toggleTheme())} className="fa-solid fa-sun fa-lg ml-2 cursor-pointer hover:text-orange"></i>
+                            <i onClick={ () => dispatch(toggleTheme())} className="fa-solid fa-sun fa-lg ml-1.5 text-orange cursor-pointer hover:text-black"></i>
                         </>
                     }
                 </div>

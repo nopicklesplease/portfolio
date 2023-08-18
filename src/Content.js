@@ -18,7 +18,7 @@ const Content = () => {
                 <div className='flex-1 bg-white border-l-50 border-yellow p-6 font-roboto font-light first-line:uppercase first-line:tracking-widest
                 first-letter:text-5xl first-letter:font-normal
                 first-letter:mr-3 first-letter:float-left text-justify dark:border-green dark:bg-slategray dark:text-lightgray'>
-                    <p>I am a software engineer in the New York City area that's been developing web applications as a personal interest for 20+ years. <span className='bg-yellow dark:bg-purple'>In an effort to finally make it my professional career, I recently completed a full-stack development bootcamp.</span></p> 
+                    <p>I am a software engineer in the New York City area that's been developing web applications as a personal interest for 20+ years. <span className='bg-yellow dark:text-white dark:bg-purple'>In an effort to finally make it my professional career, I recently completed a full-stack development bootcamp.</span></p> 
                         
                     <p className='mt-6'>This is a representation of the work I've produced since that time.</p>
 
