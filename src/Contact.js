@@ -44,7 +44,7 @@ console.log(emailSuccess);
                     CONTACT
                 </div>
             </div>
-            <div className='flex-1 bg-white p-6 font-roboto font-light text-justify dark:bg-green'>
+            <div className='flex-1 bg-white p-6 font-roboto font-light text-justify border-l-50 border-yellow dark:border-green dark:bg-slategray'>
 
                 {(emailSuccess) ? 
                     <>
@@ -62,7 +62,7 @@ console.log(emailSuccess);
                     <TextField id="outlined-basic" label="Message" name="message" variant="outlined" multiline/>
                     <SaveButtonStyled
                         sx={{
-                            backgroundColor: '#33bbce',
+                            backgroundColor: 'black',
                         }}
                         type='submit'
                         variant='contained' 
@@ -83,6 +83,11 @@ console.log(emailSuccess);
                         <TextField id="outlined-basic" label="Message" variant="outlined" multiline/>
                     </div> */}
                     </>}
+            </div>
+            <div className='flex-initial flex justify-center bg-red p-8 dark:bg-darkgray w-rightspace'>
+                <div className='text-white text-sm'>
+
+                </div>
             </div>
         </div>
     )

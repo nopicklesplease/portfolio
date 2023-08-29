@@ -15,12 +15,16 @@ const Content = () => {
                         ABOUT 
                     </div>
                 </div>
-                <div className='flex-1 bg-white border-l-50 border-yellow p-6 font-roboto font-light first-line:uppercase first-line:tracking-widest
+                <div className='flex-1 bg-white border-l-50 border-yellow p-8 font-roboto font-light first-line:uppercase first-line:tracking-widest
                 first-letter:text-5xl first-letter:font-normal
                 first-letter:mr-3 first-letter:float-left text-justify dark:border-green dark:bg-slategray dark:text-lightgray'>
                     <p>I am a software engineer in the New York City area that's been developing web applications as a personal interest for 20+ years. <span className='bg-yellow dark:text-white dark:bg-purple'>In an effort to finally make it my professional career, I recently completed a full-stack development bootcamp.</span></p> 
                         
                     <p className='mt-6'>This is a representation of the work I've produced since that time.</p>
+
+                    <p>I am a software engineer in the New York City area that's been developing web applications as a personal interest for 20+ years. <span className='bg-yellow dark:text-white dark:bg-purple'>In an effort to finally make it my professional career, I recently completed a full-stack development bootcamp.</span></p> 
+
+                    <p>I am a software engineer in the New York City area that's been developing web applications as a personal interest for 20+ years. <span className='bg-yellow dark:text-white dark:bg-purple'>In an effort to finally make it my professional career, I recently completed a full-stack development bootcamp.</span></p> 
 
                     <div className='flex justify-center'>
                         <div className='border-t border-dotted border-lightgray w-4/5 mt-6'></div>
@@ -85,12 +89,14 @@ const Content = () => {
                             <div className='p-2 bg-lightergray rounded-md max-w-fit m-1 text-sm'>Photoshop</div>
                             </div> */}
                 </div>
-                <div className='flex-initial flex justify-center bg-red p-8 dark:bg-darkgray'>
+                <div className='flex-initial flex justify-center bg-red p-10 pt-9 dark:bg-darkgray'>
                     <div className='text-white text-5xl'>
-                        <img className='w-96 rounded-md' src={ headshot } alt='headshot'/>
+                        <img className='w-pic rounded-md' src={ headshot } alt='headshot'/>
 
-                        <Link to='https://www.linkedin.com/in/rsariego/' target='_blank'><i className="fa-brands fa-linkedin mt-2"></i></Link>
-                        <Link to='https://github.com/nopicklesplease' target='_blank'><i className="fa-brands fa-github mt-2 ml-2"></i></Link>
+                        <Link to='https://www.linkedin.com/in/rsariego/' target='_blank'><i className="fa-brands fa-linkedin mt-4"></i></Link>
+
+                        <Link to='https://github.com/nopicklesplease' target='_blank'><i className="fa-brands fa-github mt-4 ml-4"></i></Link>
+
                     </div>
                 </div>
             </div>

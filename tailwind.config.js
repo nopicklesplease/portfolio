@@ -15,20 +15,28 @@ module.exports = {
         'darkgray': '#444444',
         'orange': '#ffc03f',
         'purple': '#8d6a9f',
+        // 'purple': '#8d6a9f',
         'slategray': '#212124',
         'lightgray': '#cecece',
         'lightergray': '#e6e6e6',
         'magenta': '#ff48f9',
       },
       spacing:{
-        'abouttop': '85px',
+        'abouttop': '90px',
         'work': '53.5px',
-        'worktop': '75px',
+        'worktop': '85px',
         'contact': '109.85px',
         'contacttop': '130px',
       },
+      width:{
+        'rightspace': '401px',
+        'pic': '321px',
+      },
+      height:{
+        'contactheight': '560px',
+      },  
       borderWidth: {
-        '50': '30px',
+        '50': '10px',
       }
     },
     fontFamily: {

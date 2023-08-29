@@ -48,7 +48,7 @@ const Nav = () => {
                         </Link>
                     </div>
                     <div className='border-b-2 border-b-transparent hover:border-solid hover:border-b-blue dark:hover:border-b-purple cursor-pointer'>
-                        <a href={ Resume } download>RESUME</a>
+                        <a href={ Resume } download>RESUMÉ</a>
                     </div>
                 </div>
             </div>
