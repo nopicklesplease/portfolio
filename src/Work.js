@@ -14,25 +14,36 @@ const Work = () => {
 
     return(
         <div className={`flex h-full ${(theme) && 'dark'}`}>
-            <div className='flex-initial bg-blue dark:bg-purple'>
-                <div className='transform -rotate-90 -ml-work -mr-work pr-4 align-middle mt-worktop pt-1 text-white text-6xl font-poppins font-extralight tracking-wide dark:text-white'>
-                    WORK 
-                </div>
+                <div className='flex-initial bg-blue dark:bg-purple sticky'>
+                    <Parallax
+                        translateY={['800px', '0px']}
+                        startScroll={0}
+                        endScroll={750}
+                        shouldAlwaysCompleteAnimation={true}
+                    >
+
+                            <div className='transform -rotate-90 -ml-work -mr-work pr-4 align-middle mt-worktop pt-1 text-white text-6xl font-poppins font-extralight tracking-wide dark:text-white'>
+                                WORK 
+                            </div>
+
+                    </Parallax>
             </div>
             <div className='flex-column'>
                 <div className='flex'>
-                    <div className='flex-1 h-full border-l-50 border-yellow bg-offgray p-6 pt-10 font-roboto font-light pr-10 dark:bg-darkergray dark:border-green w-full overflow-hidden'>
+                    <div className='flex-1 h-full border-l-50 border-yellow bg-offgray p-6 pt-8 font-roboto font-light pr-10 dark:bg-darkergray dark:border-green w-full overflow-hidden'>
                         <Parallax
                             translateX={['-400px', '0px']}
                             startScroll={0}
-                            endScroll={790}
+                            endScroll={750}
+                            shouldAlwaysCompleteAnimation={true}
                         >
                             <img className='mb-24 mt-2' alt='Serenade' src={ SerenadeFinal1 }/>
                         </Parallax>
                         <Parallax
                             translateX={['400px', '0px']}
                             startScroll={0}
-                            endScroll={790}
+                            endScroll={750}
+                            shouldAlwaysCompleteAnimation={true}
                         >
                             <img className='mb-6' alt='Serenade' src={ SerenadeFinal2 }/>
                         </Parallax>
@@ -83,20 +94,34 @@ const Work = () => {
                     </div> 
                 </div>
                 <div className='flex'>
-                    <div className='flex-1 h-full border-l-50 border-yellow bg-white p-6 pt-10 font-roboto font-light pr-10 dark:bg-darkergray dark:border-green w-full'>
-                            <img className='mb-24 mt-2' alt='Serenade' src={ CalcFinal2 }/>
-                        <img className='mb-6' alt='Serenade' src={ CalcFinal1 }/>
+                    <div className='flex-1 h-full border-l-50 border-yellow bg-white p-6 pt-10 font-roboto font-light pr-10 dark:bg-slategray dark:border-green w-full overflow-hidden'>
+                        <Parallax
+                            translateX={['-400px', '0px']}
+                            startScroll={1000}
+                            endScroll={1700}
+                            shouldAlwaysCompleteAnimation={true}
+                        >
+                            <img className='mb-24 mt-2' alt='Just A Calculator' src={ CalcFinal2 }/>
+                        </Parallax>
+                        <Parallax
+                            translateX={['400px', '0px']}
+                            startScroll={1000}
+                            endScroll={1700}
+                            shouldAlwaysCompleteAnimation={true}
+                        >
+                            <img className='mb-4' alt='Just A Calculator' src={ CalcFinal1 }/>
+                        </Parallax>
                     </div>
-                    <div className='flex justify-center bg-red pt-10 dark:bg-darkgray w-rightspace dark:bg-rightoffgray'>
+                    <div className='flex justify-center bg-red pt-10 dark:bg-darkgray w-rightspace'>
                         <div className='text-white text-sm'>
                             <p className='text-4xl tracking-widest font-light px-10 mb-10'>
                                 JUST A CALCULATOR
                             </p>
-                            <div className='bg-darkred p-10 dark:bg-darkgray'>
+                            <div className='bg-darkred p-10 dark:bg-rightoffgray'>
                                 <p className='text-lg font-light border-b border-b-white border-dotted mb-4'>
                                     Project Overview: 
                                 </p>
-                                <p className='mb-8 text-xs text-justify rellax' data-rellax-speed='-4'>
+                                <p className='mb-8 text-xs text-justify' data-rellax-speed='-4'>
                                     A web app that integrates openAI's DaVinci speech model & Spotify's API to interpret user prompts and turn them into creative Spotify playlists.
                                 </p>
 
@@ -108,7 +133,7 @@ const Work = () => {
                                 </p>
                             </div>
 
-                            <div className='bg-red p-10 dark:bg-rightoffgray'>
+                            <div className='bg-red p-10 dark:bg-darkgray'>
                                 <p className='text-lg font-light border-b border-b-white border-dotted mb-4'>
                                         Tools Used: 
                                     </p>
