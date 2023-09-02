@@ -52,36 +52,27 @@ console.log(emailSuccess);
                     </> 
                 : 
                     <>
-                                        <form ref={form} onSubmit={ sendEmail }>
-                    <TextField id="outlined-basic" label="Name" name="from_name" variant="outlined" />
-                    {/* <label>Name</label>
-                    <input type="text" name="from_name" /> */}
-                    <TextField id="outlined-basic" label="Email Address" name="reply_to" variant="outlined" />
-                    {/* <label>Email</label>
-                    <input type="email" name="reply_to" /> */}
-                    <TextField id="outlined-basic" label="Message" name="message" variant="outlined" multiline/>
-                    <SaveButtonStyled
-                        sx={{
-                            backgroundColor: 'black',
-                        }}
-                        type='submit'
-                        variant='contained' 
-                    >
-                        Submit
-                    </SaveButtonStyled>
-                    {/* <input type="submit" value="Send" /> */}
+                    <form ref={form} onSubmit={ sendEmail }>
+                        <TextField id="outlined-basic" label="Name" name="from_name" size='small' variant="standard"/>
+
+                        <span className='ml-8'><TextField id="outlined-basic" label="Email Address" name="reply_to" color='success' size='small' variant="standard" /></span>
+
+                        <TextField id="outlined-basic" label="Message" name="message" size='small' variant="standard" multiline/>
+
+                        <SaveButtonStyled
+                            sx={{
+                                backgroundColor: 'black',
+                            }}
+                            type='submit'
+                            variant='contained' 
+                        >
+                            Submit
+                        </SaveButtonStyled>
+
                     </form>
 
                     <i onClick={() => {scroll.scrollToTop()}} className="fa-solid fa-arrow-up-long cursor-pointer"></i>
-                    {/* <div>
-                        <TextField id="outlined-basic" label="Name" variant="outlined" />
-                    </div>
-                    <div>
-                        <TextField id="outlined-basic" label="Email Address" variant="outlined" />
-                    </div>
-                    <div>
-                        <TextField id="outlined-basic" label="Message" variant="outlined" multiline/>
-                    </div> */}
+
                     </>}
             </div>
             <div className='flex-initial flex justify-center bg-red p-8 dark:bg-darkgray w-rightspace'>
