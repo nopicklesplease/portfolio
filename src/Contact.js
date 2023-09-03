@@ -1,25 +1,25 @@
 import React, { useState, useRef } from 'react';
 import { useSelector } from 'react-redux';
-import { TextField, Button } from '@mui/material';
+import { Button } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import { Link } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
 import SuccessfulEmail from './SuccessfulEmail';
 import * as Scroll from 'react-scroll';
 import { Parallax } from 'react-scroll-parallax';
-import { createTheme } from '@mui/material/styles';
-
-const SaveButtonStyled = styled(Button)({
-    '&:hover': {
-        backgroundColor: 'orange',
-    },
-})
 
 const Contact = () => {
 
     const [emailSuccess, setEmailSuccess] = useState(false);
     const theme = useSelector((state) => state.switchTheme.active);
     const form = useRef();
+
+    const SaveButtonStyled = styled(Button)({
+        '&:hover': {
+            backgroundColor: `${theme ? '#8b5ea2' : '#005cef'}`,
+            color: 'white',
+        },
+    })
 
     const sendEmail = (e) => {
         e.preventDefault();    
@@ -42,7 +42,7 @@ console.log(emailSuccess);
 
     return(
         <div className={`flex h-screen ${(theme) && 'dark'}`}>
-            <div className='flex-initial bg-blue dark:bg-purple'>
+            <div className='flex-initial bg-blue dark:bg-purple border-r-50 border-yellow dark:border-green'>
                 <Parallax
                     translateY={['800px', '0px']}
                     startScroll={1800}
@@ -54,8 +54,8 @@ console.log(emailSuccess);
                     </div>
                 </Parallax>
             </div>
-            <div className='flex-1 bg-offgray p-12 font-roboto font-light text-justify border-l-50 border-yellow dark:border-green dark:bg-darkergray'>
-                <div className='bg-white p-10 rounded dark:bg-lightergray'>
+            <div className='flex-1 bg-offgray p-10 font-roboto font-light text-justify dark:bg-darkergray'>
+                <div className='bg-white p-10 rounded dark:bg-rightoffgray dark:text-white'>
 
                 {(emailSuccess) ? 
                     <>
@@ -65,25 +65,25 @@ console.log(emailSuccess);
                     <>
                     <form ref={form} onSubmit={ sendEmail }>
 
-                        <div className='text-black mb-2 tracking-widest'>
+                        <div className='mb-2 tracking-widest'>
                             NAME
                         </div>
                         <div>
-                            <input className='text-black rounded p-2 w-full outline-0 mb-8 bg-offgray' name='from_name' placeholder='Enter your name'></input>
+                            <input className='text-black rounded p-2 w-full outline-0 mb-8 bg-offgray dark:bg-white' name='from_name' placeholder='Enter your name'></input>
                         </div>
 
-                        <div className='text-black mb-2 tracking-widest'>
+                        <div className='mb-2 tracking-widest'>
                             EMAIL ADDRESS
                         </div>
                         <div>
-                            <input className='text-black rounded p-2 w-full outline-0 mb-8 bg-offgray' name='reply_to' placeholder='Enter your email address'></input>
+                            <input className='text-black rounded p-2 w-full outline-0 mb-8 bg-offgray dark:bg-white' name='reply_to' placeholder='Enter your email address'></input>
                         </div>
 
-                        <div className='text-black mb-2 tracking-widest'>
+                        <div className='mb-2 tracking-widest'>
                             MESSAGE
                         </div>
                         <div>
-                            <textarea className='text-black rounded p-2 w-full h-32 outline-0 mb-8 bg-offgray' name='message' placeholder='Enter your message'></textarea>
+                            <textarea className='text-black rounded p-2 w-full h-32 outline-0 mb-8 bg-offgray dark:bg-white' name='message' placeholder='Write your message'></textarea>
                         </div>
 {/* 
                         <TextField id="outlined-basic" label="Name" name="from_name" size='small' variant="standard"/>
@@ -95,7 +95,14 @@ console.log(emailSuccess);
                         <div className='flex justify-center'>
                             <SaveButtonStyled
                                 sx={{
-                                    backgroundColor: 'black',
+                                    backgroundColor: `${theme ? 'white' : 'black'}`,
+                                    color: `${theme ? 'black' : 'white'}`,
+                                    width: '25%',
+                                    typography: {
+                                        fontFamily: 'Roboto',
+                                        fontSize: 16,
+                                        fontWeight: '300'
+                                    }
                                 }}
                                 type='submit'
                                 variant='contained' 
@@ -109,25 +116,28 @@ console.log(emailSuccess);
                     </>}
                 </div>
 
-                <i onClick={() => {scroll.scrollToTop()}} className="fa-solid fa-arrow-up-long cursor-pointer"></i>
-
             </div>
-            <div className='flex bg-red dark:bg-darkgray w-rightspace'>
-                <div className='text-white w-full h-auto bg-darkred p-10'>
-                    <p className='text-7xl'>
-                    <Link to='https://www.linkedin.com/in/rsariego/' target='_blank'><i className="fa-brands fa-linkedin hover:text-yellow"></i></Link>
+                <div className='flex-column h-screen bg-red dark:bg-darkgray w-rightspace'>
+                    <div className='flex text-white w-full bg-darkred dark:bg-rightoffgray p-10'>
+                        <p className='text-7xl'>
+                        <Link to='https://www.linkedin.com/in/rsariego/' target='_blank'><i className="fa-brands fa-linkedin hover:text-yellow"></i></Link>
 
-                    <Link to='https://github.com/nopicklesplease' target='_blank'><i className="fa-brands fa-github ml-4 hover:text-yellow"></i></Link> 
-                    </p>
+                        <Link to='https://github.com/nopicklesplease' target='_blank'><i className="fa-brands fa-github ml-4 hover:text-yellow"></i></Link> 
+                        </p>
+                    </div>
+                    {/* <div className='flex bg-red w-rightspace'>
+                        <div className='text-white w-full bg-red p-10 dark:bg-darkgray'>
+                            <i onClick={() => {scroll.scrollToTop()}} className="fa-solid fa-arrow-up-long cursor-pointer text-8xl"></i>
+                        </div>
+                    </div> */}
                 </div>
-            </div>
-            {/* <div className='flex-initial flex bg-darkred p-12 pt-11 dark:bg-rightoffgray w-rightspace'>
-                <div className='text-white text-7xl'>
-                    <Link to='https://www.linkedin.com/in/rsariego/' target='_blank'><i className="fa-brands fa-linkedin hover:text-yellow"></i></Link>
+                {/* <div className='flex-initial flex bg-darkred p-12 pt-11 dark:bg-rightoffgray w-rightspace'>
+                    <div className='text-white text-7xl'>
+                        <Link to='https://www.linkedin.com/in/rsariego/' target='_blank'><i className="fa-brands fa-linkedin hover:text-yellow"></i></Link>
 
-                    <Link to='https://github.com/nopicklesplease' target='_blank'><i className="fa-brands fa-github ml-4 hover:text-yellow"></i></Link>
-                </div>
-            </div> */}
+                        <Link to='https://github.com/nopicklesplease' target='_blank'><i className="fa-brands fa-github ml-4 hover:text-yellow"></i></Link>
+                    </div>
+                </div> */}
         </div>
     )
 };

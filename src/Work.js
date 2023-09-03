@@ -4,8 +4,6 @@ import SerenadeFinal1 from './Mockups/Serenade-Final1.png';
 import SerenadeFinal2 from './Mockups/Serenade-Final2.png';
 import CalcFinal1 from './Mockups/Calc-Final1.png';
 import CalcFinal2 from './Mockups/Calc-Final2.png';
-import SaucySlices from './Mockups/SaucySlices-Air1.png';
-import RecordLogger from './Mockups/RecordLogger-Air.png';
 import { Parallax } from 'react-scroll-parallax';
 
 const Work = () => {
@@ -14,11 +12,11 @@ const Work = () => {
 
     return(
         <div className={`flex h-full ${(theme) && 'dark'}`}>
-                <div className='flex-initial bg-blue dark:bg-purple sticky'>
+                <div className='flex-initial bg-blue dark:bg-purple sticky border-r-50 border-yellow dark:border-green'>
                     <Parallax
                         translateY={['800px', '0px']}
                         startScroll={0}
-                        endScroll={750}
+                        endScroll={700}
                         shouldAlwaysCompleteAnimation={true}
                     >
 
@@ -30,11 +28,11 @@ const Work = () => {
             </div>
             <div className='flex-column'>
                 <div className='flex'>
-                    <div className='flex-1 h-full border-l-50 border-yellow bg-offgray p-6 pt-8 font-roboto font-light pr-10 dark:bg-darkergray dark:border-green w-full overflow-hidden'>
+                    <div className='flex-1 h-full bg-offgray p-6 pt-8 font-roboto font-light pr-10 dark:bg-darkergray w-full overflow-hidden'>
                         <Parallax
                             translateX={['-400px', '0px']}
                             startScroll={0}
-                            endScroll={750}
+                            endScroll={700}
                             shouldAlwaysCompleteAnimation={true}
                         >
                             <img className='mb-24 mt-2' alt='Serenade' src={ SerenadeFinal1 }/>
@@ -42,50 +40,60 @@ const Work = () => {
                         <Parallax
                             translateX={['400px', '0px']}
                             startScroll={0}
-                            endScroll={750}
+                            endScroll={700}
                             shouldAlwaysCompleteAnimation={true}
                         >
                             <img className='mb-6' alt='Serenade' src={ SerenadeFinal2 }/>
                         </Parallax>
                     </div>
-                    <div className='flex justify-center bg-darkred pt-10 dark:bg-darkgray w-rightspace dark:bg-rightoffgray'>
+                    <div className='flex justify-center font-roboto bg-darkred pt-10 dark:bg-darkgray w-rightspace dark:bg-rightoffgray'>
                         <div className='text-white text-sm'>
                             <p className='text-4xl tracking-widest font-light px-10 mb-10'>
                                 SERENADE
                             </p>
                             <div className='bg-red p-10 dark:bg-darkgray'>
-                                <p className='text-lg font-light border-b border-b-white border-dotted mb-4'>
-                                    Project Overview: 
+                                <p className='text-lg mb-3 tracking-widest'>
+                                    PROJECT OVERVIEW
                                 </p>
-                                <p className='mb-8 text-xs text-justify'>
+                                <p className='mb-10 text-sm text-justify'>
                                     A web app that integrates openAI's DaVinci speech model & Spotify's API to interpret user prompts and turn them into creative Spotify playlists.
                                 </p>
 
-                                <p className='text-lg font-light border-b border-b-white border-dotted mb-4'>
-                                    Role & Responsibilities: 
+                                <p className='text-lg mb-3 tracking-widest'>
+                                    ROLE & RESPONSIBILITIES
                                 </p>
-                                <p className='mb-2 text-xs text-justify'>
+                                <p className='text-sm text-justify'>
                                     Lead Front-End Engineer responsible for UX design, User Profile & My Playlists/Discover components, JSX rendering of Spotify playlist materials, responsive design for mobile.
                                 </p>
                             </div>
 
                             <div className='bg-darkred p-10 dark:bg-rightoffgray'>
-                                <p className='text-lg font-light border-b border-b-white border-dotted mb-4'>
-                                        Tools Used: 
-                                    </p>
+                                <p className='text-lg mb-3 tracking-widest'>
+                                    TOOLS USED
+                                </p>
 
-                                <div className='flex flex-wrap mt-2'>
-                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 text-xs'>JavaScript</div>
+                                <div className='flex flex-wrap'>
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>JavaScript</div>
 
-                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 text-xs'>React.js</div>
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>React.js</div>
 
-                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 text-xs'>Redux.js</div>
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>Redux.js</div>
 
-                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 text-xs'>Node.js</div>
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>Node.js</div>
 
-                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 text-xs'>React Router</div>
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>React Router</div>
+
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>OpenAI API</div>
+
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>Spotify API</div>
+
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>HTML</div>
+
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>Vanilla CSS</div>
+
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>Adobe Photoshop</div>
+
                                 </div>
-
                                 {/* <div className='flex flex-wrap mt-8'>
                                     <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 text-sm text-red'>Live Link</div>
                                 </div> */}
@@ -94,7 +102,7 @@ const Work = () => {
                     </div> 
                 </div>
                 <div className='flex'>
-                    <div className='flex-1 h-full border-l-50 border-yellow bg-white p-6 pt-10 font-roboto font-light pr-10 dark:bg-slategray dark:border-green w-full overflow-hidden'>
+                    <div className='flex-1 h-full bg-white p-6 pt-10 font-roboto font-light pr-10 dark:bg-slategray w-full overflow-hidden'>
                         <Parallax
                             translateX={['-400px', '0px']}
                             startScroll={1000}
@@ -109,45 +117,54 @@ const Work = () => {
                             endScroll={1700}
                             shouldAlwaysCompleteAnimation={true}
                         >
-                            <img className='mb-4' alt='Just A Calculator' src={ CalcFinal1 }/>
+                            <img className='mb-2' alt='Just A Calculator' src={ CalcFinal1 }/>
                         </Parallax>
                     </div>
-                    <div className='flex justify-center bg-red pt-10 dark:bg-darkgray w-rightspace'>
+                    <div className='flex justify-center font-roboto bg-red pt-10 dark:bg-darkgray w-rightspace'>
                         <div className='text-white text-sm'>
                             <p className='text-4xl tracking-widest font-light px-10 mb-10'>
                                 JUST A CALCULATOR
                             </p>
                             <div className='bg-darkred p-10 dark:bg-rightoffgray'>
-                                <p className='text-lg font-light border-b border-b-white border-dotted mb-4'>
-                                    Project Overview: 
+                                <p className='text-lg mb-3 tracking-widest'>
+                                    PROJECT OVERVIEW 
                                 </p>
-                                <p className='mb-8 text-xs text-justify' data-rellax-speed='-4'>
-                                    A web app that integrates openAI's DaVinci speech model & Spotify's API to interpret user prompts and turn them into creative Spotify playlists.
+                                <p className='mb-8 text-sm text-justify' data-rellax-speed='-4'>
+                                    A Bitcoin portfolio tracker disguised as an iOS calculator. Pressing the '+' key on the calculator five times unveils a login screen to access the web application.
                                 </p>
 
-                                <p className='text-lg font-light border-b border-b-white border-dotted mb-4'>
-                                    Role & Responsibilities: 
+                                <p className='text-lg mb-3 tracking-widest'>
+                                    ROLE & RESPONSIBILITIES 
                                 </p>
-                                <p className='mb-2 text-xs text-justify'>
-                                    Lead Front-End Engineer responsible for UX design, User Profile & My Playlists/Discover components, JSX rendering of Spotify playlist materials, responsive design for mobile.
+                                <p className='text-sm text-justify'>
+                                    Creator & Sole Developer
                                 </p>
                             </div>
 
                             <div className='bg-red p-10 dark:bg-darkgray'>
-                                <p className='text-lg font-light border-b border-b-white border-dotted mb-4'>
-                                        Tools Used: 
-                                    </p>
+                                <p className='text-lg mb-3 tracking-widest'>
+                                    TOOLS USED 
+                                </p>
 
-                                <div className='flex flex-wrap mt-2'>
-                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 text-xs'>JavaScript</div>
+                                <div className='flex flex-wrap'>
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>JavaScript</div>
 
-                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 text-xs'>React.js</div>
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>React.js</div>
 
-                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 text-xs'>Redux.js</div>
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>Redux.js</div>
 
-                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 text-xs'>Node.js</div>
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>Node.js</div>
 
-                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 text-xs'>React Router</div>
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>React Router</div>
+
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>CoinMarketCap API</div>
+
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>HTML</div>
+
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>Vanilla CSS</div>
+
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>Material-UI</div>
+
                                 </div>
 
                                 {/* <div className='flex flex-wrap mt-8'>
