@@ -39,17 +39,20 @@ module.exports = {
         'smrightspace': '293px',
         'pic': '321px',
         'content': '100%',
-        '50': '10px',
+        '50': '9px',
+        '272px': '272px'
       },
       height:{
         'contactheight': '560px',
       },  
       borderWidth: {
-        '50': '10px',
+        '50': '9px',
       },
       screens:{
         '1150px': '1150px',
-        '900px': '900px'
+        '915px': '915px',
+        '960px': '960px',
+        '840px': '840px',
       },
       flex:{
         '2': '2 2 0%',

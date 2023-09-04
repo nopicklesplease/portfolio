@@ -43,13 +43,21 @@ const Work = () => {
                             endScroll={700}
                             shouldAlwaysCompleteAnimation={true}
                         >
-                            <img className='mb-6' alt='Serenade' src={ SerenadeFinal2 }/>
+                            <img className='mb-24 1150px:mb-6' alt='Serenade' src={ SerenadeFinal2 }/>
+                        </Parallax>
+                        <Parallax
+                            translateX={['-400px', '0px']}
+                            startScroll={0}
+                            endScroll={700}
+                            shouldAlwaysCompleteAnimation={true}
+                        >
+                            <img className='mb-6 mt-2 1150px:hidden' alt='Serenade' src={ SerenadeFinal1 }/>
                         </Parallax>
                     </div>
                     <div className='flex justify-center font-roboto bg-darkred pt-10 dark:bg-darkgray 
                     w-smrightspace
-                    900px:w-medrightspace
-                    lg:w-rightspace dark:bg-rightoffgray'>
+                    915px:w-medrightspace
+                    1150px:w-rightspace dark:bg-rightoffgray'>
                         <div className='text-white text-sm'>
                             <p className='text-4xl tracking-widest font-light px-10 mb-10'>
                                 SERENADE
@@ -124,13 +132,21 @@ const Work = () => {
                             endScroll={1700}
                             shouldAlwaysCompleteAnimation={true}
                         >
-                            <img className='mb-2' alt='Just A Calculator' src={ CalcFinal1 }/>
+                            <img className='mb-24 1150px:mb-2' alt='Just A Calculator' src={ CalcFinal1 }/>
+                        </Parallax>
+                        <Parallax
+                            translateX={['-400px', '0px']}
+                            startScroll={1000}
+                            endScroll={1700}
+                            shouldAlwaysCompleteAnimation={true}
+                        >
+                            <img className='mb-2 1150px:hidden' alt='Just A Calculator' src={ CalcFinal2 }/>
                         </Parallax>
                     </div>
                     <div className='flex justify-center font-roboto bg-red pt-10 dark:bg-darkgray 
                     w-smrightspace
-                    900px:w-medrightspace
-                    lg:w-rightspace dark:bg-darkgray'>
+                    915px:w-medrightspace
+                    1150px:w-rightspace dark:bg-darkgray'>
                         <div className='text-white text-sm'>
                             <p className='text-3xl tracking-widest font-light px-10 mb-10'>
                                 JUST A CALCULATOR

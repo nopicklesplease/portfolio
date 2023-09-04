@@ -122,9 +122,9 @@ console.log(emailSuccess);
                 </div>
 
             </div>
-                <div className='flex-column h-screen bg-red dark:bg-darkgray
+                <div className='hidden 915px:block flex-column h-screen bg-red dark:bg-darkgray
                 w-smrightspace
-                900px:w-medrightspace lg:w-rightspace'>
+                915px:w-medrightspace 1150px:w-rightspace'>
                     <div className='flex text-white w-full bg-darkred dark:bg-rightoffgray p-10'>
                         <p className='text-7xl'>
                         <Link to='https://www.linkedin.com/in/rsariego/' target='_blank'><i className="fa-brands fa-linkedin hover:text-yellow"></i></Link>

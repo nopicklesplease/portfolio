@@ -24,7 +24,7 @@ const Nav = () => {
     return(
         <div className={`${(theme) && 'dark'} sticky top-0 pt-10 z-50 bg-white dark:bg-slategray`}>
             <div className='flex border-b-8 border-b-black pb-4 items-end font-roboto dark:border-b-white'>
-                <div className='flex-none text-8xl lg:text-8xl m-0 tracking-widest font-extralight'>
+                <div className='flex-none text-7xl 960px:text-8xl m-0 tracking-widest font-extralight'>
                     RYAN S.
                 </div>
                 <div className='flex-1'>
@@ -42,7 +42,7 @@ const Nav = () => {
                             </>
                         }
                     </div>
-                    <div className='flex justify-between flex-initial w-80 1150px:w-96 items-end tracking-wide text-lg 1150px:text-xl font-light'>
+                    <div className='flex justify-between flex-initial w-272px 840px:w-80 1150px:w-96 items-end tracking-wide text-md 840px:text-lg 1150px:text-xl font-light'>
                         
                         <div className='border-b-2 border-b-transparent hover:border-solid hover:border-b-blue dark:hover:border-b-purple cursor-pointer'>
                             <Link activeClass={`${theme ? 'dark-active' : 'active'}`} to="about" spy={true} smooth={true} offset={-200} duration={500}>
