@@ -41,7 +41,7 @@ const Content = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='bg-offgray'>
+                    <div className='bg-offgray dark:bg-darkergray'>
                     <div className='p-10 pb-3 flex'>
                         <span className='font-normal text-xl tracking-widest'>CORE PROFICIENCIES <span className='text-blue dark:text-green'> + ADDL. SKILLS</span></span>
                     </div>
@@ -87,14 +87,14 @@ const Content = () => {
 
                             </div>
                             <div className='flex'>
-                                <div className='flex-5 p-10 bg-white'>
+                                <div className='flex-5 p-10 bg-white dark:bg-slategray'>
                                     <span className='font-normal text-xl tracking-widest'>CURRENT PROJECT: <span className='text-blue dark:text-green'> SO WHAT?</span></span>
 
                                     <p className='mt-3 font-roboto font-light'>
                                     SO WHAT? is an application that summarizes important historical events, people & places into an easy-to-digest format that provides users with a topical overview of anything that piques their interest.
                                     </p>
                                 </div>
-                                <div className='flex bg-red w-smrightspace 915px:w-medrightspace'>
+                                <div className='flex bg-red w-smrightspace 915px:w-medrightspace dark:bg-darkgray'>
                                     
                                 </div>
                             </div>

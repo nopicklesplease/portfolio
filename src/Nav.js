@@ -23,26 +23,53 @@ const Nav = () => {
 
     return(
         <div className={`${(theme) && 'dark'} sticky top-0 pt-10 z-50 bg-white dark:bg-slategray`}>
-            <div className='flex border-b-8 border-b-black pb-4 items-end font-roboto dark:border-b-white'>
-                <div className='flex-none text-7xl 960px:text-8xl m-0 tracking-widest font-extralight'>
+            <div className='flex-column md:flex border-b-8 border-b-black pb-4 m-0 items-end font-roboto dark:border-b-white'>
+
+                <div id='header' className='flex-none text-justify text-9xl md:text-7xl 960px:text-8xl m-0 p-0 tracking-widest font-extralight'>
                     RYAN S.
                 </div>
-                <div className='flex-1'>
+
+                <div className='md:flex-1'>
                 </div>
-                    <div className='xl:flex'>
-                    <div className='flex pb-4 items-center xl:mr-14 xl:pb-1 justify-end'>
+
+                <div className='flex items-end w-full md:w-auto md:block xl:flex'>
+                    <div className='hidden w-56 pb-2 md:w-auto md:flex md:pb-4 md:items-center xl:mr-14 xl:pb-2 md:justify-end'>
                         {(theme) ?
-                            <> 
-                            <span className='font-tech font-light text-xs'>DARK MODE</span> <i onClick={ () => dispatch(toggleTheme())} className="fa-solid fa-moon fa-lg ml-3 cursor-pointer text-yellow dark:hover:text-white"></i>
-                            </>
+                            <div className='flex items-center'> 
+                            <div className='flex font-tech font-light text-xs pr-1'>DARK MODE</div> <i onClick={ () => dispatch(toggleTheme())} className="fa-solid fa-moon fa-lg ml-3 cursor-pointer text-yellow dark:hover:text-white"></i>
+                            </div>
                         :
-                            <>
-                            <span className='flex font-tech font-light text-xs pr-1'>LIGHT MODE</span>
-                                <i onClick={ () => dispatch(toggleTheme())} className="fa-solid flex fa-sun fa-lg ml-1.5 text-orange cursor-pointer hover:text-black"></i>
-                            </>
+                            <div className='flex items-center'>
+                                <div className='flex font-tech font-light text-xs pr-1'>LIGHT MODE</div>
+                                    <i onClick={ () => dispatch(toggleTheme())} className="fa-solid flex fa-sun fa-lg ml-1.5 text-orange cursor-pointer hover:text-black"></i>
+
+                            </div>
                         }
                     </div>
-                    <div className='flex justify-between flex-initial w-272px 840px:w-80 1150px:w-96 items-end tracking-wide text-md 840px:text-lg 1150px:text-xl font-light'>
+                    
+                    <div className='
+                    flex 
+                    justify-between 
+                    flex-initial 
+                    w-full 
+                    md:w-272px 
+                    840px:w-80 
+                    1150px:w-96 
+                    items-end 
+                    tracking-wide 
+                    max-[767px]:text-2xl 
+                    md:text-md 
+                    840px:text-lg 
+                    1150px:text-xl 
+                    font-light'>
+
+                        <div className='flex pb-themepb md:hidden'>
+                            {(theme) ?
+                                <i onClick={ () => dispatch(toggleTheme())} className="fa-solid fa-moon fa-lg ml-3 cursor-pointer text-yellow"></i>
+                            :
+                                <i onClick={ () => dispatch(toggleTheme())} className="fa-solid flex fa-sun fa-lg ml-1.5 text-orange cursor-pointer"></i>
+                            }
+                        </div>
                         
                         <div className='border-b-2 border-b-transparent hover:border-solid hover:border-b-blue dark:hover:border-b-purple cursor-pointer'>
                             <Link activeClass={`${theme ? 'dark-active' : 'active'}`} to="about" spy={true} smooth={true} offset={-200} duration={500}>
