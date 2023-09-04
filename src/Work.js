@@ -20,15 +20,15 @@ const Work = () => {
                         shouldAlwaysCompleteAnimation={true}
                     >
 
-                            <div className='transform -rotate-90 -ml-work -mr-work pr-4 align-middle mt-worktop pt-1 text-white text-6xl font-poppins font-extralight tracking-wide dark:text-white'>
-                                WORK 
+                            <div className='lg:transform lg:-rotate-90 lg:-ml-work lg:-mr-work lg:pr-4 lg:align-middle lg:mt-worktop lg:pt-1 text-white text-6xl font-poppins font-extralight tracking-wide dark:text-white w-50 lg:w-auto'>
+                                <p className='hidden lg:flex'>WORK</p> 
                             </div>
 
                     </Parallax>
             </div>
             <div className='flex-column'>
                 <div className='flex'>
-                    <div className='flex-1 h-full bg-offgray p-6 pt-8 font-roboto font-light pr-10 dark:bg-darkergray w-full overflow-hidden'>
+                    <div className='flex-5 h-auto bg-offgray p-6 pt-8 font-roboto font-light pr-10 dark:bg-darkergray w-full overflow-hidden'>
                         <Parallax
                             translateX={['-400px', '0px']}
                             startScroll={0}
@@ -46,7 +46,10 @@ const Work = () => {
                             <img className='mb-6' alt='Serenade' src={ SerenadeFinal2 }/>
                         </Parallax>
                     </div>
-                    <div className='flex justify-center font-roboto bg-darkred pt-10 dark:bg-darkgray w-rightspace dark:bg-rightoffgray'>
+                    <div className='flex justify-center font-roboto bg-darkred pt-10 dark:bg-darkgray 
+                    w-smrightspace
+                    900px:w-medrightspace
+                    lg:w-rightspace dark:bg-rightoffgray'>
                         <div className='text-white text-sm'>
                             <p className='text-4xl tracking-widest font-light px-10 mb-10'>
                                 SERENADE
@@ -81,6 +84,10 @@ const Work = () => {
 
                                     <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>Node.js</div>
 
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>Express.js</div>
+
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>PostgreSQL</div>
+
                                     <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>React Router</div>
 
                                     <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>OpenAI API</div>
@@ -102,7 +109,7 @@ const Work = () => {
                     </div> 
                 </div>
                 <div className='flex'>
-                    <div className='flex-1 h-full bg-white p-6 pt-10 font-roboto font-light pr-10 dark:bg-slategray w-full overflow-hidden'>
+                    <div className='flex-1 h-full bg-white p-6 pt-10 font-roboto font-light pr-10 dark:bg-slategray w-full h-auto overflow-hidden'>
                         <Parallax
                             translateX={['-400px', '0px']}
                             startScroll={1000}
@@ -120,9 +127,12 @@ const Work = () => {
                             <img className='mb-2' alt='Just A Calculator' src={ CalcFinal1 }/>
                         </Parallax>
                     </div>
-                    <div className='flex justify-center font-roboto bg-red pt-10 dark:bg-darkgray w-rightspace'>
+                    <div className='flex justify-center font-roboto bg-red pt-10 dark:bg-darkgray 
+                    w-smrightspace
+                    900px:w-medrightspace
+                    lg:w-rightspace dark:bg-darkgray'>
                         <div className='text-white text-sm'>
-                            <p className='text-4xl tracking-widest font-light px-10 mb-10'>
+                            <p className='text-3xl tracking-widest font-light px-10 mb-10'>
                                 JUST A CALCULATOR
                             </p>
                             <div className='bg-darkred p-10 dark:bg-rightoffgray'>
@@ -166,10 +176,6 @@ const Work = () => {
                                     <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>Material-UI</div>
 
                                 </div>
-
-                                {/* <div className='flex flex-wrap mt-8'>
-                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 text-sm text-red'>Live Link</div>
-                                </div> */}
                             </div>
                         </div>
                     </div>

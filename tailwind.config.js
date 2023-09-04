@@ -35,13 +35,27 @@ module.exports = {
       },
       width:{
         'rightspace': '401px',
+        'medrightspace': '305px',
+        'smrightspace': '293px',
         'pic': '321px',
+        'content': '100%',
+        '50': '10px',
       },
       height:{
         'contactheight': '560px',
       },  
       borderWidth: {
         '50': '10px',
+      },
+      screens:{
+        '1150px': '1150px',
+        '900px': '900px'
+      },
+      flex:{
+        '2': '2 2 0%',
+        '3': '3 3 0%',
+        '4': '4 4 0%',
+        '5': '5 5 0%'
       }
     },
     fontFamily: {

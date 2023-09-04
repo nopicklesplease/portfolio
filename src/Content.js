@@ -10,16 +10,19 @@ const Content = () => {
     return(
         <div className='z-auto'>
             <div className={`flex h-auto ${(theme) && 'dark'}`}>
-                <div className='flex-initial bg-blue dark:bg-purple border-r-50 border-yellow dark:border-green'>
-                        <div className='transform -rotate-90 -ml-16 -mr-16 pr-4 align-middle mt-abouttop pt-1 text-white text-6xl font-poppins  font-extralight tracking-wide'>
-                            ABOUT 
+                <div className='lg:flex-initial bg-blue dark:bg-purple border-r-50 border-yellow dark:border-green'>
+                        <div className='lg:transform lg:-rotate-90 lg:-ml-16 lg:-mr-16 lg:pr-4 lg:align-middle lg:mt-abouttop lg:pt-1 text-white text-6xl font-poppins font-extralight tracking-wide w-50 lg:w-auto'>
+                            <p className='hidden lg:flex'>ABOUT</p> 
                         </div>
                 </div>
-                <div className='flex-1'>
+                <div className='flex-5 lg:flex-1'>
+                    <div className='lg:hidden p-10 pb-0 text-5xl  font-light font-roboto text-blue dark:text-lightgray'>
+                        ABOUT
+                    </div>
                     <div className='bg-white p-10 pt-9 pb-0 font-roboto font-light first-line:uppercase first-line:tracking-widest
                     first-letter:text-5xl first-letter:font-normal
-                    first-letter:mr-3 first-letter:float-left text-justify  dark:bg-slategray dark:text-lightgray'>
-                    <p>I am a software engineer in the New York City area that's been developing web applications as a personal interest for 20+ years. <span className='bg-yellow dark:text-white dark:bg-purple'>In an effort to finally make it my professional career, I recently completed a full-stack development bootcamp.</span></p> 
+                    first-letter:mr-3 first-letter:float-left text-justify dark:bg-slategray dark:text-lightgray'>
+                    <p>I am a software engineer in the New York City area that's been developing web applications as a personal interest for 20+ years. <span className='bg-yellow dark:text-white dark:bg-purple'>In an effort to finally make it my professional career, I recently completed a full-stack development bootcamp.</span> This is a representation of the work I've produced since that time.</p> 
                         
                     {/* <p className='mt-6'>This is a representation of the work I've produced since that time.</p> */}
                     </div>
@@ -45,9 +48,9 @@ const Content = () => {
 
                             <div className='p-2 bg-lightergray dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>Node.js</div>
 
-                            <div className='p-2 bg-lightergray dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>React Router</div>
+                            <div className='p-2 bg-lightergray dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>Express.js</div>
 
-                            <div className='p-2 bg-lightergray dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>Express</div>
+                            <div className='p-2 bg-lightergray dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>React Router</div>
 
                             <div className='p-2 bg-lightergray dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>PostgreSQL</div>
 
@@ -86,9 +89,11 @@ const Content = () => {
                     </div>
 
                 </div>
-                <div className='flex-initial flex justify-center bg-red p-10 dark:bg-darkgray'>
+                <div className='flex w-smrightspace 900px:w-medrightspace 
+                lg:w-rightspace
+                lg:flex-initial justify-center bg-red p-10 dark:bg-darkgray'>
                     <div className='text-white text-6xl'>
-                        <img className='w-pic rounded-md' src={ headshot } alt='headshot'/>
+                        <img className='lg:w-pic rounded-md' src={ headshot } alt='headshot'/>
 
                         <Link to='https://www.linkedin.com/in/rsariego/' target='_blank'><i className="fa-brands fa-linkedin mt-4 hover:text-yellow"></i></Link>
 

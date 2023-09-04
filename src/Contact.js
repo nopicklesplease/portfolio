@@ -42,6 +42,7 @@ console.log(emailSuccess);
 
     return(
         <div className={`flex h-screen ${(theme) && 'dark'}`}>
+
             <div className='flex-initial bg-blue dark:bg-purple border-r-50 border-yellow dark:border-green'>
                 <Parallax
                     translateY={['800px', '0px']}
@@ -49,12 +50,16 @@ console.log(emailSuccess);
                     endScroll={2600}
                     shouldAlwaysCompleteAnimation={true}
                 >
-                    <div className='transform -rotate-90 -ml-contact -mr-contact pr-4 align-middle mt-contacttop pt-1 text-white text-6xl font-poppins  font-extralight tracking-wide'>
-                        CONTACT
+                    <div className='lg:transform lg:-rotate-90 lg:-ml-contact lg:-mr-contact lg:pr-4 lg:align-middle lg:mt-contacttop pt-1 text-white text-6xl font-poppins font-extralight tracking-wide w-50 lg:w-auto'>
+                    <p className='hidden lg:flex'>CONTACT</p>
                     </div>
                 </Parallax>
             </div>
+            
             <div className='flex-1 bg-offgray p-10 font-roboto font-light text-justify dark:bg-darkergray'>
+            <div className='lg:hidden pb-10 text-5xl  font-light font-roboto text-blue dark:text-lightgray'>
+                        CONTACT
+                    </div>
                 <div className='bg-white p-10 rounded dark:bg-rightoffgray dark:text-white'>
 
                 {(emailSuccess) ? 
@@ -117,7 +122,9 @@ console.log(emailSuccess);
                 </div>
 
             </div>
-                <div className='flex-column h-screen bg-red dark:bg-darkgray w-rightspace'>
+                <div className='flex-column h-screen bg-red dark:bg-darkgray
+                w-smrightspace
+                900px:w-medrightspace lg:w-rightspace'>
                     <div className='flex text-white w-full bg-darkred dark:bg-rightoffgray p-10'>
                         <p className='text-7xl'>
                         <Link to='https://www.linkedin.com/in/rsariego/' target='_blank'><i className="fa-brands fa-linkedin hover:text-yellow"></i></Link>
