@@ -57,13 +57,18 @@ const Nav = () => {
                     1150px:w-96 
                     items-end 
                     tracking-wide 
+                    max-[360px]:text-xs
+                    max-[400px]:text-sm
+                    max-[450px]:text-base
+                    max-[500px]:text-lg
+                    max-[600px]:text-xl 
                     max-[767px]:text-2xl 
-                    md:text-md 
+                    md:text-base 
                     840px:text-lg 
                     1150px:text-xl 
                     font-light'>
 
-                        <div className='flex pb-themepb md:hidden'>
+                        <div className='flex max-[360px]:pb-themepb360 max-[400px]:pb-themepb400 max-[450px]:pb-themepb450 max-[600px]:pb-themepb500 pb-themepb600 md:hidden'>
                             {(theme) ?
                                 <i onClick={ () => dispatch(toggleTheme())} className="fa-solid fa-moon fa-lg ml-3 cursor-pointer text-yellow"></i>
                             :

@@ -56,7 +56,7 @@ console.log(emailSuccess);
                 </Parallax>
             </div>
             
-            <div className='flex-1 bg-offgray p-10 font-roboto font-light text-justify dark:bg-darkergray border-r-100 border-red md:border-0'>
+            <div className='flex-1 bg-offgray p-10 font-roboto font-light text-justify dark:bg-darkergray border-r-100 border-red dark:border-darkgray md:border-0'>
             <div className='lg:hidden pb-10 text-5xl  font-light font-roboto text-blue dark:text-lightgray'>
                         CONTACT
                     </div>

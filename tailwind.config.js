@@ -32,7 +32,11 @@ module.exports = {
         'worktop': '82px',
         'contact': '109.85px',
         'contacttop': '135px',
-        'themepb': '17px',
+        'themepb600': '17px',
+        'themepb500': '15px',
+        'themepb450': '13px',
+        'themepb400': '10px',
+        'themepb360': '7px',
       },
       width:{
         'rightspace': '401px',
@@ -55,13 +59,16 @@ module.exports = {
         '915px': '915px',
         '960px': '960px',
         '840px': '840px',
-        '600px': '600px'
+        '600px': '600px',
       },
       flex:{
         '2': '2 2 0%',
         '3': '3 3 0%',
         '4': '4 4 0%',
         '5': '5 5 0%'
+      },
+      fontSize:{
+        'header': '8rem'
       }
     },
     fontFamily: {
