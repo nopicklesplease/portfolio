@@ -48,12 +48,14 @@ module.exports = {
       },  
       borderWidth: {
         '50': '9px',
+        '100': '18px',
       },
       screens:{
         '1150px': '1150px',
         '915px': '915px',
         '960px': '960px',
         '840px': '840px',
+        '600px': '600px'
       },
       flex:{
         '2': '2 2 0%',

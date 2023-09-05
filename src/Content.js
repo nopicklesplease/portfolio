@@ -15,7 +15,7 @@ const Content = () => {
                             <p className='hidden lg:flex'>ABOUT</p> 
                         </div>
                 </div>
-                <div className='flex-column 915px:hidden'>
+                <div className='hidden md:block md:flex-column 915px:hidden'>
 
                     <div className='flex'>
                         <div className='flex-1'>
@@ -111,9 +111,12 @@ const Content = () => {
                     </div>
                 </div> */}
 
-                <div className='hidden md:flex-5 915px:block 915px:flex-1'>
-                    <div className='lg:hidden p-10 pb-0 text-5xl  font-light font-roboto text-blue dark:text-lightgray'>
+                <div className='md:hidden md:flex-5 915px:block 915px:flex-1 border-r-100 border-red dark:border-darkgray md:border-0'>
+                    <div className='hidden md:block lg:hidden p-10 pb-0 text-5xl font-light font-roboto text-blue dark:text-lightgray'>
                         ABOUT
+                    </div>
+                    <div>
+                        <img className='md:hidden 1150px:w-pic' src={ headshot } alt='headshot'/>
                     </div>
                     <div className='bg-white p-10 pt-9 pb-0 font-roboto font-light first-line:uppercase first-line:tracking-widest
                     first-letter:text-5xl first-letter:font-normal
@@ -127,42 +130,42 @@ const Content = () => {
                         <div className='border-t border-lightgray w-4/5 mt-6'></div>
                     </div> */}
 
-                    <div className='flex justify-center'>
+                    <div className='hidden md:flex justify-center'>
                         <div className='border-t border-lightgray w-4/5 mt-10'></div>
                     </div>
 
-                    <div className='p-10 pb-3 flex'>
+                    <div className='p-10 pb-3 mt-10 md:mt-0 flex bg-offgray dark:bg-darkergray md:dark:bg-slategray md:bg-white'>
                         <span className='font-normal text-xl tracking-widest'>CORE PROFICIENCIES <span className='text-blue dark:text-green'> + ADDL. SKILLS</span></span>
                     </div>
 
-                    <div className='flex flex-wrap p-10 pt-0'>
-                            <div className='p-2 bg-lightergray dark: text-slategray rounded-md max-w-fit m-1 text-sm  hover:bg-yellow cursor-default'>JavaScript</div>
+                    <div className='flex flex-wrap p-10 pt-0 mb-10 md:mb-0 bg-offgray dark:bg-darkergray md:dark:bg-slategray md:bg-white'>
+                            <div className='p-2 bg-lightgray md:bg-lightergray dark: text-slategray rounded-md max-w-fit m-1 text-sm  hover:bg-yellow cursor-default'>JavaScript</div>
 
-                            <div className='p-2 bg-lightergray dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>React.js</div>
+                            <div className='p-2 bg-lightgray md:bg-lightergray dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>React.js</div>
 
-                            <div className='p-2 bg-lightergray dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>Redux.js</div>
+                            <div className='p-2 bg-lightgray md:bg-lightergray dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>Redux.js</div>
 
-                            <div className='p-2 bg-lightergray dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>Node.js</div>
+                            <div className='p-2 bg-lightgray md:bg-lightergray dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>Node.js</div>
 
-                            <div className='p-2 bg-lightergray dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>Express.js</div>
+                            <div className='p-2 bg-lightgray md:bg-lightergray dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>Express.js</div>
 
-                            <div className='p-2 bg-lightergray dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>React Router</div>
+                            <div className='p-2 bg-lightgray md:bg-lightergray dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>React Router</div>
 
-                            <div className='p-2 bg-lightergray dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>PostgreSQL</div>
+                            <div className='p-2 bg-lightgray md:bg-lightergray dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>PostgreSQL</div>
 
-                            <div className='p-2 bg-lightergray dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>REST API</div>
+                            <div className='p-2 bg-lightgray md:bg-lightergray dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>REST API</div>
 
-                            <div className='p-2 bg-lightergray dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>GIT</div>
+                            <div className='p-2 bg-lightgray md:bg-lightergray dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>GIT</div>
 
-                            <div className='p-2 bg-lightergray dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>CSS</div>
+                            <div className='p-2 bg-lightgray md:bg-lightergray dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>CSS</div>
 
-                            <div className='p-2 bg-lightergray dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>Tailwind</div>
+                            <div className='p-2 bg-lightgray md:bg-lightergray dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>Tailwind</div>
 
-                            <div className='p-2 bg-lightergray dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>React-Parallax</div>
+                            <div className='p-2 bg-lightgray md:bg-lightergray dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>React-Parallax</div>
 
-                            <div className='p-2 bg-lightergray dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>Material-UI</div>
+                            <div className='p-2 bg-lightgray md:bg-lightergray dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>Material-UI</div>
 
-                            <div className='p-2 bg-lightergray dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>Responsive Design</div>
+                            <div className='p-2 bg-lightgray md:bg-lightergray dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>Responsive Design</div>
 
                             <div className='p-2 bg-blue dark:bg-green text-white rounded-md max-w-fit m-1 text-sm hover:bg-yellow dark:hover:bg-yellow cursor-default hover:text-black'>Audio Engineering</div>
 
@@ -179,7 +182,7 @@ const Content = () => {
                         <div className='p-10 pt-0'>
                         <span className='font-normal text-xl tracking-widest'>CURRENT PROJECT: <span className='text-blue dark:text-green'> SO WHAT?</span></span>
 
-                        <p className='mt-3 mb-20 font-roboto font-light'>
+                        <p className='mt-3 mb-10 md:mb-20 font-roboto font-light'>
                         SO WHAT? is an application that summarizes important historical events, people & places into an easy-to-digest format that provides users with a topical overview of anything that piques their interest.
                         </p>
                     </div>

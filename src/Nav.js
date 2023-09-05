@@ -22,7 +22,7 @@ const Nav = () => {
     const dispatch = useDispatch();
 
     return(
-        <div className={`${(theme) && 'dark'} sticky top-0 pt-10 z-50 bg-white dark:bg-slategray`}>
+        <div className={`${(theme) && 'dark'} sticky top-0 pt-6 md:pt-10 z-50 bg-white dark:bg-slategray`}>
             <div className='flex-column md:flex border-b-8 border-b-black pb-4 m-0 items-end font-roboto dark:border-b-white'>
 
                 <div id='header' className='flex-none text-justify text-9xl md:text-7xl 960px:text-8xl m-0 p-0 tracking-widest font-extralight'>
@@ -32,7 +32,7 @@ const Nav = () => {
                 <div className='md:flex-1'>
                 </div>
 
-                <div className='flex items-end w-full md:w-auto md:block xl:flex'>
+                <div className='flex items-end w-full md:w-auto md:block xl:flex pt-2'>
                     <div className='hidden w-56 pb-2 md:w-auto md:flex md:pb-4 md:items-center xl:mr-14 xl:pb-2 md:justify-end'>
                         {(theme) ?
                             <div className='flex items-center'> 
