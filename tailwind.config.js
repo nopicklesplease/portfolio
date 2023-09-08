@@ -6,7 +6,8 @@ module.exports = {
       colors:{
         'yellow': '#ffdd18',
         'red': '#ff1f25',
-        'darkred': '#e70008',
+        'darkred': '#d50008',
+        'offred': '#a30005',
         // 'darkred': '#de0d2c',
         'blue': '#005cef',
         'lightblue': '#438bff',
@@ -68,7 +69,8 @@ module.exports = {
         '5': '5 5 0%'
       },
       fontSize:{
-        'header': '8rem'
+        'header': '12rem',
+        'pointninefive': '.95rem'
       }
     },
     fontFamily: {

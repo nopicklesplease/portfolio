@@ -13,13 +13,13 @@ const Home = () => {
     return(
         <div className={`${(theme) && 'dark'}`}>
             <div className='w-screen h-max bg-white dark:bg-slategray dark:text-white z-50'>
-                <div className='mx-6 md:mx-20'>
+                <div className='md:mx-20'>
                     <Nav />
                     <div id='about'>                   
                         <Content />
                     </div>
 
-                    <div id='work'>                   
+                    <div>                   
                         <Work />
                     </div>
 

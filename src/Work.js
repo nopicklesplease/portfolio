@@ -16,31 +16,37 @@ const Work = () => {
         <div className={`md:hidden flex-column h-full ${(theme) && 'dark'}`}>
 
 
-        <div className='flex justify-center font-roboto bg-blue pt-10 dark:bg-darkgray 
+        <div className='flex justify-center font-roboto bg-yellow dark:bg-darkgray 
                     w-full
-                    dark:bg-purple'>
-                        <div className='text-white text-sm'>
-                            <p className='text-4xl tracking-widest font-light px-10 mb-10'>
+                    dark:bg-green'>
+                        <div id='work' className='text-black text-sm'>
+                            <p className='text-5xl text-slategray  tracking-widest font-light p-10'>
                                 SERENADE
                             </p>
                         </div>
         </div>
 
-        <div className='flex justify-center font-roboto bg-darkred dark:bg-darkgray 
+        <div className='flex justify-center font-roboto bg-blue  dark:bg-darkgray 
                     w-full dark:bg-rightoffgray'>
                         <div className='text-white text-sm'>
-                            <div className='bg-yellow text-black p-10 dark:bg-green'>
-                                <p className='text-lg mb-3 tracking-widest'>
-                                    PROJECT OVERVIEW
+                            <div className='bg-red p-10 pt-12 dark:bg-darkgray'>
+                            <p className='text-xl text-slategray dark:text-white mb-3 tracking-widest'>
+                                <span className='bg-offgray dark:bg-lightgray px-2 text-slategray p-1 rounded'>COMPLETION</span>
                                 </p>
-                                <p className='mb-10 text-sm text-justify'>
+                                <p className='mb-10 text-pointninefive leading-6'>
+                                    July 2023
+                                </p>
+                                <p className='text-xl text-slategray dark:text-white mb-3 tracking-widest'>
+                                    <span className='bg-offgray dark:bg-lightgray px-2 text-slategray p-1 rounded'>PROJECT OVERVIEW</span>
+                                </p>
+                                <p className='mb-10 text-pointninefive leading-6'>
                                     A web app that integrates openAI's DaVinci speech model & Spotify's API to interpret user prompts and turn them into creative Spotify playlists.
                                 </p>
 
-                                <p className='text-lg mb-3 tracking-widest'>
-                                    ROLE & RESPONSIBILITIES
+                                <p className='text-xl text-slategray dark:text-white mb-3 tracking-widest'>
+                                    <span className='bg-offgray dark:bg-lightgray px-2 text-slategray p-1 rounded'>ROLE & RESPONSIBILITIES</span>
                                 </p>
-                                <p className='text-sm text-justify'>
+                                <p className='text-pointninefive leading-6'>
                                     Lead Front-End Engineer responsible for UX design, User Profile & My Playlists/Discover components, JSX rendering of Spotify playlist materials, responsive design for mobile.
                                 </p>
                             </div>
@@ -49,14 +55,14 @@ const Work = () => {
             
             <div className='flex-column'>
                 <div className='flex-column'>
-                    <div className='flex-5 h-auto bg-offgray p-6 pt-8 font-roboto font-light pr-10 dark:bg-darkergray w-full overflow-hidden'>
+                    <div className='flex-5 h-auto bg-white p-6 pt-8 font-roboto font-light pr-10 dark:bg-darkergray w-full overflow-hidden'>
                         <Parallax
                             translateX={['-400px', '0px']}
                             startScroll={0}
                             endScroll={700}
                             shouldAlwaysCompleteAnimation={true}
                         >
-                            <img className='mb-24 mt-4' alt='Serenade' src={ SerenadeFinal1 }/>
+                            <img className='mb-12 mt-4' alt='Serenade' src={ SerenadeFinal1 }/>
                         </Parallax>
                         <Parallax
                             translateX={['400px', '0px']}
@@ -64,42 +70,50 @@ const Work = () => {
                             endScroll={700}
                             shouldAlwaysCompleteAnimation={true}
                         >
-                            <img className='mb-6' alt='Serenade' src={ SerenadeFinal2 }/>
+                            <img className='mb-12' alt='Serenade' src={ SerenadeFinal2 }/>
+                        </Parallax>
+                        <Parallax
+                            translateX={['-400px', '0px']}
+                            startScroll={0}
+                            endScroll={700}
+                            shouldAlwaysCompleteAnimation={true}
+                        >
+                            <img className='mb-6 mt-2 1150px:hidden' alt='Serenade' src={ SerenadeFinal1 }/>
                         </Parallax>
                     </div>
                     <div className='flex justify-center font-roboto bg-darkred dark:bg-darkgray 
                     w-full dark:bg-rightoffgray'>
                         <div className='text-white text-sm'>
 
-                            <div className='bg-darkred p-10 dark:bg-rightoffgray'>
-                                <p className='text-lg mb-3 tracking-widest'>
+                            <div className='bg-blue p-10 dark:bg-purple'>
+                                <p className='text-xl mb-3 tracking-widest'>
                                     TOOLS USED
                                 </p>
 
-                                <div className='flex flex-wrap'>
-                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>JavaScript</div>
+                                <div className='flex flex-wrap text-xs'>
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>JavaScript</div>
 
-                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>React.js</div>
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>React.js</div>
 
-                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>Redux.js</div>
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>Redux.js</div>
 
-                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>Node.js</div>
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>Node.js</div>
 
-                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>Express.js</div>
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>Express.js</div>
 
-                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>PostgreSQL</div>
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>PostgreSQL</div>
 
-                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>React Router</div>
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>React Router</div>
 
-                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>OpenAI API</div>
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>OpenAI API</div>
 
-                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>Spotify API</div>
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>Spotify API</div>
 
-                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>HTML</div>
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>HTML</div>
 
-                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>Vanilla CSS</div>
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>Vanilla CSS</div>
 
-                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>Adobe Photoshop</div>
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>Adobe Photoshop</div>
 
                                 </div>
                             </div>
@@ -108,11 +122,11 @@ const Work = () => {
                 </div>
 
 
-                <div className='flex justify-center font-roboto bg-blue pt-10 dark:bg-darkgray 
+                <div className='flex justify-center font-roboto bg-yellow pt-10 dark:bg-darkgray 
                     w-full
-                    dark:bg-purple'>
-                        <div className='text-white text-sm'>
-                            <p className='text-4xl tracking-widest font-light px-10 mb-10'>
+                    dark:bg-green'>
+                        <div className='text-white'>
+                            <p className='text-5xl text-slategray tracking-widest font-light px-10 mb-10'>
                                 JUST A CALCULATOR
                             </p>
                         </div>
@@ -121,18 +135,25 @@ const Work = () => {
         <div className='flex justify-center font-roboto bg-darkred dark:bg-darkgray 
                     w-full dark:bg-rightoffgray'>
                         <div className='text-white text-sm'>
-                            <div className='bg-yellow text-black p-10 dark:bg-green'>
-                            <p className='text-lg mb-3 tracking-widest'>
-                                    PROJECT OVERVIEW 
+                            <div className='bg-red p-10 pt-12 dark:bg-darkgray'>
+                            <p className='text-xl text-slategray dark:text-white mb-3 tracking-widest'>
+
+                                    <span className='bg-offgray dark:bg-lightgray px-2 text-slategray p-1 rounded'>COMPLETION</span>
                                 </p>
-                                <p className='mb-8 text-sm text-justify' data-rellax-speed='-4'>
+                                <p className='mb-10 text-pointninefive leading-6'>
+                                    June 2023
+                                </p>
+                            <p className='text-xl mb-3 text-slategray dark:text-white tracking-widest'>
+                                <span className='bg-offgray dark:bg-lightgray px-2 text-slategray p-1 rounded'>PROJECT OVERVIEW</span>
+                                </p>
+                                <p className='mb-8 text-pointninefive leading-6' data-rellax-speed='-4'>
                                     A Bitcoin portfolio tracker disguised as an iOS calculator. Pressing the '+' key on the calculator five times unveils a login screen to access the web application.
                                 </p>
 
-                                <p className='text-lg mb-3 tracking-widest'>
-                                    ROLE & RESPONSIBILITIES 
+                                <p className='text-xl mb-3 tracking-widest text-slategray dark:text-white'>
+                                    <span className='bg-offgray dark:bg-lightgray px-2 text-slategray p-1 rounded'>ROLE & RESPONSIBILITIES</span>
                                 </p>
-                                <p className='text-sm text-justify'>
+                                <p className='text-pointninefive text-justify leading-6'>
                                     Creator & Sole Developer
                                 </p>
                             </div>
@@ -140,14 +161,14 @@ const Work = () => {
         </div>
 
         <div className='flex-column'>
-                    <div className='flex-5 h-auto bg-offgray p-6 pt-8 font-roboto font-light pr-10 dark:bg-darkergray w-full overflow-hidden'>
+                    <div className='flex-5 h-auto bg-white p-6 pt-8 font-roboto font-light pr-10 dark:bg-darkergray w-full overflow-hidden'>
                         <Parallax
                             translateX={['-400px', '0px']}
                             startScroll={0}
                             endScroll={700}
                             shouldAlwaysCompleteAnimation={true}
                         >
-                            <img className='mb-24 mt-4' alt='Serenade' src={ CalcFinal2 }/>
+                            <img className='mb-12 mt-4' alt='Serenade' src={ CalcFinal2 }/>
                         </Parallax>
                         <Parallax
                             translateX={['400px', '0px']}
@@ -155,36 +176,44 @@ const Work = () => {
                             endScroll={700}
                             shouldAlwaysCompleteAnimation={true}
                         >
-                            <img className='mb-6' alt='Serenade' src={ CalcFinal1 }/>
+                            <img className='mb-12' alt='Serenade' src={ CalcFinal1 }/>
+                        </Parallax>
+                        <Parallax
+                            translateX={['-400px', '0px']}
+                            startScroll={0}
+                            endScroll={700}
+                            shouldAlwaysCompleteAnimation={true}
+                        >
+                            <img className='mb-6 mt-4' alt='Serenade' src={ CalcFinal2 }/>
                         </Parallax>
                     </div>
                     <div className='flex justify-center font-roboto bg-darkred dark:bg-darkgray 
                     w-full dark:bg-rightoffgray'>
                         <div className='text-white text-sm'>
 
-                            <div className='bg-darkred p-10 dark:bg-rightoffgray'>
-                                <p className='text-lg mb-3 tracking-widest'>
+                            <div className='bg-blue p-10 dark:bg-purple'>
+                                <p className='text-xl mb-3 tracking-widest'>
                                     TOOLS USED
                                 </p>
 
-                                <div className='flex flex-wrap'>
-                                <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>JavaScript</div>
+                                <div className='flex flex-wrap text-xs'>
+                                <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>JavaScript</div>
 
-<div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>React.js</div>
+<div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>React.js</div>
 
-<div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>Redux.js</div>
+<div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>Redux.js</div>
 
-<div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>Node.js</div>
+<div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>Node.js</div>
 
-<div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>React Router</div>
+<div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>React Router</div>
 
-<div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>CoinMarketCap API</div>
+<div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>CoinMarketCap API</div>
 
-<div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>HTML</div>
+<div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>HTML</div>
 
-<div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>Vanilla CSS</div>
+<div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>Vanilla CSS</div>
 
-<div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 text-sm hover:bg-yellow cursor-default'>Material-UI</div>
+<div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>Material-UI</div>
 
                                 </div>
                             </div>

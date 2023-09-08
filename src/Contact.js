@@ -41,26 +41,26 @@ const scroll = Scroll.animateScroll;
 console.log(emailSuccess);
 
     return(
-        <div className={`flex h-screen ${(theme) && 'dark'}`}>
+        <div className={`flex h-auto ${(theme) && 'dark'}`}>
 
-            <div className='flex-initial bg-blue dark:bg-purple border-r-50 border-yellow dark:border-green'>
+            <div className='flex-initial bg-blue dark:bg-purple md:border-r-50 md:border-yellow dark:border-green'>
                 <Parallax
                     translateY={['800px', '0px']}
                     startScroll={1800}
                     endScroll={2600}
                     shouldAlwaysCompleteAnimation={true}
                 >
-                    <div className='lg:transform lg:-rotate-90 lg:-ml-contact lg:-mr-contact lg:pr-4 lg:align-middle lg:mt-contacttop pt-1 text-white text-6xl font-poppins font-extralight tracking-wide w-50 lg:w-auto'>
+                    <div className='lg:transform lg:-rotate-90 lg:-ml-contact lg:-mr-contact lg:pr-4 lg:align-middle lg:mt-contacttop pt-1 text-white text-6xl font-poppins font-extralight tracking-wide md:w-50 lg:w-auto'>
                     <p className='hidden lg:flex'>CONTACT</p>
                     </div>
                 </Parallax>
             </div>
             
-            <div className='flex-1 bg-offgray p-10 font-roboto font-light text-justify dark:bg-darkergray border-r-100 border-red dark:border-darkgray md:border-0'>
-            <div className='lg:hidden pb-10 text-5xl  font-light font-roboto text-blue dark:text-lightgray'>
+            <div className='flex-1 bg-offgray p-10 font-roboto font-light text-justify dark:bg-slategray'>
+            {/* <div className='lg:hidden pb-10 text-5xl  font-light font-roboto text-blue dark:text-lightgray'>
                         CONTACT
-                    </div>
-                <div className='bg-white p-10 rounded dark:bg-rightoffgray dark:text-white'>
+                    </div> */}
+
 
                 {(emailSuccess) ? 
                     <>
@@ -74,21 +74,21 @@ console.log(emailSuccess);
                             NAME
                         </div>
                         <div>
-                            <input className='text-black rounded p-2 w-full outline-0 mb-8 bg-offgray dark:bg-white' name='from_name' placeholder='Enter your name'></input>
+                            <input className='text-black rounded p-2 w-full outline-0 mb-8 dark:bg-offgray dark:bg-white' name='from_name' placeholder='Enter your name'></input>
                         </div>
 
                         <div className='mb-2 tracking-widest'>
                             EMAIL ADDRESS
                         </div>
                         <div>
-                            <input className='text-black rounded p-2 w-full outline-0 mb-8 bg-offgray dark:bg-white' name='reply_to' placeholder='Enter your email address'></input>
+                            <input className='text-black rounded p-2 w-full outline-0 mb-8 dark:bg-offgray dark:bg-white' name='reply_to' placeholder='Enter your email address'></input>
                         </div>
 
                         <div className='mb-2 tracking-widest'>
                             MESSAGE
                         </div>
                         <div>
-                            <textarea className='text-black rounded p-2 w-full h-32 outline-0 mb-8 bg-offgray dark:bg-white' name='message' placeholder='Write your message'></textarea>
+                            <textarea className='text-black rounded p-2 w-full h-32 outline-0 mb-8 dark:bg-offgray dark:bg-white' name='message' placeholder='Write your message'></textarea>
                         </div>
 {/* 
                         <TextField id="outlined-basic" label="Name" name="from_name" size='small' variant="standard"/>
@@ -102,7 +102,7 @@ console.log(emailSuccess);
                                 sx={{
                                     backgroundColor: `${theme ? 'white' : 'black'}`,
                                     color: `${theme ? 'black' : 'white'}`,
-                                    width: '25%',
+                                    width: '45%',
                                     typography: {
                                         fontFamily: 'Roboto',
                                         fontSize: 16,
@@ -119,7 +119,7 @@ console.log(emailSuccess);
                     </form>
 
                     </>}
-                </div>
+
 
             </div>
                 <div className='hidden 915px:block flex-column h-screen bg-red dark:bg-darkgray

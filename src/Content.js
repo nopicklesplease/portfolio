@@ -2,6 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import headshot from './headshot.jpeg';
+import CurrentProject from './CurrentProject';
 
 const Content = () => {
 
@@ -118,7 +119,7 @@ const Content = () => {
                     <div>
                         <img className='md:hidden 1150px:w-pic' src={ headshot } alt='headshot'/>
                     </div>
-                    <div className='bg-white p-6 pt-6  450px:p-10 450px:pt-9 font-roboto font-light first-line:uppercase first-line:tracking-widest
+                    <div className='bg-white p-10 px-6  450px:p-10 450px:pt-9 font-roboto font-light first-line:uppercase first-line:tracking-widest
                     first-letter:text-5xl first-letter:font-normal
                     first-letter:mr-3 first-letter:float-left text-justify dark:bg-slategray dark:text-lightgray'>
                     <p>I am a software engineer in the New York City area that's been developing web applications as a personal interest for 20+ years. <span className='block mt-6  mb-6 600px:mt-0 600px:mb-0 600px:inline 600px:bg-yellow dark:text-white 600px:dark:bg-purple'><span className='bg-yellow dark:bg-purple'>In an effort to finally make it my professional career, I recently completed a full-stack development bootcamp.</span></span> This is a representation of the work I've produced since that time.</p> 
@@ -129,11 +130,11 @@ const Content = () => {
                         <div className='border-t border-lightgray w-4/5 mt-10'></div>
                     </div>
 
-                    <div className='p-6 450px:p-10 pb-3 mt-0 450px:mt-10 md:mt-0 flex bg-offgray dark:bg-darkergray md:dark:bg-slategray md:bg-white'>
+                    <div className='p-6 pt-10 450px:p-10 pb-3 mt-0 450px:mt-10 md:mt-0 flex bg-offgray dark:bg-darkergray md:dark:bg-slategray md:bg-white'>
                         <span className='font-normal text-xl tracking-widest'>CORE PROFICIENCIES <span className='text-blue dark:text-green'> + ADDL. SKILLS</span></span>
                     </div>
 
-                    <div className='flex flex-wrap p-6 450px:p-10 pt-0 md:mb-0 text-xs bg-offgray dark:bg-darkergray md:dark:bg-slategray md:bg-white'>
+                    <div className='flex flex-wrap p-6 pb-10 450px:p-10 pt-0 md:mb-0 text-xs bg-offgray dark:bg-darkergray md:dark:bg-slategray md:bg-white'>
                             <div className='p-2 bg-lightgray md:bg-lightergray dark: text-slategray rounded-md max-w-fit m-1   hover:bg-yellow cursor-default'>JavaScript</div>
 
                             <div className='p-2 bg-lightgray md:bg-lightergray dark: text-slategray rounded-md max-w-fit m-1  hover:bg-yellow cursor-default'>React.js</div>
@@ -174,13 +175,13 @@ const Content = () => {
 
                         </div>
 
-                        <div className='p-6 450px:p-10 450px:pt-0'>
-                        <span className='font-normal text-xl tracking-widest'>CURRENT PROJECT: <span className='text-blue dark:text-green'> SO WHAT?</span></span>
+                        {/* <div className='p-6 450px:p-10 450px:pt-0'>
+                            <span className='font-normal text-xl tracking-widest'>CURRENT PROJECT: <span className='text-blue dark:text-green'> SO WHAT?</span></span>
 
-                        <p className='mt-3 mb-10 md:mb-20 font-roboto font-light'>
-                        SO WHAT? is an application that summarizes important historical events, people & places into an easy-to-digest format that provides users with a topical overview of anything that piques their interest.
-                        </p>
-                    </div>
+                            <p className='mt-3 mb-10 md:mb-20 font-roboto font-light'>
+                            SO WHAT? is an application that summarizes important historical events, people & places into an easy-to-digest format that provides users with a topical overview of anything that piques their interest.
+                            </p>
+                        </div> */}
 
                 </div>
                 <div className='hidden 915px:flex w-smrightspace 915px:w-medrightspace 
@@ -196,6 +197,7 @@ const Content = () => {
                     </div>
                 </div>
             </div>
+            <CurrentProject />
         </div>
     )
 };

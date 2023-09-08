@@ -22,17 +22,17 @@ const Nav = () => {
     const dispatch = useDispatch();
 
     return(
-        <div className={`${(theme) && 'dark'} sticky top-0 pt-6 md:pt-10 z-50 bg-white dark:bg-slategray`}>
+        <div className={`${(theme) && 'dark'} sticky top-0 pt-4 md:pt-10 z-50 bg-white dark:bg-slategray`}>
             <div className='flex-column md:flex border-b-8 border-b-black pb-4 m-0 items-end font-roboto dark:border-b-white'>
 
-                <div id='header' className='flex-none text-justify text-9xl md:text-7xl 960px:text-8xl m-0 p-0 tracking-widest font-extralight'>
+                <div id='header' className='flex-none text-justify text-9xl md:text-7xl 960px:text-8xl m-0 p-0 px-4 md:px-0 tracking-widest font-extralight'>
                     RYAN S.
                 </div>
 
                 <div className='md:flex-1'>
                 </div>
 
-                <div className='flex items-end w-full md:w-auto md:block xl:flex pt-2'>
+                <div className='flex items-end w-full md:w-auto md:block xl:flex pt-2 px-4 md:px-0'>
                     <div className='hidden w-56 pb-2 md:w-auto md:flex md:pb-4 md:items-center xl:mr-14 xl:pb-2 md:justify-end'>
                         {(theme) ?
                             <div className='flex items-center'> 
@@ -82,12 +82,12 @@ const Nav = () => {
                             </Link>
                         </div>
                         <div className='border-b-2 border-b-transparent hover:border-solid hover:border-b-blue dark:hover:border-b-purple cursor-pointer'>
-                            <Link activeClass={`${theme ? 'dark-active' : 'active'}`} to="work" spy={true} smooth={true} offset={-160} duration={500}>
+                            <Link activeClass={`${theme ? 'dark-active' : 'active'}`} to="work" spy={true} smooth={true} duration={500}>
                                 WORK
                             </Link>
                         </div>
                         <div className='border-b-2 border-b-transparent hover:border-solid hover:border-b-blue dark:hover:border-b-purple cursor-pointer'>
-                            <Link activeClass={`${theme ? 'dark-active' : 'active'}`} to="contact" spy={true} smooth={true} offset={-160} duration={900}>
+                            <Link activeClass={`${theme ? 'dark-active' : 'active'}`} to="contact" spy={true} smooth={true} offset={-149} duration={900}>
                                 CONTACT
                             </Link>
                         </div>
