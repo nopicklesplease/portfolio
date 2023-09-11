@@ -82,12 +82,12 @@ const Nav = () => {
                             </Link>
                         </div>
                         <div className='border-b-2 border-b-transparent hover:border-solid hover:border-b-blue dark:hover:border-b-purple cursor-pointer'>
-                            <Link activeClass={`${theme ? 'dark-active' : 'active'}`} to="work" spy={true} smooth={true} duration={500}>
+                            <Link activeClass={`${theme ? 'dark-active' : 'active'}`} to="work" spy={true} smooth={true} offset={-147} duration={500}>
                                 WORK
                             </Link>
                         </div>
                         <div className='border-b-2 border-b-transparent hover:border-solid hover:border-b-blue dark:hover:border-b-purple cursor-pointer'>
-                            <Link activeClass={`${theme ? 'dark-active' : 'active'}`} to="contact" spy={true} smooth={true} offset={-149} duration={900}>
+                            <Link activeClass={`${theme ? 'dark-active' : 'active'}`} to="contact" spy={true} smooth={true} offset={-145} duration={900}>
                                 CONTACT
                             </Link>
                         </div>

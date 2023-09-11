@@ -22,7 +22,7 @@ module.exports = {
         'purple': '#8b5ea2',
         // 'purple': '#8d6a9f',
         'slategray': '#212124',
-        'offgray': '#f0f0f0',
+        'offgray': '#f6f6f6',
         'lightgray': '#cecece',
         'lightergray': '#e6e6e6',
         'magenta': '#ff48f9',

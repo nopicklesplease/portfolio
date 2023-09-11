@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { Button } from '@mui/material';
 import { styled } from '@mui/material/styles';
@@ -12,6 +12,18 @@ const Contact = () => {
 
     const [emailSuccess, setEmailSuccess] = useState(false);
     const theme = useSelector((state) => state.switchTheme.active);
+    const [width, setWidth] = useState(window.innerWidth);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setWidth(window.innerWidth);
+        }
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+      }, [width]);
+
     const form = useRef();
 
     const SaveButtonStyled = styled(Button)({
@@ -41,19 +53,29 @@ const scroll = Scroll.animateScroll;
 console.log(emailSuccess);
 
     return(
-        <div className={`flex h-auto ${(theme) && 'dark'}`}>
+        <div className={`flex-column md:flex h-auto ${(theme) && 'dark'}`}>
 
             <div className='flex-initial bg-blue dark:bg-purple md:border-r-50 md:border-yellow dark:border-green'>
                 <Parallax
                     translateY={['800px', '0px']}
-                    startScroll={1800}
-                    endScroll={2600}
+                    startScroll={850} 
+                    endScroll={2000}
                     shouldAlwaysCompleteAnimation={true}
                 >
                     <div className='lg:transform lg:-rotate-90 lg:-ml-contact lg:-mr-contact lg:pr-4 lg:align-middle lg:mt-contacttop pt-1 text-white text-6xl font-poppins font-extralight tracking-wide md:w-50 lg:w-auto'>
                     <p className='hidden lg:flex'>CONTACT</p>
                     </div>
                 </Parallax>
+            </div>
+
+            <div className='md:hidden flex justify-center font-roboto bg-yellow dark:bg-darkgray 
+                    w-full
+                    dark:bg-green'>
+                        <div className='text-black text-sm'>
+                            <p className='text-4xl text-slategray dark:text-white tracking-widest font-light p-10'>
+                                CONTACT
+                            </p>
+                        </div>
             </div>
             
             <div className='flex-1 bg-offgray p-10 font-roboto font-light text-justify dark:bg-slategray'>
@@ -125,7 +147,7 @@ console.log(emailSuccess);
                 <div className='hidden 915px:block flex-column h-screen bg-red dark:bg-darkgray
                 w-smrightspace
                 915px:w-medrightspace 1150px:w-rightspace'>
-                    <div className='flex text-white w-full bg-darkred dark:bg-rightoffgray p-10'>
+                    <div className='flex text-offgray w-full dark:bg-rightoffgray p-10'>
                         <p className='text-7xl'>
                         <Link to='https://www.linkedin.com/in/rsariego/' target='_blank'><i className="fa-brands fa-linkedin hover:text-yellow"></i></Link>
 

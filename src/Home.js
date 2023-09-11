@@ -19,7 +19,7 @@ const Home = () => {
                         <Content />
                     </div>
 
-                    <div>                   
+                    <div id='work'>                   
                         <Work />
                     </div>
 

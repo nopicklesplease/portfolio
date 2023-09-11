@@ -7,7 +7,7 @@ const Footer = () => {
 
     return(
         <div>
-            <div className={`${(theme) && 'dark'} flex-column items-center justify-start p-10 top-0 z-50 border-t-8 border-t-black bg-darkgray text-4xl text-white dark:bg-slategray dark:border-t-white md:hidden`}>
+            <div className={`${(theme) && 'dark'} flex-column items-center justify-start p-10 top-0 z-50 border-t-8 border-t-black bg-darkgray text-4xl text-white dark:border-t-white md:hidden`}>
                 <Link to='https://www.linkedin.com/in/rsariego/' target='_blank'><i className="fa-brands fa-linkedin"></i></Link>
 
                 <Link to='https://github.com/nopicklesplease' target='_blank'><i className="fa-brands fa-github  ml-4"></i></Link>

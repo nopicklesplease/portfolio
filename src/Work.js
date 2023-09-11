@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import SerenadeFinal1 from './Mockups/Serenade-Final1.png';
 import SerenadeFinal2 from './Mockups/Serenade-Final2.png';
@@ -9,6 +9,19 @@ import { Parallax } from 'react-scroll-parallax';
 const Work = () => {
 
     const theme = useSelector((state) => state.switchTheme.active);
+    const [width, setWidth] = useState(window.innerWidth);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setWidth(window.innerWidth);
+        }
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+      }, [width]);
+
+      console.log(width);
 
     return(
         <>
@@ -16,11 +29,11 @@ const Work = () => {
         <div className={`md:hidden flex-column h-full ${(theme) && 'dark'}`}>
 
 
-        <div className='flex justify-center font-roboto bg-yellow dark:bg-darkgray 
+        <div id='work' className='flex justify-center font-roboto bg-yellow dark:bg-darkgray 
                     w-full
                     dark:bg-green'>
-                        <div id='work' className='text-black text-sm'>
-                            <p className='text-5xl text-slategray  tracking-widest font-light p-10'>
+                        <div className='text-black text-sm'>
+                            <p className='text-4xl text-slategray dark:text-white  tracking-widest font-light p-10'>
                                 SERENADE
                             </p>
                         </div>
@@ -30,20 +43,20 @@ const Work = () => {
                     w-full dark:bg-rightoffgray'>
                         <div className='text-white text-sm'>
                             <div className='bg-red p-10 pt-12 dark:bg-darkgray'>
-                            <p className='text-xl text-slategray dark:text-white mb-3 tracking-widest'>
+                            <p className='text-lg text-slategray dark:text-white mb-3 tracking-widest'>
                                 <span className='bg-offgray dark:bg-lightgray px-2 text-slategray p-1 rounded'>COMPLETION</span>
                                 </p>
                                 <p className='mb-10 text-pointninefive leading-6'>
                                     July 2023
                                 </p>
-                                <p className='text-xl text-slategray dark:text-white mb-3 tracking-widest'>
+                                <p className='text-lg text-slategray dark:text-white mb-3 tracking-widest'>
                                     <span className='bg-offgray dark:bg-lightgray px-2 text-slategray p-1 rounded'>PROJECT OVERVIEW</span>
                                 </p>
                                 <p className='mb-10 text-pointninefive leading-6'>
                                     A web app that integrates openAI's DaVinci speech model & Spotify's API to interpret user prompts and turn them into creative Spotify playlists.
                                 </p>
 
-                                <p className='text-xl text-slategray dark:text-white mb-3 tracking-widest'>
+                                <p className='text-lg text-slategray dark:text-white mb-3 tracking-widest'>
                                     <span className='bg-offgray dark:bg-lightgray px-2 text-slategray p-1 rounded'>ROLE & RESPONSIBILITIES</span>
                                 </p>
                                 <p className='text-pointninefive leading-6'>
@@ -59,15 +72,16 @@ const Work = () => {
                         <Parallax
                             translateX={['-400px', '0px']}
                             startScroll={0}
-                            endScroll={700}
+                            endScroll={1875}
                             shouldAlwaysCompleteAnimation={true}
                         >
                             <img className='mb-12 mt-4' alt='Serenade' src={ SerenadeFinal1 }/>
                         </Parallax>
+
                         <Parallax
                             translateX={['400px', '0px']}
                             startScroll={0}
-                            endScroll={700}
+                            endScroll={1875}
                             shouldAlwaysCompleteAnimation={true}
                         >
                             <img className='mb-12' alt='Serenade' src={ SerenadeFinal2 }/>
@@ -75,7 +89,7 @@ const Work = () => {
                         <Parallax
                             translateX={['-400px', '0px']}
                             startScroll={0}
-                            endScroll={700}
+                            endScroll={1875}
                             shouldAlwaysCompleteAnimation={true}
                         >
                             <img className='mb-6 mt-2 1150px:hidden' alt='Serenade' src={ SerenadeFinal1 }/>
@@ -126,7 +140,7 @@ const Work = () => {
                     w-full
                     dark:bg-green'>
                         <div className='text-white'>
-                            <p className='text-5xl text-slategray tracking-widest font-light px-10 mb-10'>
+                            <p className='text-4xl text-slategray dark:text-white tracking-widest font-light px-10 mb-10'>
                                 JUST A CALCULATOR
                             </p>
                         </div>
@@ -136,21 +150,21 @@ const Work = () => {
                     w-full dark:bg-rightoffgray'>
                         <div className='text-white text-sm'>
                             <div className='bg-red p-10 pt-12 dark:bg-darkgray'>
-                            <p className='text-xl text-slategray dark:text-white mb-3 tracking-widest'>
+                            <p className='text-lg text-slategray dark:text-white mb-3 tracking-widest'>
 
                                     <span className='bg-offgray dark:bg-lightgray px-2 text-slategray p-1 rounded'>COMPLETION</span>
                                 </p>
                                 <p className='mb-10 text-pointninefive leading-6'>
                                     June 2023
                                 </p>
-                            <p className='text-xl mb-3 text-slategray dark:text-white tracking-widest'>
+                            <p className='text-lg mb-3 text-slategray dark:text-white tracking-widest'>
                                 <span className='bg-offgray dark:bg-lightgray px-2 text-slategray p-1 rounded'>PROJECT OVERVIEW</span>
                                 </p>
                                 <p className='mb-8 text-pointninefive leading-6' data-rellax-speed='-4'>
                                     A Bitcoin portfolio tracker disguised as an iOS calculator. Pressing the '+' key on the calculator five times unveils a login screen to access the web application.
                                 </p>
 
-                                <p className='text-xl mb-3 tracking-widest text-slategray dark:text-white'>
+                                <p className='text-lg mb-3 tracking-widest text-slategray dark:text-white'>
                                     <span className='bg-offgray dark:bg-lightgray px-2 text-slategray p-1 rounded'>ROLE & RESPONSIBILITIES</span>
                                 </p>
                                 <p className='text-pointninefive text-justify leading-6'>
@@ -165,7 +179,7 @@ const Work = () => {
                         <Parallax
                             translateX={['-400px', '0px']}
                             startScroll={0}
-                            endScroll={700}
+                            endScroll={2900}
                             shouldAlwaysCompleteAnimation={true}
                         >
                             <img className='mb-12 mt-4' alt='Serenade' src={ CalcFinal2 }/>
@@ -173,7 +187,7 @@ const Work = () => {
                         <Parallax
                             translateX={['400px', '0px']}
                             startScroll={0}
-                            endScroll={700}
+                            endScroll={2900}
                             shouldAlwaysCompleteAnimation={true}
                         >
                             <img className='mb-12' alt='Serenade' src={ CalcFinal1 }/>
@@ -181,7 +195,7 @@ const Work = () => {
                         <Parallax
                             translateX={['-400px', '0px']}
                             startScroll={0}
-                            endScroll={700}
+                            endScroll={2900}
                             shouldAlwaysCompleteAnimation={true}
                         >
                             <img className='mb-6 mt-4' alt='Serenade' src={ CalcFinal2 }/>
@@ -232,7 +246,7 @@ const Work = () => {
                 <Parallax
                     translateY={['800px', '0px']}
                     startScroll={0}
-                    endScroll={700}
+                    endScroll={450}
                     shouldAlwaysCompleteAnimation={true}
                 >
 
@@ -244,11 +258,11 @@ const Work = () => {
             </div>
             <div className='flex-column'>
                 <div className='flex'>
-                    <div className='flex-5 h-auto bg-offgray p-6 pt-8 font-roboto font-light pr-10 dark:bg-darkergray w-full overflow-hidden'>
+                    <div className='flex-5 h-auto bg-white p-6 pt-8 font-roboto font-light pr-10 dark:bg-darkergray w-full overflow-hidden'>
                         <Parallax
                             translateX={['-400px', '0px']}
                             startScroll={0}
-                            endScroll={700}
+                            endScroll={450}
                             shouldAlwaysCompleteAnimation={true}
                         >
                             <img className='mb-24 mt-2' alt='Serenade' src={ SerenadeFinal1 }/>
@@ -256,7 +270,7 @@ const Work = () => {
                         <Parallax
                             translateX={['400px', '0px']}
                             startScroll={0}
-                            endScroll={700}
+                            endScroll={450}
                             shouldAlwaysCompleteAnimation={true}
                         >
                             <img className='mb-24 1150px:mb-6' alt='Serenade' src={ SerenadeFinal2 }/>
@@ -264,21 +278,21 @@ const Work = () => {
                         <Parallax
                             translateX={['-400px', '0px']}
                             startScroll={0}
-                            endScroll={700}
+                            endScroll={450}
                             shouldAlwaysCompleteAnimation={true}
                         >
                             <img className='mb-6 mt-2 1150px:hidden' alt='Serenade' src={ SerenadeFinal1 }/>
                         </Parallax>
                     </div>
-                    <div className='flex justify-center font-roboto bg-darkred pt-10 dark:bg-darkgray 
+                    <div className='flex justify-center font-roboto bg-yellow pt-10 dark:bg-darkgray 
                     w-smrightspace
                     915px:w-medrightspace
-                    1150px:w-rightspace dark:bg-rightoffgray'>
-                        <div className='text-white text-sm'>
-                            <p className='text-4xl tracking-widest font-light px-10 mb-10'>
+                    1150px:w-rightspace dark:bg-green'>
+                        <div className='text-black dark:text-lightergray text-sm'>
+                            <p className='text-4xl  tracking-widest dark:text-white font-light px-10 mb-10'>
                                 SERENADE
                             </p>
-                            <div className='bg-red p-10 dark:bg-darkgray'>
+                            <div className='bg-offgray p-10 dark:bg-darkgray'>
                                 <p className='text-lg mb-3 tracking-widest'>
                                     PROJECT OVERVIEW
                                 </p>
@@ -294,8 +308,8 @@ const Work = () => {
                                 </p>
                             </div>
 
-                            <div className='bg-darkred p-10 dark:bg-rightoffgray'>
-                                <p className='text-lg mb-3 tracking-widest'>
+                            <div className='bg-blue p-10 dark:bg-purple h-full'>
+                                <p className='text-lg text-white mb-3 tracking-widest'>
                                     TOOLS USED
                                 </p>
 
@@ -336,38 +350,38 @@ const Work = () => {
                     <div className='flex-1 h-full bg-white p-6 pt-10 font-roboto font-light pr-10 dark:bg-slategray w-full h-auto overflow-hidden'>
                         <Parallax
                             translateX={['-400px', '0px']}
-                            startScroll={1000}
-                            endScroll={1700}
+                            startScroll={450}
+                            endScroll={1300}
                             shouldAlwaysCompleteAnimation={true}
                         >
                             <img className='mb-24 mt-2' alt='Just A Calculator' src={ CalcFinal2 }/>
                         </Parallax>
                         <Parallax
                             translateX={['400px', '0px']}
-                            startScroll={1000}
-                            endScroll={1700}
+                            startScroll={450}
+                            endScroll={1300}
                             shouldAlwaysCompleteAnimation={true}
                         >
                             <img className='mb-24 1150px:mb-2' alt='Just A Calculator' src={ CalcFinal1 }/>
                         </Parallax>
                         <Parallax
                             translateX={['-400px', '0px']}
-                            startScroll={1000}
-                            endScroll={1700}
+                            startScroll={450}
+                            endScroll={1300}
                             shouldAlwaysCompleteAnimation={true}
                         >
                             <img className='mb-2 1150px:hidden' alt='Just A Calculator' src={ CalcFinal2 }/>
                         </Parallax>
                     </div>
-                    <div className='flex justify-center font-roboto bg-red pt-10 dark:bg-darkgray 
+                    <div className='flex justify-center font-roboto bg-yellow pt-10 dark:bg-green 
                     w-smrightspace
                     915px:w-medrightspace
-                    1150px:w-rightspace dark:bg-darkgray'>
+                    1150px:w-rightspace'>
                         <div className='text-white text-sm'>
-                            <p className='text-3xl tracking-widest font-light px-10 mb-10'>
+                            <p className='text-3xl text-slategray dark:text-white tracking-widest font-light px-10 mb-10'>
                                 JUST A CALCULATOR
                             </p>
-                            <div className='bg-darkred p-10 dark:bg-rightoffgray'>
+                            <div className='bg-offgray text-black dark:text-lightergray p-10 dark:bg-rightoffgray'>
                                 <p className='text-lg mb-3 tracking-widest'>
                                     PROJECT OVERVIEW 
                                 </p>
@@ -383,7 +397,7 @@ const Work = () => {
                                 </p>
                             </div>
 
-                            <div className='bg-red p-10 dark:bg-darkgray'>
+                            <div className='bg-blue p-10 dark:bg-purple h-full'>
                                 <p className='text-lg mb-3 tracking-widest'>
                                     TOOLS USED 
                                 </p>
