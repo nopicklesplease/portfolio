@@ -30,9 +30,9 @@ module.exports = {
       spacing:{
         'abouttop': '95px',
         'work': '53.5px',
-        'worktop': '82px',
+        'worktop': '89px',
         'contact': '109.85px',
-        'contacttop': '135px',
+        'contacttop': '145px',
         'themepb600': '17px',
         'themepb500': '15px',
         'themepb450': '13px',
@@ -60,6 +60,7 @@ module.exports = {
         '915px': '915px',
         '960px': '960px',
         '840px': '840px',
+        '880px': '880px',
         '600px': '600px',
       },
       flex:{

@@ -119,59 +119,59 @@ const Content = () => {
                     <div>
                         <img className='md:hidden 1150px:w-pic' src={ headshot } alt='headshot'/>
                     </div>
-                    <div className='bg-white p-10 px-6  450px:p-10 450px:pt-9 font-roboto font-light first-line:uppercase first-line:tracking-widest
-                    first-letter:text-5xl first-letter:font-normal
+                    <div className='bg-white p-10 px-6 450px:p-10 450px:pt-9 lg:px-10 font-roboto font-light text-base lg:text-pointninefive first-line:uppercase first-line:tracking-widest
+                    first-letter:text-4xl first-letter:font-normal
                     first-letter:mr-3 first-letter:float-left text-justify dark:bg-slategray dark:text-lightgray'>
                     <p>I am a software engineer in the New York City area that's been developing web applications as a personal interest for 20+ years. <span className='block mt-6  mb-6 600px:mt-0 600px:mb-0 600px:inline 600px:bg-yellow dark:text-white 600px:dark:bg-purple'><span className='bg-yellow dark:bg-purple'>In an effort to finally make it my professional career, I recently completed a full-stack development bootcamp.</span></span> This is a representation of the work I've produced since that time.</p> 
                     </div>
 
 
-                    <div className='hidden md:flex justify-center'>
+                    {/* <div className='hidden md:flex justify-center'>
                         <div className='border-t border-lightgray w-4/5 mt-10'></div>
-                    </div>
-
-                    <div className='p-6 pt-10 450px:p-10 pb-3 mt-0 450px:mt-10 md:mt-0 flex bg-offgray dark:bg-darkergray md:dark:bg-slategray md:bg-white'>
+                    </div> */}
+                
+                    <div className='p-6 pt-10 450px:p-10 pb-3 mt-0 450px:mt-10 md:mt-0 lg:px-10 flex bg-offgray dark:bg-darkergray md:dark:bg-darkergray'>
                         <span className='font-normal text-xl tracking-widest'>CORE PROFICIENCIES <span className='text-blue dark:text-green'> + ADDL. SKILLS</span></span>
                     </div>
 
-                    <div className='flex flex-wrap p-6 pb-10 450px:p-10 pt-0 md:mb-0 text-xs bg-offgray dark:bg-darkergray md:dark:bg-slategray md:bg-white'>
-                            <div className='p-2 bg-lightgray md:bg-lightergray dark: text-slategray rounded-md max-w-fit m-1   hover:bg-yellow cursor-default'>JavaScript</div>
+                    <div className='flex flex-wrap p-6 pb-10 450px:p-10 pt-0 md:mb-0 text-sm md:text-xs lg:px-10 1150px:text-sm bg-offgray dark:bg-darkergray md:dark:bg-darkergray'>
+                            <div className='p-2 bg-lightgray dark: text-slategray rounded-md max-w-fit h-fit m-1 hover:bg-yellow cursor-default'>JavaScript</div>
 
-                            <div className='p-2 bg-lightgray md:bg-lightergray dark: text-slategray rounded-md max-w-fit m-1  hover:bg-yellow cursor-default'>React.js</div>
+                            <div className='p-2 bg-lightgray dark: text-slategray rounded-md max-w-fit h-fit m-1  hover:bg-yellow cursor-default'>React.js</div>
 
-                            <div className='p-2 bg-lightgray md:bg-lightergray dark: text-slategray rounded-md max-w-fit m-1  hover:bg-yellow cursor-default'>Redux.js</div>
+                            <div className='p-2 bg-lightgray dark: text-slategray rounded-md max-w-fit h-fit m-1  hover:bg-yellow cursor-default'>Redux.js</div>
 
-                            <div className='p-2 bg-lightgray md:bg-lightergray dark: text-slategray rounded-md max-w-fit m-1  hover:bg-yellow cursor-default'>Node.js</div>
+                            <div className='p-2 bg-lightgray dark: text-slategray rounded-md max-w-fit h-fit m-1  hover:bg-yellow cursor-default'>Node.js</div>
 
-                            <div className='p-2 bg-lightgray md:bg-lightergray dark: text-slategray rounded-md max-w-fit m-1  hover:bg-yellow cursor-default'>Express.js</div>
+                            <div className='p-2 bg-lightgray dark: text-slategray rounded-md max-w-fit h-fit m-1  hover:bg-yellow cursor-default'>Express.js</div>
 
-                            <div className='p-2 bg-lightgray md:bg-lightergray dark: text-slategray rounded-md max-w-fit m-1  hover:bg-yellow cursor-default'>React Router</div>
+                            <div className='p-2 bg-lightgray dark: text-slategray rounded-md max-w-fit h-fit m-1  hover:bg-yellow cursor-default'>React Router</div>
 
-                            <div className='p-2 bg-lightgray md:bg-lightergray dark: text-slategray rounded-md max-w-fit m-1  hover:bg-yellow cursor-default'>PostgreSQL</div>
+                            <div className='p-2 bg-lightgray dark: text-slategray rounded-md max-w-fit h-fit m-1  hover:bg-yellow cursor-default'>PostgreSQL</div>
 
-                            <div className='p-2 bg-lightgray md:bg-lightergray dark: text-slategray rounded-md max-w-fit m-1  hover:bg-yellow cursor-default'>REST API</div>
+                            <div className='p-2 bg-lightgray dark: text-slategray rounded-md max-w-fit h-fit m-1  hover:bg-yellow cursor-default'>REST API</div>
 
-                            <div className='p-2 bg-lightgray md:bg-lightergray dark: text-slategray rounded-md max-w-fit m-1  hover:bg-yellow cursor-default'>GIT</div>
+                            <div className='p-2 bg-lightgray dark: text-slategray rounded-md max-w-fit h-fit m-1  hover:bg-yellow cursor-default'>GIT</div>
 
-                            <div className='p-2 bg-lightgray md:bg-lightergray dark: text-slategray rounded-md max-w-fit m-1  hover:bg-yellow cursor-default'>CSS</div>
+                            <div className='p-2 bg-lightgray dark: text-slategray rounded-md max-w-fit h-fit m-1  hover:bg-yellow cursor-default'>CSS</div>
 
-                            <div className='p-2 bg-lightgray md:bg-lightergray dark: text-slategray rounded-md max-w-fit m-1  hover:bg-yellow cursor-default'>Tailwind</div>
+                            <div className='p-2 bg-lightgray dark: text-slategray rounded-md max-w-fit h-fit m-1  hover:bg-yellow cursor-default'>Tailwind</div>
 
-                            <div className='p-2 bg-lightgray md:bg-lightergray dark: text-slategray rounded-md max-w-fit m-1  hover:bg-yellow cursor-default'>React-Parallax</div>
+                            <div className='p-2 bg-lightgray dark: text-slategray rounded-md max-w-fit h-fit m-1  hover:bg-yellow cursor-default'>React-Parallax</div>
 
-                            <div className='p-2 bg-lightgray md:bg-lightergray dark: text-slategray rounded-md max-w-fit m-1  hover:bg-yellow cursor-default'>Material-UI</div>
+                            <div className='p-2 bg-lightgray dark: text-slategray rounded-md max-w-fit h-fit m-1  hover:bg-yellow cursor-default'>Material-UI</div>
 
-                            <div className='p-2 bg-lightgray md:bg-lightergray dark: text-slategray rounded-md max-w-fit m-1  hover:bg-yellow cursor-default'>Responsive Design</div>
+                            <div className='p-2 bg-lightgray dark: text-slategray rounded-md max-w-fit h-fit m-1  hover:bg-yellow cursor-default'>Responsive Design</div>
 
-                            <div className='p-2 bg-blue dark:bg-green text-white rounded-md max-w-fit m-1  hover:bg-yellow dark:hover:bg-yellow cursor-default hover:text-black'>Audio Engineering</div>
+                            <div className='p-2 bg-blue dark:bg-green text-white rounded-md max-w-fit h-fit m-1  hover:bg-yellow dark:hover:bg-yellow cursor-default hover:text-black'>Audio Engineering</div>
 
-                            <div className='p-2 bg-blue dark:bg-green text-white rounded-md max-w-fit m-1  hover:bg-yellow dark:hover:bg-yellow cursor-default hover:text-black'>Music & Podcast Production</div>
+                            <div className='p-2 bg-blue dark:bg-green text-white rounded-md max-w-fit h-fit m-1  hover:bg-yellow dark:hover:bg-yellow cursor-default hover:text-black'>Music & Podcast Production</div>
 
-                            <div className='p-2 bg-blue dark:bg-green text-white rounded-md max-w-fit m-1  hover:bg-yellow dark:hover:bg-yellow cursor-default hover:text-black'>Bitcoin Education</div>
+                            <div className='p-2 bg-blue dark:bg-green text-white rounded-md max-w-fit h-fit m-1  hover:bg-yellow dark:hover:bg-yellow cursor-default hover:text-black'>Bitcoin Education</div>
 
-                            <div className='p-2 bg-blue dark:bg-green text-white rounded-md max-w-fit m-1  hover:bg-yellow dark:hover:bg-yellow cursor-default hover:text-black'>Photography</div>
+                            <div className='p-2 bg-blue dark:bg-green text-white rounded-md max-w-fit h-fit m-1  hover:bg-yellow dark:hover:bg-yellow cursor-default hover:text-black'>Photography</div>
 
-                            <div className='p-2 bg-blue dark:bg-green text-white rounded-md max-w-fit m-1  hover:bg-yellow dark:hover:bg-yellow cursor-default hover:text-black'>Adobe Photoshop</div>
+                            <div className='p-2 bg-blue dark:bg-green text-white rounded-md max-w-fit h-fit m-1  hover:bg-yellow dark:hover:bg-yellow cursor-default hover:text-black'>Adobe Photoshop</div>
 
                         </div>
 
@@ -187,7 +187,7 @@ const Content = () => {
                 <div className='hidden 915px:flex w-smrightspace 915px:w-medrightspace 
                 1150px:w-rightspace
                 1150px:flex-initial justify-center bg-red p-10 dark:bg-darkgray'>
-                    <div className='text-white text-6xl'>
+                    <div className='text-white text-5xl'>
                         <img className='1150px:w-pic rounded-md' src={ headshot } alt='headshot'/>
 
                         <Link to='https://www.linkedin.com/in/rsariego/' target='_blank'><i className="fa-brands fa-linkedin mt-4 hover:text-yellow"></i></Link>
