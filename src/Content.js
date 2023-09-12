@@ -112,7 +112,7 @@ const Content = () => {
                     </div>
                 </div> */}
 
-                <div className='md:hidden md:flex-5 915px:block 915px:flex-1 border-r-100 border-red dark:border-darkgray md:border-0'>
+                <div className='md:hidden md:flex-5 915px:block 915px:flex-1 border-r-100 border-red dark:bg-darkergray dark:border-darkgray md:border-0'>
                     <div className='hidden md:block lg:hidden bg-white p-10 pb-0 text-5xl font-light font-roboto text-blue dark:text-lightgray'>
                         ABOUT
                     </div>

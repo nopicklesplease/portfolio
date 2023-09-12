@@ -37,9 +37,16 @@ const Work = () => {
                     w-full
                     dark:bg-green'>
                         <div className='text-black text-sm'>
+                            <Parallax
+                                opacity={[0, 1, 'easeOutBack']}
+                                startScroll={800}
+                                endScroll={1600}
+                                shouldAlwaysCompleteAnimation={true}
+                            >
                             <p className='text-4xl text-slategray dark:text-white  tracking-widest font-light p-10'>
                             <Link to={ serenadeLink } title='Launch Serenade' target='_blank'>SERENADE <span><i className="fa-solid fa-up-right-from-square ml-2 text-xl"></i></span></Link>
                             </p>
+                            </Parallax>
                         </div>
         </div>
 
@@ -47,6 +54,12 @@ const Work = () => {
                     w-full dark:bg-rightoffgray'>
                         <div className='text-white text-sm'>
                             <div className='bg-red p-10 pt-12 dark:bg-darkgray'>
+                            <Parallax
+                                opacity={[0, 1, 'easeOutBack']}
+                                startScroll={900}
+                                endScroll={1700}
+                                shouldAlwaysCompleteAnimation={true}
+                            >
                             <p className='text-lg text-slategray dark:text-white mb-3 tracking-widest'>
                                 <span className='bg-offgray dark:bg-lightgray px-2 text-slategray p-1 rounded'>COMPLETION</span>
                                 </p>
@@ -66,6 +79,7 @@ const Work = () => {
                                 <p className='text-pointninefive font-light leading-6'>
                                     Lead Front-End Engineer responsible for UX design, User Profile & My Playlists/Discover components, JSX rendering of Spotify playlist materials, responsive design for mobile.
                                 </p>
+                                </Parallax>
                             </div>
                         </div>
         </div>
@@ -144,16 +158,30 @@ const Work = () => {
                     w-full
                     dark:bg-green'>
                         <div className='text-white'>
-                            <p className='text-4xl text-slategray dark:text-white tracking-widest font-light px-10 mb-10'>
+                            <Parallax
+                                opacity={[0, 1, 'easeOutBack']}
+                                startScroll={2500}
+                                endScroll={3300}
+                                shouldAlwaysCompleteAnimation={true}
+                            >
+                            <p className='text-4xl text-slategray dark:bg-green dark:text-white tracking-widest font-light px-10 mb-10'>
                             <Link to='http://just-a-calculator.onrender.com' title='Launch Just-A-Calculator' target='_blank'>JUST A CALCULATOR <span><i className="fa-solid fa-up-right-from-square ml-2 text-xl"></i></span></Link>
                             </p>
+                            </Parallax>
                         </div>
         </div>
 
         <div className='flex justify-center font-roboto bg-darkred dark:bg-darkgray 
                     w-full dark:bg-rightoffgray'>
                         <div className='text-white text-sm'>
+
                             <div className='bg-red p-10 pt-12 dark:bg-darkgray'>
+                            <Parallax
+                                opacity={[0, 1, 'easeOutBack']}
+                                startScroll={2600}
+                                endScroll={3400}
+                                shouldAlwaysCompleteAnimation={true}
+                            >
                             <p className='text-lg text-slategray dark:text-white mb-3 tracking-widest'>
 
                                     <span className='bg-offgray dark:bg-lightgray px-2 text-slategray p-1 rounded'>COMPLETION</span>
@@ -174,7 +202,9 @@ const Work = () => {
                                 <p className='text-pointninefive text-justify font-light leading-6'>
                                     Creator & Sole Developer
                                 </p>
+                                </Parallax>
                             </div>
+
                         </div>
         </div>
 
@@ -401,7 +431,7 @@ const Work = () => {
                             <Link to={ calcLink } title='Launch Just-A-Calculator' target='_blank'><img className='mb-6 880px:hidden' alt='Launch Just-A-Calculator' src={ CalcFinal1 }/></Link>
                         </Parallax>
                     </div>
-                    <div className='flex justify-center font-roboto bg-blue dark:bg-green 
+                    <div className='flex justify-center font-roboto bg-blue dark:bg-purple 
                     w-smrightspace
                     915px:w-medrightspace
                     1150px:w-rightspace'>
