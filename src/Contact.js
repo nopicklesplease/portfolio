@@ -62,11 +62,13 @@ console.log(emailSuccess);
                     endScroll={2000}
                     shouldAlwaysCompleteAnimation={true}
                 >
-                    <div className='lg:transform lg:-rotate-90 lg:-ml-contact lg:-mr-contact lg:pr-4 lg:align-middle lg:mt-contacttop pt-1 text-white text-6xl font-poppins font-extralight tracking-wide md:w-50 lg:w-auto'>
+                    <div className='lg:transform lg:-rotate-90 lg:-ml-contact lg:-mr-contact lg:pr-4 lg:align-middle lg:mt-contacttop pt-1 text-white text-6xl font-roboto font-extralight tracking-wide md:w-50 lg:w-auto'>
                     <p className='hidden lg:flex'>CONTACT</p>
                     </div>
                 </Parallax>
             </div>
+
+            
 
             <div className='md:hidden flex justify-center font-roboto bg-yellow dark:bg-darkgray 
                     w-full
@@ -77,11 +79,12 @@ console.log(emailSuccess);
                             </p>
                         </div>
             </div>
-            
-            <div className='flex-1 bg-offgray p-10 font-roboto font-light text-justify dark:bg-darkergray'>
-            {/* <div className='lg:hidden pb-10 text-5xl  font-light font-roboto text-blue dark:text-lightgray'>
+
+                        {/* <div className='flex lg:hidden pb-10 text-5xl  font-light font-roboto text-blue dark:text-lightgray'>
                         CONTACT
                     </div> */}
+            
+            <div className='flex-1 bg-offgray p-10 font-roboto font-light text-justify dark:bg-darkergray lg:pb-20'>
 
 
                 {(emailSuccess) ? 
@@ -144,14 +147,19 @@ console.log(emailSuccess);
 
 
             </div>
-                <div className='hidden 915px:block flex-column h-screen bg-red dark:bg-darkgray
+                <div className='hidden 915px:block flex-column h-auto bg-red dark:bg-darkgray
                 w-smrightspace
                 915px:w-medrightspace 1150px:w-rightspace'>
-                    <div className='flex text-offgray w-full dark:bg-darkgray p-10'>
-                        <p className='text-7xl'>
-                        <Link to='https://www.linkedin.com/in/rsariego/' target='_blank'><i className="fa-brands fa-linkedin hover:text-yellow"></i></Link>
 
-                        <Link to='https://github.com/nopicklesplease' target='_blank'><i className="fa-brands fa-github ml-4 hover:text-yellow"></i></Link> 
+                    <div className='p-10 bg-yellow dark:bg-green font-roboto text-pointninefive text-black dark:text-white font-light leading-6'>
+                        <p>I am open to all Front-End Development opportunities and would love to hear from you!</p> 
+                        <p className='pt-6'>If you're interested in my work, please use this form to contact me and I'll respond promptly.</p>
+                    </div>
+                    <div className='flex text-offgray w-full dark:bg-darkgray p-10'>
+                        <p className='text-5xl'>
+                        <Link to='https://www.linkedin.com/in/rsariego/' title='LinkedIn Profile' target='_blank'><i className="fa-brands fa-linkedin hover:text-yellow"></i></Link>
+
+                        <Link to='https://github.com/nopicklesplease' title='Github Profile' target='_blank'><i className="fa-brands fa-github ml-4 hover:text-yellow"></i></Link> 
                         </p>
                     </div>
                     {/* <div className='flex bg-red w-rightspace'>

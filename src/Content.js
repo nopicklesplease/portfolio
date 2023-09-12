@@ -10,9 +10,9 @@ const Content = () => {
 
     return(
         <div className='z-auto'>
-            <div className={`flex h-auto ${(theme) && 'dark'}`}>
+            <div className={`flex bg-offgray h-auto ${(theme) && 'dark'}`}>
                 <div className='lg:flex-initial bg-blue dark:bg-purple border-r-50 border-yellow dark:border-green'>
-                        <div className='lg:transform lg:-rotate-90 lg:-ml-16 lg:-mr-16 lg:pr-4 lg:align-middle lg:mt-abouttop lg:pt-1 text-white text-6xl font-poppins font-extralight tracking-wide w-50 lg:w-auto'>
+                        <div className='lg:transform lg:-rotate-90 lg:-ml-16 lg:-mr-16 lg:pr-4 lg:align-middle lg:mt-abouttop lg:pt-1 text-white text-6xl font-roboto font-extralight tracking-wide w-50 lg:w-auto'>
                             <p className='hidden lg:flex'>ABOUT</p> 
                         </div>
                 </div>
@@ -20,7 +20,7 @@ const Content = () => {
 
                     <div className='flex'>
                         <div className='flex-1'>
-                            <div className='915px:hidden p-10 pb-0 text-5xl font-light font-roboto text-blue dark:text-lightgray'>
+                            <div className='915px:hidden p-10 pb-0 text-5xl font-light font-roboto bg-white text-blue dark:text-lightgray'>
                                 ABOUT
                             </div>
                             <div className='bg-white p-10 pt-9 font-roboto font-light first-line:uppercase first-line:tracking-widest
@@ -34,9 +34,9 @@ const Content = () => {
                                 <div className='text-white text-6xl'>
                                     <img className='lg:w-pic rounded-md' src={ headshot } alt='headshot'/>
 
-                                    <Link to='https://www.linkedin.com/in/rsariego/' target='_blank'><i className="fa-brands fa-linkedin mt-4 hover:text-yellow"></i></Link>
+                                    <Link to='https://www.linkedin.com/in/rsariego/' title='LinkedIn Profile' target='_blank'><i className="fa-brands fa-linkedin mt-4 hover:text-yellow"></i></Link>
 
-                                    <Link to='https://github.com/nopicklesplease' target='_blank'><i className="fa-brands fa-github mt-4 ml-4 hover:text-yellow"></i></Link>
+                                    <Link to='https://github.com/nopicklesplease' title='Github Profile' target='_blank'><i className="fa-brands fa-github mt-4 ml-4 hover:text-yellow"></i></Link>
 
                                 </div>
                             </div>
@@ -113,7 +113,7 @@ const Content = () => {
                 </div> */}
 
                 <div className='md:hidden md:flex-5 915px:block 915px:flex-1 border-r-100 border-red dark:border-darkgray md:border-0'>
-                    <div className='hidden md:block lg:hidden p-10 pb-0 text-5xl font-light font-roboto text-blue dark:text-lightgray'>
+                    <div className='hidden md:block lg:hidden bg-white p-10 pb-0 text-5xl font-light font-roboto text-blue dark:text-lightgray'>
                         ABOUT
                     </div>
                     <div>

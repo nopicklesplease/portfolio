@@ -183,7 +183,7 @@ const Work = () => {
                         <Parallax
                             translateX={['-400px', '0px']}
                             startScroll={0}
-                            endScroll={2900}
+                            endScroll={3600}
                             shouldAlwaysCompleteAnimation={true}
                         >
                             <Link to={ calcLink } title='Launch Just-A-Calculator' target='_blank'><img className='mb-12 mt-4' alt='Serenade' src={ CalcFinal2 }/></Link>
@@ -191,7 +191,7 @@ const Work = () => {
                         <Parallax
                             translateX={['400px', '0px']}
                             startScroll={0}
-                            endScroll={2900}
+                            endScroll={3600}
                             shouldAlwaysCompleteAnimation={true}
                         >
                             <Link to={ calcLink } title='Launch Just-A-Calculator' target='_blank'><img className='mb-12' alt='Serenade' src={ CalcFinal1 }/></Link>
@@ -199,7 +199,7 @@ const Work = () => {
                         <Parallax
                             translateX={['-400px', '0px']}
                             startScroll={0}
-                            endScroll={2900}
+                            endScroll={3600}
                             shouldAlwaysCompleteAnimation={true}
                         >
                             <Link to={ calcLink } title='Launch Just-A-Calculator' target='_blank'><img className='mb-6 mt-4' alt='Serenade' src={ CalcFinal2 }/></Link>
@@ -254,7 +254,7 @@ const Work = () => {
                     shouldAlwaysCompleteAnimation={true}
                 >
 
-                        <div className='lg:transform lg:-rotate-90 lg:-ml-work lg:-mr-work lg:pr-4 lg:align-middle lg:mt-worktop lg:pt-1 text-white text-6xl font-poppins font-extralight tracking-wide dark:text-white w-50 lg:w-auto'>
+                        <div className='lg:transform lg:-rotate-90 lg:-ml-work lg:-mr-work lg:pr-4 lg:align-middle lg:mt-worktop lg:pt-1 text-white text-6xl font-roboto font-extralight tracking-wide dark:text-white w-50 lg:w-auto'>
                             <p className='hidden lg:flex'>WORK</p> 
                         </div>
 
@@ -382,7 +382,7 @@ const Work = () => {
                             endScroll={1300}
                             shouldAlwaysCompleteAnimation={true}
                         >
-                            <Link to={ calcLink } title='Launch Just-A-Calculator' target='_blank'><img className='mb-12' alt='Launch Just-A-Calculator' src={ CalcFinal1 }/></Link>
+                            <Link to={ calcLink } title='Launch Just-A-Calculator' target='_blank'><img className='mb-12 1150px:mb-6' alt='Launch Just-A-Calculator' src={ CalcFinal1 }/></Link>
                         </Parallax>
                         <Parallax
                             translateX={['-400px', '0px']}
@@ -390,7 +390,7 @@ const Work = () => {
                             endScroll={1300}
                             shouldAlwaysCompleteAnimation={true}
                         >
-                            <Link to={ calcLink } title='Launch Just-A-Calculator' target='_blank'><img className='mb-12 1150px:hidden' alt='Launch Just-A-Calculator' src={ CalcFinal2 }/></Link>
+                            <Link to={ calcLink } title='Launch Just-A-Calculator' target='_blank'><img className='mb-12 880px:mb-6 1150px:hidden' alt='Launch Just-A-Calculator' src={ CalcFinal2 }/></Link>
                         </Parallax>
                         <Parallax
                             translateX={['400px', '0px']}
@@ -401,12 +401,12 @@ const Work = () => {
                             <Link to={ calcLink } title='Launch Just-A-Calculator' target='_blank'><img className='mb-6 880px:hidden' alt='Launch Just-A-Calculator' src={ CalcFinal1 }/></Link>
                         </Parallax>
                     </div>
-                    <div className='flex justify-center font-roboto bg-yellow pt-10 dark:bg-green 
+                    <div className='flex justify-center font-roboto bg-blue dark:bg-green 
                     w-smrightspace
                     915px:w-medrightspace
                     1150px:w-rightspace'>
                         <div className='text-white text-sm'>
-                            <p className='text-2xl 1150px:text-3xl text-slategray dark:text-white tracking-widest font-light px-10 mb-10'>
+                            <p className='bg-yellow text-2xl 1150px:text-3xl text-slategray dark:bg-green dark:text-white tracking-widest font-light p-10'>
                             <Link to='http://just-a-calculator.onrender.com' title='Launch Just-A-Calculator' target='_blank'>JUST A CALCULATOR <span><i className="fa-solid fa-up-right-from-square ml-2 text-xl"></i></span></Link>
                             </p>
                             <div className='bg-offgray text-black dark:text-lightergray p-10 dark:bg-rightoffgray'>
@@ -436,7 +436,7 @@ const Work = () => {
                                 </p> */}
                             </div>
 
-                            <div className='bg-blue p-10 dark:bg-purple 915px:h-full'>
+                            <div className='bg-blue p-10 dark:bg-purple'>
                                 <p className='text-lg mb-3 tracking-widest'>
                                     TOOLS USED 
                                 </p>
