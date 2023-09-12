@@ -151,7 +151,7 @@ console.log(emailSuccess);
                 w-smrightspace
                 915px:w-medrightspace 1150px:w-rightspace'>
 
-                    <div className='p-10 bg-yellow dark:bg-green font-roboto text-pointninefive text-black dark:text-white font-light leading-6'>
+                    <div className='p-10 bg-yellow dark:bg-green font-roboto text-base text-black dark:text-white font-light leading-6'>
                         <p>I am open to all Front-End Development opportunities and would love to hear from you!</p> 
                         <p className='pt-6'>If you're interested in my work, please use this form to contact me and I'll respond promptly.</p>
                     </div>

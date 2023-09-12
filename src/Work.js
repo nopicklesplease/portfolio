@@ -295,6 +295,7 @@ const Work = () => {
                     <div className='flex-5 h-auto bg-white p-6 pt-8 font-roboto font-light pr-10 dark:bg-darkergray 915px:dark:bg-slategray w-full overflow-hidden'>
                         <Parallax
                             translateX={['-400px', '0px']}
+                            opacity={[0, 1, 'easeOutBack']}
                             startScroll={0}
                             endScroll={450}
                             shouldAlwaysCompleteAnimation={true}
@@ -303,6 +304,7 @@ const Work = () => {
                         </Parallax>
                         <Parallax
                             translateX={['400px', '0px']}
+                            opacity={[0, 1, 'easeOutBack']}
                             startScroll={0}
                             endScroll={450}
                             shouldAlwaysCompleteAnimation={true}
@@ -311,6 +313,7 @@ const Work = () => {
                         </Parallax>
                         <Parallax
                             translateX={['-400px', '0px']}
+                            opacity={[0, 1, 'easeOutBack']}
                             startScroll={0}
                             endScroll={450}
                             shouldAlwaysCompleteAnimation={true}
@@ -319,6 +322,7 @@ const Work = () => {
                         </Parallax>
                         <Parallax
                             translateX={['400px', '0px']}
+                            opacity={[0, 1, 'easeOutBack']}
                             startScroll={0}
                             endScroll={450}
                             shouldAlwaysCompleteAnimation={true}
@@ -331,11 +335,26 @@ const Work = () => {
                     915px:w-medrightspace
                     1150px:w-rightspace dark:bg-green'>
                         <div className='text-black dark:text-lightergray text-sm'>
+                            <Parallax
+                                opacity={[0, 1, 'easeOutBack']}
+                                startScroll={0}
+                                endScroll={800}
+                                shouldAlwaysCompleteAnimation={true}
+                            >
+
                             <p className='text-2xl lg:text-3xl 1150px:text-4xl  tracking-widest dark:text-white font-light px-10 mb-10'>
                             <Link to='http://serenade-ai-playlists.onrender.com' title='Launch Serenade' target='_blank'>SERENADE <span><i className="fa-solid fa-up-right-from-square ml-2 text-xl"></i></span></Link>
                             </p>
+
+                            </Parallax>
                             <div className='bg-offgray p-10 dark:bg-rightoffgray'>
                                 
+                            <Parallax
+                                opacity={[0, 1, 'easeOutBack']}
+                                startScroll={100}
+                                endScroll={900}
+                                shouldAlwaysCompleteAnimation={true}
+                            >
                             <p className='text-base text-slategray dark:text-white mb-3 tracking-widest'>
                                 <span className='bg-lightgray px-2 text-slategray p-1 rounded'>COMPLETION</span>
                                 </p>
@@ -356,9 +375,16 @@ const Work = () => {
                                 <p className='text-sm 1150px:text-pointninefive font-light leading-6'>
                                     Lead Front-End Engineer responsible for UX design, User Profile & My Playlists/Discover components, JSX rendering of Spotify playlist materials, responsive design for mobile.
                                 </p>
+                                </Parallax>
                             </div>
 
                             <div className='bg-blue p-10 dark:bg-purple h-full'>
+                            <Parallax
+                                opacity={[0, 1, 'easeOutBack']}
+                                startScroll={500}
+                                endScroll={1300}
+                                shouldAlwaysCompleteAnimation={true}
+                            >
                                 <p className='text-lg text-white mb-3 tracking-widest'>
                                     TOOLS USED
                                 </p>
@@ -392,6 +418,7 @@ const Work = () => {
                                 {/* <div className='flex flex-wrap mt-8'>
                                     <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 text-sm text-red'>Live Link</div>
                                 </div> */}
+                                </Parallax>
                             </div>
                         </div>
                     </div> 
@@ -437,9 +464,23 @@ const Work = () => {
                     1150px:w-rightspace'>
                         <div className='text-white text-sm'>
                             <p className='bg-yellow text-2xl 1150px:text-3xl text-slategray dark:bg-green dark:text-white tracking-widest font-light p-10'>
+                            <Parallax
+                                opacity={[0, 1, 'easeOutBack']}
+                                startScroll={850}
+                                endScroll={1650}
+                                shouldAlwaysCompleteAnimation={true}
+                            >
                             <Link to='http://just-a-calculator.onrender.com' title='Launch Just-A-Calculator' target='_blank'>JUST A CALCULATOR <span><i className="fa-solid fa-up-right-from-square ml-2 text-xl"></i></span></Link>
+                            </Parallax>
                             </p>
                             <div className='bg-offgray text-black dark:text-lightergray p-10 dark:bg-rightoffgray'>
+
+                            <Parallax
+                                opacity={[0, 1, 'easeOutBack']}
+                                startScroll={950}
+                                endScroll={1750}
+                                shouldAlwaysCompleteAnimation={true}
+                            >
 
                             <p className='text-base text-slategray dark:text-white mb-3 tracking-widest'>
                                 <span className='bg-lightgray px-2 text-slategray p-1 rounded'>COMPLETION</span>
@@ -460,13 +501,19 @@ const Work = () => {
                                 <p className='mb-8 text-sm font-light 1150px:text-pointninefive leading-6'>
                                     Creator & Sole Developer
                                 </p>
-
+                            </Parallax>
                                 {/* <p className='flex justify-center text-lg text-slategray dark:text-white mb-3 tracking-widest'>
                                     <span className='bg-lightgray px-2 text-slategray p-1 rounded'>LAUNCH</span>
                                 </p> */}
                             </div>
 
                             <div className='bg-blue p-10 dark:bg-purple'>
+                            <Parallax
+                                opacity={[0, 1, 'easeOutBack']}
+                                startScroll={1400}
+                                endScroll={2200}
+                                shouldAlwaysCompleteAnimation={true}
+                            >
                                 <p className='text-lg mb-3 tracking-widest'>
                                     TOOLS USED 
                                 </p>
@@ -491,6 +538,7 @@ const Work = () => {
                                     <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>Material-UI</div>
 
                                 </div>
+                                </Parallax>
                             </div>
                         </div>
                     </div>
