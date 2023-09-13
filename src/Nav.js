@@ -76,23 +76,23 @@ const Nav = () => {
                             }
                         </div>
                         
-                        <div className='border-b-2 border-b-transparent hover:border-solid hover:border-b-blue dark:hover:border-b-purple cursor-pointer'>
-                            <Link activeClass={`${theme ? 'dark-active' : 'active'}`} to="about" spy={true} smooth={true} offset={-200} duration={800}>
+                        <div>
+                            <Link activeClass={`${theme ? 'dark-active' : 'active'}`} className={`p-1 cursor-pointer hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black`} to="about" spy={true} smooth={true} offset={-200} duration={800}>
                                 ABOUT
                             </Link>
                         </div>
-                        <div className='border-b-2 border-b-transparent hover:border-solid hover:border-b-blue dark:hover:border-b-purple cursor-pointer'>
-                            <Link activeClass={`${theme ? 'dark-active' : 'active'}`} to="work" spy={true} smooth={true} offset={-147} duration={800}>
+                        <div>
+                            <Link activeClass={`${theme ? 'dark-active' : 'active'}`} className={`p-1 cursor-pointer hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black`} to="work" spy={true} smooth={true} offset={-147} duration={800}>
                                 WORK
                             </Link>
                         </div>
-                        <div className='border-b-2 border-b-transparent hover:border-solid hover:border-b-blue dark:hover:border-b-purple cursor-pointer'>
-                            <Link activeClass={`${theme ? 'dark-active' : 'active'}`} to="contact" spy={true} smooth={true} offset={-145} duration={900}>
+                        <div>
+                            <Link activeClass={`${theme ? 'dark-active' : 'active'}`} className={`p-1 cursor-pointer hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black`} to="contact" spy={true} smooth={true} offset={-145} duration={900}>
                                 CONTACT
                             </Link>
                         </div>
-                        <div className='border-b-2 border-b-transparent hover:border-solid hover:border-b-blue dark:hover:border-b-purple cursor-pointer'>
-                            <a href={ Resume } download>RÉSUMÉ</a>
+                        <div>
+                            <a href={ Resume } className={`p-1 cursor-pointer hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black`} download>RÉSUMÉ</a>
                         </div>
                     </div>
                 </div>

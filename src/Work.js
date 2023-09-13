@@ -39,8 +39,8 @@ const Work = () => {
                         <div className='text-black text-sm'>
                             <Parallax
                                 opacity={[0, 1, 'easeOutBack']}
-                                startScroll={800}
-                                endScroll={1600}
+                                startScroll={750}
+                                endScroll={1850}
                                 shouldAlwaysCompleteAnimation={true}
                             >
                             <p className='text-4xl text-slategray dark:text-white  tracking-widest font-light p-10'>
@@ -56,8 +56,8 @@ const Work = () => {
                             <div className='bg-red p-10 pt-12 dark:bg-darkgray'>
                             <Parallax
                                 opacity={[0, 1, 'easeOutBack']}
-                                startScroll={900}
-                                endScroll={1700}
+                                startScroll={850}
+                                endScroll={1950}
                                 shouldAlwaysCompleteAnimation={true}
                             >
                             <p className='text-lg text-slategray dark:text-white mb-3 tracking-widest'>
@@ -76,8 +76,14 @@ const Work = () => {
                                 <p className='text-lg text-slategray dark:text-white mb-3 tracking-widest'>
                                     <span className='bg-offgray dark:bg-lightgray px-2 text-slategray p-1 rounded'>ROLE & RESPONSIBILITIES</span>
                                 </p>
-                                <p className='text-pointninefive font-light leading-6'>
+                                <p className='text-pointninefive font-light leading-6 mb-8'>
                                     Lead Front-End Engineer responsible for UX design, User Profile & My Playlists/Discover components, JSX rendering of Spotify playlist materials, responsive design for mobile.
+                                </p>
+
+                                <p className='text-lg  tracking-widest'>
+                                    <Link to='http://serenade-ai-playlists.onrender.com' title='Launch Serenade' target='_blank'>
+                                        <span className='bg-black px-2 text-white p-1 rounded cursor-pointer dark:bg-yellow dark:text-black'>LAUNCH PROJECT</span>
+                                    </Link>
                                 </p>
                                 </Parallax>
                             </div>
@@ -118,36 +124,43 @@ const Work = () => {
                         <div className='text-white text-sm'>
 
                             <div className='bg-blue p-10 dark:bg-purple'>
+                            <Parallax
+                                opacity={[0, 1, 'easeOutBack']}
+                                startScroll={2100}
+                                endScroll={3200}
+                                shouldAlwaysCompleteAnimation={true}
+                            >
                                 <p className='text-xl mb-3 tracking-widest'>
                                     TOOLS USED
                                 </p>
 
                                 <div className='flex flex-wrap text-sm'>
-                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>JavaScript</div>
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 cursor-default'>JavaScript</div>
 
-                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>React.js</div>
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 cursor-default'>React.js</div>
 
-                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>Redux.js</div>
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 cursor-default'>Redux.js</div>
 
-                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>Node.js</div>
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 cursor-default'>Node.js</div>
 
-                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>Express.js</div>
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 cursor-default'>Express.js</div>
 
-                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>PostgreSQL</div>
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 cursor-default'>PostgreSQL</div>
 
-                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>React Router</div>
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 cursor-default'>React Router</div>
 
-                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>OpenAI API</div>
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 cursor-default'>OpenAI API</div>
 
-                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>Spotify API</div>
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 cursor-default'>Spotify API</div>
 
-                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>HTML</div>
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 cursor-default'>HTML</div>
 
-                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>Vanilla CSS</div>
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 cursor-default'>Vanilla CSS</div>
 
-                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>Adobe Photoshop</div>
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 cursor-default'>Adobe Photoshop</div>
 
                                 </div>
+                                </Parallax>
                             </div>
                         </div>
                     </div> 
@@ -160,8 +173,8 @@ const Work = () => {
                         <div className='text-white'>
                             <Parallax
                                 opacity={[0, 1, 'easeOutBack']}
-                                startScroll={2500}
-                                endScroll={3300}
+                                startScroll={2450}
+                                endScroll={3550}
                                 shouldAlwaysCompleteAnimation={true}
                             >
                             <p className='text-4xl text-slategray dark:bg-green dark:text-white tracking-widest font-light px-10 mb-10'>
@@ -179,7 +192,7 @@ const Work = () => {
                             <Parallax
                                 opacity={[0, 1, 'easeOutBack']}
                                 startScroll={2600}
-                                endScroll={3400}
+                                endScroll={3650}
                                 shouldAlwaysCompleteAnimation={true}
                             >
                             <p className='text-lg text-slategray dark:text-white mb-3 tracking-widest'>
@@ -199,8 +212,13 @@ const Work = () => {
                                 <p className='text-lg mb-3 tracking-widest text-slategray dark:text-white'>
                                     <span className='bg-offgray dark:bg-lightgray px-2 text-slategray p-1 rounded'>ROLE & RESPONSIBILITIES</span>
                                 </p>
-                                <p className='text-pointninefive text-justify font-light leading-6'>
+                                <p className='text-pointninefive text-justify font-light leading-6 mb-8'>
                                     Creator & Sole Developer
+                                </p>
+                                <p className='text-lg tracking-widest'>
+                                    <Link to='http://just-a-calculator.onrender.com' title='Launch Just-A-Calculator' target='_blank'>
+                                        <span className='bg-black px-2 text-white p-1 rounded  cursor-pointer dark:bg-yellow dark:text-black'>LAUNCH PROJECT</span>
+                                    </Link>
                                 </p>
                                 </Parallax>
                             </div>
@@ -240,30 +258,37 @@ const Work = () => {
                         <div className='text-white text-sm'>
 
                             <div className='bg-blue p-10 dark:bg-purple'>
+                            <Parallax
+                            opacity={[0, 1, 'easeOutBack']}
+                            startScroll={3850}
+                            endScroll={4800}
+                            shouldAlwaysCompleteAnimation={true}
+                        >
                                 <p className='text-xl mb-3 tracking-widest'>
                                     TOOLS USED
                                 </p>
 
                                 <div className='flex flex-wrap text-sm'>
-                                <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>JavaScript</div>
+                                <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 cursor-default'>JavaScript</div>
 
-<div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>React.js</div>
+<div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 cursor-default'>React.js</div>
 
-<div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>Redux.js</div>
+<div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 cursor-default'>Redux.js</div>
 
-<div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>Node.js</div>
+<div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 cursor-default'>Node.js</div>
 
-<div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>React Router</div>
+<div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 cursor-default'>React Router</div>
 
-<div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>CoinMarketCap API</div>
+<div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 cursor-default'>CoinMarketCap API</div>
 
-<div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>HTML</div>
+<div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 cursor-default'>HTML</div>
 
-<div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>Vanilla CSS</div>
+<div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 cursor-default'>Vanilla CSS</div>
 
-<div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>Material-UI</div>
+<div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 cursor-default'>Material-UI</div>
 
                                 </div>
+                                </Parallax>
                             </div>
                         </div>
                     </div> 
@@ -342,8 +367,8 @@ const Work = () => {
                                 shouldAlwaysCompleteAnimation={true}
                             >
 
-                            <p className='text-2xl lg:text-3xl 1150px:text-4xl  tracking-widest dark:text-white font-light px-10 mb-10'>
-                            <Link to='http://serenade-ai-playlists.onrender.com' title='Launch Serenade' target='_blank'>SERENADE <span><i className="fa-solid fa-up-right-from-square ml-2 text-xl"></i></span></Link>
+                            <p className='text-2xl lg:text-3xl 1150px:text-4xl tracking-widest dark:text-white font-light px-10 mb-10'>
+                            <Link to='http://serenade-ai-playlists.onrender.com' title='Launch Serenade' target='_blank' className='hover:bg-black hover:text-white'>SERENADE <span><i className="fa-solid fa-up-right-from-square ml-2 text-xl"></i></span></Link>
                             </p>
 
                             </Parallax>
@@ -351,7 +376,7 @@ const Work = () => {
                                 
                             <Parallax
                                 opacity={[0, 1, 'easeOutBack']}
-                                startScroll={100}
+                                startScroll={50}
                                 endScroll={900}
                                 shouldAlwaysCompleteAnimation={true}
                             >
@@ -372,8 +397,14 @@ const Work = () => {
                                 <p className='text-base mb-3 tracking-widest'>
                                     <span className='bg-lightgray px-2 text-slategray p-1 rounded'>ROLE & RESPONSIBILITIES</span>
                                 </p>
-                                <p className='text-sm 1150px:text-pointninefive font-light leading-6'>
+                                <p className='mb-8 text-sm 1150px:text-pointninefive font-light leading-6'>
                                     Lead Front-End Engineer responsible for UX design, User Profile & My Playlists/Discover components, JSX rendering of Spotify playlist materials, responsive design for mobile.
+                                </p>
+
+                                <p className='text-base  tracking-widest'>
+                                    <Link to='http://serenade-ai-playlists.onrender.com' title='Launch Serenade' target='_blank'>
+                                        <span className='bg-black px-2 text-white p-1 rounded hover:bg-yellow hover:text-black cursor-pointer'>LAUNCH PROJECT</span>
+                                    </Link>
                                 </p>
                                 </Parallax>
                             </div>
@@ -381,8 +412,8 @@ const Work = () => {
                             <div className='bg-blue p-10 dark:bg-purple h-full'>
                             <Parallax
                                 opacity={[0, 1, 'easeOutBack']}
-                                startScroll={500}
-                                endScroll={1300}
+                                startScroll={450}
+                                endScroll={1250}
                                 shouldAlwaysCompleteAnimation={true}
                             >
                                 <p className='text-lg text-white mb-3 tracking-widest'>
@@ -390,29 +421,29 @@ const Work = () => {
                                 </p>
 
                                 <div className='flex flex-wrap text-xs 1150px:text-sm'>
-                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>JavaScript</div>
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 cursor-default'>JavaScript</div>
 
-                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>React.js</div>
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 cursor-default'>React.js</div>
 
-                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>Redux.js</div>
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 cursor-default'>Redux.js</div>
 
-                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>Node.js</div>
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 cursor-default'>Node.js</div>
 
-                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>Express.js</div>
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 cursor-default'>Express.js</div>
 
-                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>PostgreSQL</div>
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 cursor-default'>PostgreSQL</div>
 
-                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>React Router</div>
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 cursor-default'>React Router</div>
 
-                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>OpenAI API</div>
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 cursor-default'>OpenAI API</div>
 
-                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>Spotify API</div>
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 cursor-default'>Spotify API</div>
 
-                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>HTML</div>
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 cursor-default'>HTML</div>
 
-                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>Vanilla CSS</div>
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 cursor-default'>Vanilla CSS</div>
 
-                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>Adobe Photoshop</div>
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 cursor-default'>Adobe Photoshop</div>
 
                                 </div>
                                 {/* <div className='flex flex-wrap mt-8'>
@@ -466,18 +497,18 @@ const Work = () => {
                             <p className='bg-yellow text-2xl 1150px:text-3xl text-slategray dark:bg-green dark:text-white tracking-widest font-light p-10'>
                             <Parallax
                                 opacity={[0, 1, 'easeOutBack']}
-                                startScroll={850}
-                                endScroll={1650}
+                                startScroll={725}
+                                endScroll={1525}
                                 shouldAlwaysCompleteAnimation={true}
                             >
-                            <Link to='http://just-a-calculator.onrender.com' title='Launch Just-A-Calculator' target='_blank'>JUST A CALCULATOR <span><i className="fa-solid fa-up-right-from-square ml-2 text-xl"></i></span></Link>
+                            <Link to='http://just-a-calculator.onrender.com' title='Launch Just-A-Calculator' target='_blank' className='hover:bg-black hover:text-white'>JUST A CALCULATOR <span><i className="fa-solid fa-up-right-from-square ml-2 text-xl"></i></span></Link>
                             </Parallax>
                             </p>
                             <div className='bg-offgray text-black dark:text-lightergray p-10 dark:bg-rightoffgray'>
 
                             <Parallax
                                 opacity={[0, 1, 'easeOutBack']}
-                                startScroll={950}
+                                startScroll={900}
                                 endScroll={1750}
                                 shouldAlwaysCompleteAnimation={true}
                             >
@@ -501,6 +532,12 @@ const Work = () => {
                                 <p className='mb-8 text-sm font-light 1150px:text-pointninefive leading-6'>
                                     Creator & Sole Developer
                                 </p>
+
+                                <p className='text-base tracking-widest'>
+                                    <Link to='http://just-a-calculator.onrender.com' title='Launch Just-A-Calculator' target='_blank'>
+                                        <span className='bg-black px-2 text-white p-1 rounded hover:bg-yellow hover:text-black cursor-pointer'>LAUNCH PROJECT</span>
+                                    </Link>
+                                </p>
                             </Parallax>
                                 {/* <p className='flex justify-center text-lg text-slategray dark:text-white mb-3 tracking-widest'>
                                     <span className='bg-lightgray px-2 text-slategray p-1 rounded'>LAUNCH</span>
@@ -510,8 +547,8 @@ const Work = () => {
                             <div className='bg-blue p-10 dark:bg-purple'>
                             <Parallax
                                 opacity={[0, 1, 'easeOutBack']}
-                                startScroll={1400}
-                                endScroll={2200}
+                                startScroll={1300}
+                                endScroll={2300}
                                 shouldAlwaysCompleteAnimation={true}
                             >
                                 <p className='text-lg mb-3 tracking-widest'>
@@ -519,23 +556,23 @@ const Work = () => {
                                 </p>
 
                                 <div className='flex flex-wrap text-xs 1150px:text-sm'>
-                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>JavaScript</div>
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1  cursor-default'>JavaScript</div>
 
-                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>React.js</div>
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1  cursor-default'>React.js</div>
 
-                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>Redux.js</div>
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1  cursor-default'>Redux.js</div>
 
-                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>Node.js</div>
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1  cursor-default'>Node.js</div>
 
-                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>React Router</div>
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1  cursor-default'>React Router</div>
 
-                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>CoinMarketCap API</div>
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1  cursor-default'>CoinMarketCap API</div>
 
-                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>HTML</div>
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1  cursor-default'>HTML</div>
 
-                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>Vanilla CSS</div>
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1  cursor-default'>Vanilla CSS</div>
 
-                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>Material-UI</div>
+                                    <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1  cursor-default'>Material-UI</div>
 
                                 </div>
                                 </Parallax>

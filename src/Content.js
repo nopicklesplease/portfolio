@@ -190,9 +190,9 @@ const Content = () => {
                     <div className='text-white text-5xl'>
                         <img className='1150px:w-pic rounded-md' src={ headshot } alt='headshot'/>
 
-                        <Link to='https://www.linkedin.com/in/rsariego/' target='_blank'><i className="fa-brands fa-linkedin mt-4 hover:text-yellow"></i></Link>
+                        <Link to='https://www.linkedin.com/in/rsariego/' title='LinkedIn Profile' target='_blank'><i className="fa-brands fa-linkedin mt-4 hover:text-black dark:hover:text-yellow"></i></Link>
 
-                        <Link to='https://github.com/nopicklesplease' target='_blank'><i className="fa-brands fa-github mt-4 ml-4 hover:text-yellow"></i></Link>
+                        <Link to='https://github.com/nopicklesplease' title='Github Profile' target='_blank'><i className="fa-brands fa-github mt-4 ml-4 hover:text-black dark:hover:text-yellow"></i></Link>
 
                     </div>
                 </div>

@@ -17,13 +17,17 @@ code {
 }
 
 .active{
-  padding-bottom: .15rem;
-  border-bottom: 2px solid #005cef;
+  background-color: black;
+  padding: .25rem;
+  color: white;
+  transition: .5s;
 }
 
 .dark-active{
-  padding-bottom: .15rem;
-  border-bottom: 2px solid #8b5ea2;
+  background-color: white;
+  padding: .25rem;
+  color: black;
+  transition: .5s;
 }
 
 @media screen and (max-width: 767px) {

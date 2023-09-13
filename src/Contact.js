@@ -84,7 +84,7 @@ console.log(emailSuccess);
                         CONTACT
                     </div> */}
             
-            <div className='flex-1 bg-offgray p-10 font-roboto font-light text-justify dark:bg-darkergray lg:pb-20'>
+            <div className='flex-1 bg-offgray p-10 font-roboto font-light text-justify dark:bg-darkergray lg:pb-72'>
 
 
                 {(emailSuccess) ? 
@@ -157,9 +157,9 @@ console.log(emailSuccess);
                     </div>
                     <div className='flex text-offgray w-full dark:bg-darkgray p-10'>
                         <p className='text-5xl'>
-                        <Link to='https://www.linkedin.com/in/rsariego/' title='LinkedIn Profile' target='_blank'><i className="fa-brands fa-linkedin hover:text-yellow"></i></Link>
+                        <Link to='https://www.linkedin.com/in/rsariego/' title='LinkedIn Profile' target='_blank'><i className="fa-brands fa-linkedin hover:text-black dark:hover:text-yellow"></i></Link>
 
-                        <Link to='https://github.com/nopicklesplease' title='Github Profile' target='_blank'><i className="fa-brands fa-github ml-4 hover:text-yellow"></i></Link> 
+                        <Link to='https://github.com/nopicklesplease' title='Github Profile' target='_blank'><i className="fa-brands fa-github ml-4 hover:text-black dark:hover:text-yellow"></i></Link> 
                         </p>
                     </div>
                     {/* <div className='flex bg-red w-rightspace'>

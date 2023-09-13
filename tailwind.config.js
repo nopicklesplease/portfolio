@@ -29,15 +29,16 @@ module.exports = {
       },
       spacing:{
         'abouttop': '95px',
-        'work': '55px',
+        'work': '55.5px',
         'worktop': '89px',
-        'contact': '103.1px',
+        'contact': '103.6px',
         'contacttop': '145px',
         'themepb600': '17px',
         'themepb500': '15px',
         'themepb450': '13px',
         'themepb400': '10px',
         'themepb360': '7px',
+        'nav': '.25rem',
       },
       width:{
         'rightspace': '401px',
