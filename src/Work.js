@@ -76,13 +76,13 @@ const Work = () => {
                                 <p className='text-lg text-slategray dark:text-white mb-3 tracking-widest'>
                                     <span className='bg-offgray dark:bg-lightgray px-2 text-slategray p-1 rounded'>ROLE & RESPONSIBILITIES</span>
                                 </p>
-                                <p className='text-pointninefive font-light leading-6 mb-8'>
+                                <p className='text-pointninefive font-light leading-6 mb-10'>
                                     Lead Front-End Engineer responsible for UX design, User Profile & My Playlists/Discover components, JSX rendering of Spotify playlist materials, responsive design for mobile.
                                 </p>
 
-                                <p className='text-lg  tracking-widest'>
+                                <p className='text-lg  tracking-widest mb-4'>
                                     <Link to='http://serenade-ai-playlists.onrender.com' title='Launch Serenade' target='_blank'>
-                                        <span className='bg-black px-2 text-white p-1 rounded cursor-pointer'>LAUNCH PROJECT</span>
+                                        <span className='bg-black p-3 text-white rounded cursor-pointer'>LAUNCH PROJECT</span>
                                     </Link>
                                 </p>
                                 </Parallax>
@@ -212,12 +212,12 @@ const Work = () => {
                                 <p className='text-lg mb-3 tracking-widest text-slategray dark:text-white'>
                                     <span className='bg-offgray dark:bg-lightgray px-2 text-slategray p-1 rounded'>ROLE & RESPONSIBILITIES</span>
                                 </p>
-                                <p className='text-pointninefive text-justify font-light leading-6 mb-8'>
+                                <p className='text-pointninefive text-justify font-light leading-6 mb-10'>
                                     Creator & Sole Developer
                                 </p>
-                                <p className='text-lg tracking-widest'>
+                                <p className='text-lg tracking-widest mb-4'>
                                     <Link to='http://just-a-calculator.onrender.com' title='Launch Just-A-Calculator' target='_blank'>
-                                        <span className='bg-black px-2 text-white p-1 rounded  cursor-pointer'>LAUNCH PROJECT</span>
+                                        <span className='bg-black text-white p-3 rounded  cursor-pointer'>LAUNCH PROJECT</span>
                                     </Link>
                                 </p>
                                 </Parallax>
@@ -397,15 +397,17 @@ const Work = () => {
                                 <p className='text-base mb-3 tracking-widest'>
                                     <span className='bg-lightgray px-2 text-slategray p-1 rounded'>ROLE & RESPONSIBILITIES</span>
                                 </p>
-                                <p className='mb-8 text-sm 1150px:text-pointninefive font-light leading-6'>
+                                <p className='mb-9 text-sm 1150px:text-pointninefive font-light leading-6'>
                                     Lead Front-End Engineer responsible for UX design, User Profile & My Playlists/Discover components, JSX rendering of Spotify playlist materials, responsive design for mobile.
                                 </p>
 
+                            <div className='flex justify-start'>
                                 <p className='text-base  tracking-widest'>
                                     <Link to='http://serenade-ai-playlists.onrender.com' title='Launch Serenade' target='_blank'>
-                                        <span className='bg-black px-2 text-white p-1 rounded hover:bg-yellow hover:text-black cursor-pointer'>LAUNCH PROJECT</span>
+                                        <span className='bg-black  text-white p-3 rounded hover:bg-yellow hover:text-black cursor-pointer'>LAUNCH PROJECT</span>
                                     </Link>
                                 </p>
+                            </div>
                                 </Parallax>
                             </div>
 
@@ -529,15 +531,17 @@ const Work = () => {
                                 <p className='text-base mb-3 tracking-widest'>
                                     <span className='bg-lightgray px-2 text-slategray p-1 rounded'>ROLE & RESPONSIBILITIES</span> 
                                 </p>
-                                <p className='mb-8 text-sm font-light 1150px:text-pointninefive leading-6'>
+                                <p className='mb-9 text-sm font-light 1150px:text-pointninefive leading-6'>
                                     Creator & Sole Developer
                                 </p>
 
-                                <p className='text-base tracking-widest'>
-                                    <Link to='http://just-a-calculator.onrender.com' title='Launch Just-A-Calculator' target='_blank'>
-                                        <span className='bg-black px-2 text-white p-1 rounded hover:bg-yellow hover:text-black cursor-pointer'>LAUNCH PROJECT</span>
-                                    </Link>
-                                </p>
+                                <div className='flex justify-start'>
+                                    <p className='text-base  tracking-widest'>
+                                        <Link to='http://just-a-calculator.onrender.com' title='Launch Just-A-Calculator' target='_blank'>
+                                            <span className='bg-black  text-white p-3 rounded hover:bg-yellow hover:text-black cursor-pointer'>LAUNCH PROJECT</span>
+                                        </Link>
+                                    </p>
+                                </div>
                             </Parallax>
                                 {/* <p className='flex justify-center text-lg text-slategray dark:text-white mb-3 tracking-widest'>
                                     <span className='bg-lightgray px-2 text-slategray p-1 rounded'>LAUNCH</span>
