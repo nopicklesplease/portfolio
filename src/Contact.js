@@ -28,8 +28,8 @@ const Contact = () => {
 
     const SaveButtonStyled = styled(Button)({
         '&:hover': {
-            backgroundColor: `${theme ? '#8b5ea2' : '#005cef'}`,
-            color: 'white',
+            backgroundColor: `${theme ? '#ffdd18' : '#005cef'}`,
+            color: `${theme ? 'black' : 'white'}`,
         },
     })
 
@@ -125,8 +125,8 @@ console.log(emailSuccess);
                         <div className='flex justify-center'>
                             <SaveButtonStyled
                                 sx={{
-                                    backgroundColor: `${theme ? 'white' : 'black'}`,
-                                    color: `${theme ? 'black' : 'white'}`,
+                                    backgroundColor: `${theme ? '#8b5ea2' : 'black'}`,
+                                    color: `${theme ? 'white' : 'white'}`,
                                     width: '45%',
                                     typography: {
                                         fontFamily: 'Roboto',
@@ -152,7 +152,7 @@ console.log(emailSuccess);
                 915px:w-medrightspace 1150px:w-rightspace'>
 
                     <div className='p-10 bg-yellow dark:bg-green font-roboto text-base text-black dark:text-white font-light leading-6'>
-                        <p>I am open to all Front-End Development opportunities and would love to hear from you!</p> 
+                        <p>Open to all Front-End Development opportunities.</p> 
                         <p className='pt-6'>If you're interested in my work, please use this form to contact me and I'll respond promptly.</p>
                     </div>
                     <div className='flex text-offgray w-full dark:bg-darkgray p-10'>

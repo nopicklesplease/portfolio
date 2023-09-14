@@ -45,9 +45,10 @@ module.exports = {
         'medrightspace': '305px',
         'smrightspace': '293px',
         'pic': '321px',
+        'bigpic': '500px',
         'content': '100%',
         '50': '9px',
-        '272px': '272px'
+        '290px': '290px'
       },
       height:{
         'contactheight': '560px',

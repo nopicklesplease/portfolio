@@ -33,7 +33,7 @@ const Work = () => {
         <div className={`md:hidden flex-column h-full ${(theme) && 'dark'}`}>
 
 
-        <div id='work' className='flex justify-center font-roboto bg-yellow dark:bg-darkgray 
+        <div className='flex justify-center font-roboto bg-yellow dark:bg-darkgray 
                     w-full
                     dark:bg-green'>
                         <div className='text-black text-sm'>
@@ -82,7 +82,7 @@ const Work = () => {
 
                                 <p className='text-lg  tracking-widest'>
                                     <Link to='http://serenade-ai-playlists.onrender.com' title='Launch Serenade' target='_blank'>
-                                        <span className='bg-black px-2 text-white p-1 rounded cursor-pointer dark:bg-yellow dark:text-black'>LAUNCH PROJECT</span>
+                                        <span className='bg-black px-2 text-white p-1 rounded cursor-pointer'>LAUNCH PROJECT</span>
                                     </Link>
                                 </p>
                                 </Parallax>
@@ -217,7 +217,7 @@ const Work = () => {
                                 </p>
                                 <p className='text-lg tracking-widest'>
                                     <Link to='http://just-a-calculator.onrender.com' title='Launch Just-A-Calculator' target='_blank'>
-                                        <span className='bg-black px-2 text-white p-1 rounded  cursor-pointer dark:bg-yellow dark:text-black'>LAUNCH PROJECT</span>
+                                        <span className='bg-black px-2 text-white p-1 rounded  cursor-pointer'>LAUNCH PROJECT</span>
                                     </Link>
                                 </p>
                                 </Parallax>
@@ -315,7 +315,7 @@ const Work = () => {
 
                 </Parallax>
             </div>
-            <div className='flex-column'>
+            <div className='flex-column w-full'>
                 <div className='flex'>
                     <div className='flex-5 h-auto bg-white p-6 pt-8 font-roboto font-light pr-10 dark:bg-darkergray 915px:dark:bg-slategray w-full overflow-hidden'>
                         <Parallax

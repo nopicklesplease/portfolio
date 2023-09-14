@@ -52,7 +52,7 @@ const Nav = () => {
                     justify-between 
                     flex-initial 
                     w-full 
-                    md:w-272px 
+                    md:w-290px 
                     840px:w-80 
                     1150px:w-96 
                     items-end 

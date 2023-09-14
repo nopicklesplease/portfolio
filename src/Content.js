@@ -18,9 +18,9 @@ const Content = () => {
                 </div>
                 <div className='hidden md:block md:flex-column 915px:hidden'>
 
-                    <div className='flex'>
+                    <div className='flex h-auto'>
                         <div className='flex-1'>
-                            <div className='915px:hidden p-10 pb-0 text-5xl font-light font-roboto bg-white text-blue dark:text-lightgray'>
+                            <div className='915px:hidden p-10 pb-0 text-5xl font-light font-roboto bg-white dark:bg-slategray text-blue dark:text-lightgray'>
                                 ABOUT
                             </div>
                             <div className='bg-white p-10 pt-9 font-roboto font-light first-line:uppercase first-line:tracking-widest
@@ -31,7 +31,7 @@ const Content = () => {
                         </div>
                         <div className='flex w-smrightspace'>
                             <div className='flex w-smrightspace 915px:w-medrightspace justify-center bg-red p-10 dark:bg-darkgray'>
-                                <div className='text-white text-6xl'>
+                                <div className='text-white text-5xl'>
                                     <img className='lg:w-pic rounded-md' src={ headshot } alt='headshot'/>
 
                                     <Link to='https://www.linkedin.com/in/rsariego/' title='LinkedIn Profile' target='_blank'><i className="fa-brands fa-linkedin mt-4 hover:text-yellow"></i></Link>
@@ -121,7 +121,7 @@ const Content = () => {
                     </div>
                     <div className='bg-white p-10 px-6 450px:p-10 450px:pt-9 lg:px-10 font-roboto font-light text-base lg:text-pointninefive first-line:uppercase first-line:tracking-widest
                     first-letter:text-4xl first-letter:font-normal
-                    first-letter:mr-3 first-letter:float-left text-justify dark:bg-slategray dark:text-lightgray'>
+                    first-letter:mr-3 first-letter:float-left text-justify dark:bg-slategray dark:text-lightgray '>
                     <p>I am a software engineer in the New York City area that's been developing web applications as a personal interest for 20+ years. <span className='block mt-6  mb-6 600px:mt-0 600px:mb-0 600px:inline 600px:bg-yellow dark:text-white 600px:dark:bg-purple'><span className='bg-yellow dark:bg-purple'>In an effort to finally make it my professional career, I recently completed a full-stack development bootcamp.</span></span> This is a representation of the work I've produced since that time.</p> 
                     </div>
 
@@ -188,7 +188,7 @@ const Content = () => {
                 1150px:w-rightspace
                 1150px:flex-initial justify-center bg-red p-10 dark:bg-darkgray'>
                     <div className='text-white text-5xl'>
-                        <img className='1150px:w-pic rounded-md' src={ headshot } alt='headshot'/>
+                        <img className='1150px:w-pic 2xl:w-bigpic rounded-md' src={ headshot } alt='headshot'/>
 
                         <Link to='https://www.linkedin.com/in/rsariego/' title='LinkedIn Profile' target='_blank'><i className="fa-brands fa-linkedin mt-4 hover:text-black dark:hover:text-yellow"></i></Link>
 
