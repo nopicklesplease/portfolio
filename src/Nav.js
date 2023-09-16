@@ -25,7 +25,7 @@ const Nav = () => {
         <div className={`${(theme) && 'dark'} sticky top-0 pt-4 md:pt-10 z-50 bg-white dark:bg-slategray`}>
             <div className='flex-column md:flex border-b-8 border-b-black pb-4 m-0 items-end font-roboto dark:border-b-white'>
 
-                <div id='header' className='flex-none text-justify text-9xl md:text-7xl 960px:text-8xl m-0 p-0 px-4 md:px-0 tracking-widest font-extralight'>
+                <div id='header' className='flex-none text-justify text-9xl md:text-airHeader 790px:text-7xl 960px:text-8xl m-0 p-0 px-4 md:px-0 tracking-widest font-extralight'>
                     RYAN S.
                 </div>
 

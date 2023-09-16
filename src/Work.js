@@ -60,25 +60,28 @@ const Work = () => {
                                 endScroll={1950}
                                 shouldAlwaysCompleteAnimation={true}
                             >
-                            <p className='text-lg text-slategray dark:text-white mb-3 tracking-widest'>
-                                <span className='bg-offgray dark:bg-lightgray px-2 text-slategray p-1 rounded'>COMPLETION</span>
-                                </p>
-                                <p className='mb-10 text-pointninefive font-light leading-6'>
-                                    July 2023
-                                </p>
+
                                 <p className='text-lg text-slategray dark:text-white mb-3 tracking-widest'>
                                     <span className='bg-offgray dark:bg-lightgray px-2 text-slategray p-1 rounded'>PROJECT OVERVIEW</span>
                                 </p>
-                                <p className='mb-10 text-pointninefive font-light leading-6'>
+                                <p className='mb-10 text-pointninefive font-light leading-6 tracking-wider'>
                                     A web app that integrates openAI's DaVinci speech model & Spotify's API to interpret user prompts and turn them into creative Spotify playlists.
+                                </p>
+
+                                <p className='text-lg text-slategray dark:text-white mb-3 tracking-widest'>
+                                <span className='bg-offgray dark:bg-lightgray px-2 text-slategray p-1 rounded'>COMPLETION</span>
+                                </p>
+                                <p className='mb-10 text-pointninefive font-light leading-6 tracking-wider'>
+                                    July 2023
                                 </p>
 
                                 <p className='text-lg text-slategray dark:text-white mb-3 tracking-widest'>
                                     <span className='bg-offgray dark:bg-lightgray px-2 text-slategray p-1 rounded'>ROLE & RESPONSIBILITIES</span>
                                 </p>
-                                <p className='text-pointninefive font-light leading-6 mb-10'>
+                                <p className='text-pointninefive font-light leading-6 mb-11 tracking-wider'>
                                     Lead Front-End Engineer responsible for UX design, User Profile & My Playlists/Discover components, JSX rendering of Spotify playlist materials, responsive design for mobile.
                                 </p>
+                                
 
                                 <p className='text-lg  tracking-widest mb-4'>
                                     <Link to='http://serenade-ai-playlists.onrender.com' title='Launch Serenade' target='_blank'>
@@ -134,7 +137,7 @@ const Work = () => {
                                     TOOLS USED
                                 </p>
 
-                                <div className='flex flex-wrap text-sm'>
+                                <div className='flex flex-wrap text-sm tracking-wider pb-2'>
                                     <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 cursor-default'>JavaScript</div>
 
                                     <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 cursor-default'>React.js</div>
@@ -195,24 +198,30 @@ const Work = () => {
                                 endScroll={3650}
                                 shouldAlwaysCompleteAnimation={true}
                             >
-                            <p className='text-lg text-slategray dark:text-white mb-3 tracking-widest'>
 
-                                    <span className='bg-offgray dark:bg-lightgray px-2 text-slategray p-1 rounded'>COMPLETION</span>
-                                </p>
-                                <p className='mb-10 text-pointninefive font-light leading-6'>
-                                    June 2023
-                                </p>
                             <p className='text-lg mb-3 text-slategray dark:text-white tracking-widest'>
                                 <span className='bg-offgray dark:bg-lightgray px-2 text-slategray p-1 rounded'>PROJECT OVERVIEW</span>
                                 </p>
-                                <p className='mb-8 text-pointninefive font-light leading-6' data-rellax-speed='-4'>
+                                <p className='mb-4 text-pointninefive text-white font-light leading-6 tracking-wider' data-rellax-speed='-4'>
                                     A Bitcoin portfolio tracker disguised as an iOS calculator. Pressing the '+' key on the calculator five times unveils a login screen to access the web application.
                                 </p>
+                                <p className='mb-10 text-pointninefive text-white font-light leading-6 tracking-wider' data-rellax-speed='-4'>
+                                This project incorporates the CoinMarketCap API to produce extensive, real-time portfolio statistics according to Bitcoin's current market price.
+                                </p>
+
+                                <p className='text-lg mb-3 text-slategray dark:text-white tracking-widest'>
+                                <span className='bg-offgray dark:bg-lightgray px-2 text-slategray p-1 rounded mb-3'>COMPLETION</span>
+                                </p>
+
+                                <p className='mb-10 text-pointninefive text-white font-light leading-6 tracking-wider' data-rellax-speed='-4'>
+                                    June 2023
+                                </p>
+
 
                                 <p className='text-lg mb-3 tracking-widest text-slategray dark:text-white'>
                                     <span className='bg-offgray dark:bg-lightgray px-2 text-slategray p-1 rounded'>ROLE & RESPONSIBILITIES</span>
                                 </p>
-                                <p className='text-pointninefive text-justify font-light leading-6 mb-10'>
+                                <p className='text-pointninefive text-justify font-light leading-6 mb-11 tracking-wider'>
                                     Creator & Sole Developer
                                 </p>
                                 <p className='text-lg tracking-widest mb-4'>
@@ -268,7 +277,7 @@ const Work = () => {
                                     TOOLS USED
                                 </p>
 
-                                <div className='flex flex-wrap text-sm'>
+                                <div className='flex flex-wrap text-sm tracking-wider'>
                                 <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 cursor-default'>JavaScript</div>
 
 <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 cursor-default'>React.js</div>
@@ -381,27 +390,32 @@ const Work = () => {
                                 shouldAlwaysCompleteAnimation={true}
                             >
                             <p className='text-base text-slategray dark:text-white mb-3 tracking-widest'>
-                                <span className='bg-lightgray px-2 text-slategray p-1 rounded'>COMPLETION</span>
-                                </p>
-                                <p className='mb-8 text-sm 1150px:text-pointninefive font-light leading-6'>
-                                    July 2023
-                                </p>
 
-                                <p className='text-base mb-3 tracking-widest'>
                                     <span className='bg-lightgray px-2 text-slategray p-1 rounded'>PROJECT OVERVIEW</span>
                                 </p>
-                                <p className='mb-8 text-sm 1150px:text-pointninefive font-light leading-6'>
+                                <p className='mb-10 text-sm 1150px:text-pointninefive font-light leading-6 tracking-wide'>
                                     A web app that integrates openAI's DaVinci speech model & Spotify's API to interpret user prompts and turn them into creative Spotify playlists.
+                                </p>
+
+                                <p className='text-base text-slategray dark:text-white mb-3 tracking-widest'>
+
+                                <span className='bg-lightgray px-2 text-slategray p-1 rounded'>COMPLETION</span>
+
+                                </p>
+
+                                <p className='mb-10 text-sm 1150px:text-pointninefive font-light leading-6 tracking-wide'>
+                                    July 2023
                                 </p>
 
                                 <p className='text-base mb-3 tracking-widest'>
                                     <span className='bg-lightgray px-2 text-slategray p-1 rounded'>ROLE & RESPONSIBILITIES</span>
                                 </p>
-                                <p className='mb-9 text-sm 1150px:text-pointninefive font-light leading-6'>
+                                <p className='mb-11 text-sm 1150px:text-pointninefive font-light leading-6 tracking-wide'>
                                     Lead Front-End Engineer responsible for UX design, User Profile & My Playlists/Discover components, JSX rendering of Spotify playlist materials, responsive design for mobile.
                                 </p>
 
-                            <div className='flex justify-start'>
+
+                            <div className='flex justify-start pb-3'>
                                 <p className='text-base  tracking-widest'>
                                     <Link to='http://serenade-ai-playlists.onrender.com' title='Launch Serenade' target='_blank'>
                                         <span className='bg-black  text-white p-3 rounded hover:bg-yellow hover:text-black cursor-pointer'>LAUNCH PROJECT</span>
@@ -411,7 +425,7 @@ const Work = () => {
                                 </Parallax>
                             </div>
 
-                            <div className='bg-blue p-10 dark:bg-purple h-full'>
+                            <div className='bg-blue p-10 mb-1 dark:bg-purple h-full'>
                             <Parallax
                                 opacity={[0, 1, 'easeOutBack']}
                                 startScroll={450}
@@ -422,7 +436,7 @@ const Work = () => {
                                     TOOLS USED
                                 </p>
 
-                                <div className='flex flex-wrap text-xs 1150px:text-sm'>
+                                <div className='flex flex-wrap text-xs 1150px:text-sm tracking-wider'>
                                     <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 cursor-default'>JavaScript</div>
 
                                     <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 cursor-default'>React.js</div>
@@ -515,27 +529,34 @@ const Work = () => {
                                 shouldAlwaysCompleteAnimation={true}
                             >
 
-                            <p className='text-base text-slategray dark:text-white mb-3 tracking-widest'>
-                                <span className='bg-lightgray px-2 text-slategray p-1 rounded'>COMPLETION</span>
-                                </p>
-                                <p className='mb-8 text-sm font-light 1150px:text-pointninefive leading-6'>
-                                    June 2023
-                                </p>
-                                <p className='text-base mb-3 tracking-widest'>
+                            <p className='text-base text-slategray dark:text-white pt-3 mb-3 tracking-widest'>
+
                                     <span className='bg-lightgray px-2 text-slategray p-1 rounded'>PROJECT OVERVIEW</span> 
                                 </p>
-                                <p className='mb-8 text-sm font-light 1150px:text-pointninefive leading-6' data-rellax-speed='-4'>
+                                <p className='mb-4 text-sm font-light 1150px:text-pointninefive leading-6 tracking-wide' data-rellax-speed='-4'>
                                     A Bitcoin portfolio tracker disguised as an iOS calculator. Pressing the '+' key on the calculator five times unveils a login screen to access the web application.
+                                </p>
+
+                                <p className='mb-10 text-sm font-light 1150px:text-pointninefive leading-6 tracking-wide' data-rellax-speed='-4'>
+                                    This project incorporates the CoinMarketCap API to produce extensive, real-time portfolio statistics according to Bitcoin's current market price.
+                                </p>
+
+                                <p className='text-base text-slategray dark:text-white mb-3 tracking-widest'>
+                                <span className='bg-lightgray px-2 text-slategray p-1 rounded'>COMPLETION</span>
+                                </p>
+
+                                <p className='mb-10 text-sm font-light 1150px:text-pointninefive leading-6 tracking-wide'>
+                                    June 2023
                                 </p>
 
                                 <p className='text-base mb-3 tracking-widest'>
                                     <span className='bg-lightgray px-2 text-slategray p-1 rounded'>ROLE & RESPONSIBILITIES</span> 
                                 </p>
-                                <p className='mb-9 text-sm font-light 1150px:text-pointninefive leading-6'>
+                                <p className='mb-11 text-sm font-light 1150px:text-pointninefive leading-6 tracking-wide'>
                                     Creator & Sole Developer
                                 </p>
 
-                                <div className='flex justify-start'>
+                                <div className='flex justify-start pb-3'>
                                     <p className='text-base  tracking-widest'>
                                         <Link to='http://just-a-calculator.onrender.com' title='Launch Just-A-Calculator' target='_blank'>
                                             <span className='bg-black  text-white p-3 rounded hover:bg-yellow hover:text-black cursor-pointer'>LAUNCH PROJECT</span>
@@ -548,7 +569,7 @@ const Work = () => {
                                 </p> */}
                             </div>
 
-                            <div className='bg-blue p-10 dark:bg-purple'>
+                            <div className='bg-blue p-10 mb-1 dark:bg-purple'>
                             <Parallax
                                 opacity={[0, 1, 'easeOutBack']}
                                 startScroll={1300}
@@ -559,7 +580,7 @@ const Work = () => {
                                     TOOLS USED 
                                 </p>
 
-                                <div className='flex flex-wrap text-xs 1150px:text-sm'>
+                                <div className='flex flex-wrap text-xs 1150px:text-sm tracking-wider'>
                                     <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1  cursor-default'>JavaScript</div>
 
                                     <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1  cursor-default'>React.js</div>

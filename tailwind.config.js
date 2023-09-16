@@ -48,7 +48,7 @@ module.exports = {
         'bigpic': '500px',
         'content': '100%',
         '50': '9px',
-        '290px': '290px'
+        '290px': '290px',
       },
       height:{
         'contactheight': '560px',
@@ -63,6 +63,7 @@ module.exports = {
         '960px': '960px',
         '840px': '840px',
         '880px': '880px',
+        '790px': '790px',
         '600px': '600px',
       },
       flex:{
@@ -73,7 +74,8 @@ module.exports = {
       },
       fontSize:{
         'header': '12rem',
-        'pointninefive': '.95rem'
+        'pointninefive': '.95rem',
+        'airHeader': '4rem'
       }
     },
     fontFamily: {

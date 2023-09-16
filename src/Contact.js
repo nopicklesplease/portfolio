@@ -84,7 +84,7 @@ console.log(emailSuccess);
                         CONTACT
                     </div> */}
             
-            <div className='flex-1 bg-offgray p-10 font-roboto font-light text-justify dark:bg-darkergray lg:pb-72'>
+            <div className='flex-1 bg-offgray p-10 font-roboto font-light text-justify dark:bg-darkergray md:pb-96'>
 
 
                 {(emailSuccess) ? 
@@ -151,7 +151,7 @@ console.log(emailSuccess);
                 w-smrightspace
                 915px:w-medrightspace 1150px:w-rightspace'>
 
-                    <div className='p-10 bg-yellow dark:bg-green font-roboto text-base text-black dark:text-white font-light leading-6'>
+                    <div className='p-10 bg-yellow dark:bg-green font-roboto text-base text-black dark:text-white font-light leading-6 tracking-wide'>
                         <p>Open to all Front-End Development opportunities.</p> 
                         <p className='pt-6'>If you're interested in my work, please use this form to contact me and I'll respond promptly.</p>
                     </div>

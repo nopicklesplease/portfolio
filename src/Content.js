@@ -19,7 +19,7 @@ const Content = () => {
                 <div className='hidden md:block md:flex-column 915px:hidden'>
 
                     <div className='flex h-auto'>
-                        <div className='flex-1'>
+                        <div className='flex-1 dark:bg-slategray'>
                             <div className='915px:hidden p-10 pb-0 text-5xl font-light font-roboto bg-white dark:bg-slategray text-blue dark:text-lightgray'>
                                 ABOUT
                             </div>
@@ -76,18 +76,18 @@ const Content = () => {
 
                                 <div className='p-2 bg-lightgray dark: text-slategray rounded-md max-w-fit m-1  hover:bg-yellow cursor-default'>Responsive Design</div>
 
+                                <div className='p-2 bg-blue dark:bg-green text-white rounded-md max-w-fit m-1  hover:bg-yellow dark:hover:bg-yellow cursor-default hover:text-black'>Bitcoin Education</div>
+
                                 <div className='p-2 bg-blue dark:bg-green text-white rounded-md max-w-fit m-1  hover:bg-yellow dark:hover:bg-yellow cursor-default hover:text-black'>Audio Engineering</div>
 
                                 <div className='p-2 bg-blue dark:bg-green text-white rounded-md max-w-fit m-1  hover:bg-yellow dark:hover:bg-yellow cursor-default hover:text-black'>Music & Podcast Production</div>
-
-                                <div className='p-2 bg-blue dark:bg-green text-white rounded-md max-w-fit m-1  hover:bg-yellow dark:hover:bg-yellow cursor-default hover:text-black'>Bitcoin Education</div>
 
                                 <div className='p-2 bg-blue dark:bg-green text-white rounded-md max-w-fit m-1  hover:bg-yellow dark:hover:bg-yellow cursor-default hover:text-black'>Photography</div>
 
                                 <div className='p-2 bg-blue dark:bg-green text-white rounded-md max-w-fit m-1  hover:bg-yellow dark:hover:bg-yellow cursor-default hover:text-black'>Adobe Photoshop</div>
 
                             </div>
-                            <div className='flex'>
+                            {/* <div className='flex'>
                                 <div className='flex-5 p-10 bg-white dark:bg-slategray'>
                                     <span className='font-normal text-xl tracking-widest'>CURRENT PROJECT: <span className='text-blue dark:text-green'> SO WHAT?</span></span>
 
@@ -98,7 +98,7 @@ const Content = () => {
                                 <div className='flex bg-red w-smrightspace 915px:w-medrightspace dark:bg-darkgray'>
                                     
                                 </div>
-                            </div>
+                            </div> */}
                     </div>
                 </div>
                 {/* <div className='flex-5 lg:flex-1'>
@@ -113,15 +113,15 @@ const Content = () => {
                 </div> */}
 
                 <div className='md:hidden md:flex-5 915px:block 915px:flex-1 border-r-100 border-red dark:bg-darkergray dark:border-darkgray md:border-0'>
-                    <div className='hidden md:block lg:hidden bg-white p-10 pb-0 text-5xl font-light font-roboto text-blue dark:text-lightgray'>
+                    <div className='hidden md:block lg:hidden bg-white dark:bg-slategray p-10 pb-0 text-5xl font-light font-roboto text-blue dark:text-lightgray'>
                         ABOUT
                     </div>
                     <div>
                         <img className='md:hidden 1150px:w-pic' src={ headshot } alt='headshot'/>
                     </div>
                     <div className='bg-white p-10 px-6 450px:p-10 450px:pt-9 lg:px-10 font-roboto font-light text-base lg:text-pointninefive first-line:uppercase first-line:tracking-widest
-                    first-letter:text-4xl first-letter:font-normal
-                    first-letter:mr-3 first-letter:float-left text-justify dark:bg-slategray dark:text-lightgray '>
+                    first-letter:text-5xl first-letter:font-normal
+                    first-letter:mr-3 first-letter:float-left text-justify dark:bg-slategray dark:text-lightgray tracking-wider'>
                     <p>I am a software engineer in the New York City area that's been developing web applications as a personal interest for 20+ years. <span className='block mt-6  mb-6 600px:mt-0 600px:mb-0 600px:inline 600px:bg-yellow dark:text-white 600px:dark:bg-purple'><span className='bg-yellow dark:bg-purple'>In an effort to finally make it my professional career, I recently completed a full-stack development bootcamp.</span></span> This is a representation of the work I've produced since that time.</p> 
                     </div>
 
@@ -134,7 +134,7 @@ const Content = () => {
                         <span className='font-normal text-xl tracking-widest'>CORE PROFICIENCIES <span className='text-blue dark:text-green'> + ADDL. SKILLS</span></span>
                     </div>
 
-                    <div className='flex flex-wrap p-6 pb-10 450px:p-10 pt-0 md:mb-0 text-sm md:text-xs lg:px-10 1150px:text-sm bg-offgray dark:bg-darkergray md:dark:bg-darkergray'>
+                    <div className='flex flex-wrap p-6 pb-10 450px:p-10 pt-0 md:mb-0 text-sm md:text-xs lg:px-10 1150px:text-sm bg-offgray dark:bg-darkergray md:dark:bg-darkergray tracking-wider'>
                             <div className='p-2 bg-lightgray dark: text-slategray rounded-md max-w-fit h-fit m-1 hover:bg-yellow cursor-default'>JavaScript</div>
 
                             <div className='p-2 bg-lightgray dark: text-slategray rounded-md max-w-fit h-fit m-1  hover:bg-yellow cursor-default'>React.js</div>
@@ -163,11 +163,11 @@ const Content = () => {
 
                             <div className='p-2 bg-lightgray dark: text-slategray rounded-md max-w-fit h-fit m-1  hover:bg-yellow cursor-default'>Responsive Design</div>
 
+                            <div className='p-2 bg-blue dark:bg-green text-white rounded-md max-w-fit h-fit m-1  hover:bg-yellow dark:hover:bg-yellow cursor-default hover:text-black'>Bitcoin Education</div>
+
                             <div className='p-2 bg-blue dark:bg-green text-white rounded-md max-w-fit h-fit m-1  hover:bg-yellow dark:hover:bg-yellow cursor-default hover:text-black'>Audio Engineering</div>
 
                             <div className='p-2 bg-blue dark:bg-green text-white rounded-md max-w-fit h-fit m-1  hover:bg-yellow dark:hover:bg-yellow cursor-default hover:text-black'>Music & Podcast Production</div>
-
-                            <div className='p-2 bg-blue dark:bg-green text-white rounded-md max-w-fit h-fit m-1  hover:bg-yellow dark:hover:bg-yellow cursor-default hover:text-black'>Bitcoin Education</div>
 
                             <div className='p-2 bg-blue dark:bg-green text-white rounded-md max-w-fit h-fit m-1  hover:bg-yellow dark:hover:bg-yellow cursor-default hover:text-black'>Photography</div>
 
@@ -197,7 +197,6 @@ const Content = () => {
                     </div>
                 </div>
             </div>
-            <CurrentProject />
         </div>
     )
 };
