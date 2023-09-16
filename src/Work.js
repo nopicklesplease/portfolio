@@ -39,8 +39,8 @@ const Work = () => {
                         <div className='text-black text-sm'>
                             <Parallax
                                 opacity={[0, 1, 'easeOutBack']}
-                                startScroll={750}
-                                endScroll={1850}
+                                startScroll={600}
+                                endScroll={1725}
                                 shouldAlwaysCompleteAnimation={true}
                             >
                             <p className='text-4xl text-slategray dark:text-white  tracking-widest font-light p-10'>
@@ -56,16 +56,19 @@ const Work = () => {
                             <div className='bg-red p-10 pt-12 dark:bg-darkgray'>
                             <Parallax
                                 opacity={[0, 1, 'easeOutBack']}
-                                startScroll={850}
-                                endScroll={1950}
+                                startScroll={700}
+                                endScroll={1800}
                                 shouldAlwaysCompleteAnimation={true}
                             >
 
                                 <p className='text-lg text-slategray dark:text-white mb-3 tracking-widest'>
                                     <span className='bg-offgray dark:bg-lightgray px-2 text-slategray p-1 rounded'>PROJECT OVERVIEW</span>
                                 </p>
-                                <p className='mb-10 text-pointninefive font-light leading-6 tracking-wider'>
+                                <p className='mb-4 text-pointninefive font-light leading-6 tracking-wider'>
                                     A web app that integrates openAI's DaVinci speech model & Spotify's API to interpret user prompts and turn them into creative Spotify playlists.
+                                </p>
+                                <p className='mb-10 text-pointninefive font-light leading-6 tracking-wider'>
+                                    Users can use any descriptor or reference to generate a Spotify playlist that's immediately ready for use in-app, complete with the ability to customize their results and discover playlists from other users on the platform.
                                 </p>
 
                                 <p className='text-lg text-slategray dark:text-white mb-3 tracking-widest'>
@@ -99,7 +102,7 @@ const Work = () => {
                         <Parallax
                             translateX={['-400px', '0px']}
                             startScroll={0}
-                            endScroll={1875}
+                            endScroll={1975}
                             shouldAlwaysCompleteAnimation={true}
                         >
                             <Link to={ serenadeLink } title='Launch Serenade' target='_blank'><img className='mb-12 mt-4' alt='Serenade' src={ SerenadeFinal1 }/></Link>
@@ -108,7 +111,7 @@ const Work = () => {
                         <Parallax
                             translateX={['400px', '0px']}
                             startScroll={0}
-                            endScroll={1875}
+                            endScroll={1975}
                             shouldAlwaysCompleteAnimation={true}
                         >
                             <Link to={ serenadeLink } title='Launch Serenade' target='_blank'><img className='mb-12' alt='Serenade' src={ SerenadeFinal2 }/></Link>
@@ -116,7 +119,7 @@ const Work = () => {
                         <Parallax
                             translateX={['-400px', '0px']}
                             startScroll={0}
-                            endScroll={1875}
+                            endScroll={1975}
                             shouldAlwaysCompleteAnimation={true}
                         >
                             <Link to={ serenadeLink } title='Launch Serenade' target='_blank'><img className='mb-6 mt-2 1150px:hidden' alt='Serenade' src={ SerenadeFinal1 }/></Link>
@@ -129,8 +132,8 @@ const Work = () => {
                             <div className='bg-blue p-10 dark:bg-purple'>
                             <Parallax
                                 opacity={[0, 1, 'easeOutBack']}
-                                startScroll={2100}
-                                endScroll={3200}
+                                startScroll={2225}
+                                endScroll={3325}
                                 shouldAlwaysCompleteAnimation={true}
                             >
                                 <p className='text-xl mb-3 tracking-widest'>
@@ -176,8 +179,8 @@ const Work = () => {
                         <div className='text-white'>
                             <Parallax
                                 opacity={[0, 1, 'easeOutBack']}
-                                startScroll={2450}
-                                endScroll={3550}
+                                startScroll={2550}
+                                endScroll={3650}
                                 shouldAlwaysCompleteAnimation={true}
                             >
                             <p className='text-4xl text-slategray dark:bg-green dark:text-white tracking-widest font-light px-10 mb-10'>
@@ -194,8 +197,8 @@ const Work = () => {
                             <div className='bg-red p-10 pt-12 dark:bg-darkgray'>
                             <Parallax
                                 opacity={[0, 1, 'easeOutBack']}
-                                startScroll={2600}
-                                endScroll={3650}
+                                startScroll={2650}
+                                endScroll={3700}
                                 shouldAlwaysCompleteAnimation={true}
                             >
 
@@ -240,7 +243,7 @@ const Work = () => {
                         <Parallax
                             translateX={['-400px', '0px']}
                             startScroll={0}
-                            endScroll={3600}
+                            endScroll={3875}
                             shouldAlwaysCompleteAnimation={true}
                         >
                             <Link to={ calcLink } title='Launch Just-A-Calculator' target='_blank'><img className='mb-12 mt-4' alt='Serenade' src={ CalcFinal2 }/></Link>
@@ -248,7 +251,7 @@ const Work = () => {
                         <Parallax
                             translateX={['400px', '0px']}
                             startScroll={0}
-                            endScroll={3600}
+                            endScroll={3875}
                             shouldAlwaysCompleteAnimation={true}
                         >
                             <Link to={ calcLink } title='Launch Just-A-Calculator' target='_blank'><img className='mb-12' alt='Serenade' src={ CalcFinal1 }/></Link>
@@ -256,7 +259,7 @@ const Work = () => {
                         <Parallax
                             translateX={['-400px', '0px']}
                             startScroll={0}
-                            endScroll={3600}
+                            endScroll={3875}
                             shouldAlwaysCompleteAnimation={true}
                         >
                             <Link to={ calcLink } title='Launch Just-A-Calculator' target='_blank'><img className='mb-6 mt-4' alt='Serenade' src={ CalcFinal2 }/></Link>
@@ -269,8 +272,8 @@ const Work = () => {
                             <div className='bg-blue p-10 dark:bg-purple'>
                             <Parallax
                             opacity={[0, 1, 'easeOutBack']}
-                            startScroll={3850}
-                            endScroll={4800}
+                            startScroll={4100}
+                            endScroll={4950}
                             shouldAlwaysCompleteAnimation={true}
                         >
                                 <p className='text-xl mb-3 tracking-widest'>
@@ -393,8 +396,11 @@ const Work = () => {
 
                                     <span className='bg-lightgray px-2 text-slategray p-1 rounded'>PROJECT OVERVIEW</span>
                                 </p>
-                                <p className='mb-10 text-sm 1150px:text-pointninefive font-light leading-6 tracking-wide'>
+                                <p className='mb-4 text-sm 1150px:text-pointninefive font-light leading-6 tracking-wide'>
                                     A web app that integrates openAI's DaVinci speech model & Spotify's API to interpret user prompts and turn them into creative Spotify playlists.
+                                </p>
+                                <p className='mb-10 text-sm 1150px:text-pointninefive font-light leading-6 tracking-wide'>
+                                    Users can use any descriptor or reference to generate a Spotify playlist that's immediately ready for use in-app, complete with the ability to customize their results and discover playlists from other users on the platform.
                                 </p>
 
                                 <p className='text-base text-slategray dark:text-white mb-3 tracking-widest'>

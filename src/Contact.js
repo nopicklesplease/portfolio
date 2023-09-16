@@ -99,21 +99,21 @@ console.log(emailSuccess);
                             NAME
                         </div>
                         <div>
-                            <input className='text-black rounded p-2 w-full outline-0 mb-8 dark:bg-offgray dark:bg-white' name='from_name' placeholder='Enter your name'></input>
+                            <input className='text-black rounded p-2 w-full outline-0 mb-8 dark:bg-lightgray dark:bg-white' name='from_name' placeholder='Enter your name'></input>
                         </div>
 
                         <div className='mb-2 tracking-widest'>
                             EMAIL ADDRESS
                         </div>
                         <div>
-                            <input className='text-black rounded p-2 w-full outline-0 mb-8 dark:bg-offgray dark:bg-white' name='reply_to' placeholder='Enter your email address'></input>
+                            <input className='text-black rounded p-2 w-full outline-0 mb-8 dark:bg-lightgray dark:bg-white' name='reply_to' placeholder='Enter your email address'></input>
                         </div>
 
                         <div className='mb-2 tracking-widest'>
                             MESSAGE
                         </div>
                         <div>
-                            <textarea className='text-black rounded p-2 w-full h-32 outline-0 mb-8 dark:bg-offgray dark:bg-white' name='message' placeholder='Write your message'></textarea>
+                            <textarea className='text-black rounded p-2 w-full h-32 outline-0 mb-8 dark:bg-lightgray dark:bg-white' name='message' placeholder='Write your message'></textarea>
                         </div>
 {/* 
                         <TextField id="outlined-basic" label="Name" name="from_name" size='small' variant="standard"/>
