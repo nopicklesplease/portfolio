@@ -58,8 +58,8 @@ console.log(emailSuccess);
             <div className='flex-initial bg-blue dark:bg-purple md:border-r-50 md:border-yellow dark:border-green'>
                 <Parallax
                     translateY={['800px', '0px']}
-                    startScroll={850} 
-                    endScroll={2000}
+                    startScroll={1350} 
+                    endScroll={2500}
                     shouldAlwaysCompleteAnimation={true}
                 >
                     <div className='lg:transform lg:-rotate-90 lg:-ml-contact lg:-mr-contact lg:pr-4 lg:align-middle lg:mt-contacttop pt-1 text-white text-6xl font-roboto font-extralight tracking-wide md:w-50 lg:w-auto'>

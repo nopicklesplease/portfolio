@@ -400,7 +400,7 @@ const Work = () => {
                                     A web app that integrates openAI's DaVinci speech model & Spotify's API to interpret user prompts and turn them into creative Spotify playlists.
                                 </p>
                                 <p className='mb-10 text-sm 1150px:text-pointninefive font-light leading-6 tracking-wide'>
-                                    Users can use any descriptor or reference to generate a Spotify playlist that's immediately ready for use in-app, complete with the ability to customize their results and discover playlists from other users on the platform.
+                                    Users can provide any descriptor or reference to generate a Spotify playlist that's immediately ready for use in-app, along with the ability to customize their results and discover playlists from other users.
                                 </p>
 
                                 <p className='text-base text-slategray dark:text-white mb-3 tracking-widest'>
@@ -434,7 +434,7 @@ const Work = () => {
                             <div className='bg-blue p-10 mb-1 dark:bg-purple h-full'>
                             <Parallax
                                 opacity={[0, 1, 'easeOutBack']}
-                                startScroll={450}
+                                startScroll={750}
                                 endScroll={1250}
                                 shouldAlwaysCompleteAnimation={true}
                             >
@@ -480,32 +480,32 @@ const Work = () => {
                     <div className='flex-1 h-full bg-white p-6 pt-10 font-roboto font-light pr-10 dark:bg-slategray w-full h-auto overflow-hidden'>
                         <Parallax
                             translateX={['-400px', '0px']}
-                            startScroll={450}
-                            endScroll={1300}
+                            startScroll={750}
+                            endScroll={1500}
                             shouldAlwaysCompleteAnimation={true}
                         >
                             <Link to={ calcLink } title='Launch Just-A-Calculator' target='_blank'><img className='mb-12 mt-2' alt='Launch Just-A-Calculator' src={ CalcFinal2 }/></Link>
                         </Parallax>
                         <Parallax
                             translateX={['400px', '0px']}
-                            startScroll={450}
-                            endScroll={1300}
+                            startScroll={750}
+                            endScroll={1500}
                             shouldAlwaysCompleteAnimation={true}
                         >
                             <Link to={ calcLink } title='Launch Just-A-Calculator' target='_blank'><img className='mb-12 1150px:mb-6' alt='Launch Just-A-Calculator' src={ CalcFinal1 }/></Link>
                         </Parallax>
                         <Parallax
                             translateX={['-400px', '0px']}
-                            startScroll={450}
-                            endScroll={1300}
+                            startScroll={750}
+                            endScroll={1500}
                             shouldAlwaysCompleteAnimation={true}
                         >
                             <Link to={ calcLink } title='Launch Just-A-Calculator' target='_blank'><img className='mb-12 880px:mb-6 1150px:hidden' alt='Launch Just-A-Calculator' src={ CalcFinal2 }/></Link>
                         </Parallax>
                         <Parallax
                             translateX={['400px', '0px']}
-                            startScroll={450}
-                            endScroll={1300}
+                            startScroll={750}
+                            endScroll={1500}
                             shouldAlwaysCompleteAnimation={true}
                         >
                             <Link to={ calcLink } title='Launch Just-A-Calculator' target='_blank'><img className='mb-6 880px:hidden' alt='Launch Just-A-Calculator' src={ CalcFinal1 }/></Link>
@@ -519,8 +519,8 @@ const Work = () => {
                             <p className='bg-yellow text-2xl 1150px:text-3xl text-slategray dark:bg-green dark:text-white tracking-widest font-light p-10'>
                             <Parallax
                                 opacity={[0, 1, 'easeOutBack']}
-                                startScroll={725}
-                                endScroll={1525}
+                                startScroll={1075}
+                                endScroll={1875}
                                 shouldAlwaysCompleteAnimation={true}
                             >
                             <Link to='http://just-a-calculator.onrender.com' title='Launch Just-A-Calculator' target='_blank' className='hover:bg-black hover:text-white'>JUST A CALCULATOR <span><i className="fa-solid fa-up-right-from-square ml-2 text-xl"></i></span></Link>
@@ -530,8 +530,8 @@ const Work = () => {
 
                             <Parallax
                                 opacity={[0, 1, 'easeOutBack']}
-                                startScroll={900}
-                                endScroll={1750}
+                                startScroll={1200}
+                                endScroll={2050}
                                 shouldAlwaysCompleteAnimation={true}
                             >
 
@@ -578,8 +578,8 @@ const Work = () => {
                             <div className='bg-blue p-10 mb-1 dark:bg-purple'>
                             <Parallax
                                 opacity={[0, 1, 'easeOutBack']}
-                                startScroll={1300}
-                                endScroll={2300}
+                                startScroll={1825}
+                                endScroll={2825}
                                 shouldAlwaysCompleteAnimation={true}
                             >
                                 <p className='text-lg mb-3 tracking-widest'>
