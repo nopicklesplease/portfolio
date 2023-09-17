@@ -5,6 +5,7 @@ import Content from './Content';
 import Work from './Work';
 import Contact from './Contact';
 import Footer from './Footer';
+import SuccessfulEmail from './SuccessfulEmail';
 
 const Home = () => {
 
@@ -18,11 +19,9 @@ const Home = () => {
                     <div id='about'>                   
                         <Content />
                     </div>
-
                     <div id='work'>                   
                         <Work />
                     </div>
-
                     <div id='contact'>                   
                         <Contact />
                     </div>

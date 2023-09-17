@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import headshot from './headshot.jpeg';
-import CurrentProject from './CurrentProject';
+import CoreProf from './CoreProf';
 
 const Content = () => {
 
@@ -11,13 +11,18 @@ const Content = () => {
     return(
         <div className='z-auto'>
             <div className={`flex bg-offgray h-auto ${(theme) && 'dark'}`}>
+
+                {/* TABLET CONTENT SIDE TITLE */}
+
                 <div className='lg:flex-initial bg-blue dark:bg-purple border-r-50 border-yellow dark:border-green'>
                         <div className='lg:transform lg:-rotate-90 lg:-ml-16 lg:-mr-16 lg:pr-4 lg:align-middle lg:mt-abouttop lg:pt-1 text-white text-6xl font-roboto font-extralight tracking-wide w-50 lg:w-auto'>
                             <p className='hidden lg:flex'>ABOUT</p> 
                         </div>
                 </div>
-                <div className='hidden md:block md:flex-column 915px:hidden'>
 
+                {/* TABLET CONTENT BODY */}
+
+                <div className='hidden md:block md:flex-column 915px:hidden'>
                     <div className='flex h-auto'>
                         <div className='flex-1 dark:bg-slategray'>
                             <div className='915px:hidden p-10 pb-0 text-5xl font-light font-roboto bg-white dark:bg-slategray text-blue dark:text-lightgray'>
@@ -33,84 +38,29 @@ const Content = () => {
                             <div className='flex w-smrightspace 915px:w-medrightspace justify-center bg-red p-10 dark:bg-darkgray'>
                                 <div className='text-white text-5xl'>
                                     <img className='lg:w-pic rounded-md' src={ headshot } alt='headshot'/>
-
-                                    <Link to='https://www.linkedin.com/in/rsariego/' title='LinkedIn Profile' target='_blank'><i className="fa-brands fa-linkedin mt-4 hover:text-yellow"></i></Link>
-
-                                    <Link to='https://github.com/nopicklesplease' title='Github Profile' target='_blank'><i className="fa-brands fa-github mt-4 ml-4 hover:text-yellow"></i></Link>
-
+                                    <Link to='https://www.linkedin.com/in/rsariego/' title='LinkedIn Profile' target='_blank'>
+                                        <i className="fa-brands fa-linkedin mt-4 hover:text-yellow"></i>
+                                    </Link>
+                                    <Link to='https://github.com/nopicklesplease' title='Github Profile' target='_blank'>
+                                        <i className="fa-brands fa-github mt-4 ml-4 hover:text-yellow"></i>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className='bg-offgray dark:bg-darkergray'>
-                    <div className='p-10 pb-3 flex'>
-                        <span className='font-normal text-xl tracking-widest'>CORE PROFICIENCIES <span className='text-blue dark:text-green'> + ADDL. SKILLS</span></span>
-                    </div>
-
+                        <div className='p-10 pb-3 flex'>
+                            <span className='font-normal text-xl tracking-widest'>
+                                CORE PROFICIENCIES <span className='text-blue dark:text-green'> + ADDL. SKILLS</span>
+                            </span>
+                        </div>
                         <div className='flex flex-wrap p-10 pt-0 text-sm'>
-                                <div className='p-2 bg-lightgray dark: text-slategray rounded-md max-w-fit m-1   hover:bg-yellow cursor-default'>JavaScript</div>
-
-                                <div className='p-2 bg-lightgray dark: text-slategray rounded-md max-w-fit m-1  hover:bg-yellow cursor-default'>React.js</div>
-
-                                <div className='p-2 bg-lightgray dark: text-slategray rounded-md max-w-fit m-1  hover:bg-yellow cursor-default'>Redux.js</div>
-
-                                <div className='p-2 bg-lightgray dark: text-slategray rounded-md max-w-fit m-1  hover:bg-yellow cursor-default'>Node.js</div>
-
-                                <div className='p-2 bg-lightgray dark: text-slategray rounded-md max-w-fit m-1  hover:bg-yellow cursor-default'>Express.js</div>
-
-                                <div className='p-2 bg-lightgray dark: text-slategray rounded-md max-w-fit m-1  hover:bg-yellow cursor-default'>React Router</div>
-
-                                <div className='p-2 bg-lightgray dark: text-slategray rounded-md max-w-fit m-1  hover:bg-yellow cursor-default'>PostgreSQL</div>
-
-                                <div className='p-2 bg-lightgray dark: text-slategray rounded-md max-w-fit m-1  hover:bg-yellow cursor-default'>REST API</div>
-
-                                <div className='p-2 bg-lightgray dark: text-slategray rounded-md max-w-fit m-1  hover:bg-yellow cursor-default'>GIT</div>
-
-                                <div className='p-2 bg-lightgray dark: text-slategray rounded-md max-w-fit m-1  hover:bg-yellow cursor-default'>CSS</div>
-
-                                <div className='p-2 bg-lightgray dark: text-slategray rounded-md max-w-fit m-1  hover:bg-yellow cursor-default'>Tailwind</div>
-
-                                <div className='p-2 bg-lightgray dark: text-slategray rounded-md max-w-fit m-1  hover:bg-yellow cursor-default'>React-Parallax</div>
-
-                                <div className='p-2 bg-lightgray dark: text-slategray rounded-md max-w-fit m-1  hover:bg-yellow cursor-default'>Material-UI</div>
-
-                                <div className='p-2 bg-lightgray dark: text-slategray rounded-md max-w-fit m-1  hover:bg-yellow cursor-default'>Responsive Design</div>
-
-                                <div className='p-2 bg-blue dark:bg-green text-white rounded-md max-w-fit m-1  hover:bg-yellow dark:hover:bg-yellow cursor-default hover:text-black'>Bitcoin Education</div>
-
-                                <div className='p-2 bg-blue dark:bg-green text-white rounded-md max-w-fit m-1  hover:bg-yellow dark:hover:bg-yellow cursor-default hover:text-black'>Audio Engineering</div>
-
-                                <div className='p-2 bg-blue dark:bg-green text-white rounded-md max-w-fit m-1  hover:bg-yellow dark:hover:bg-yellow cursor-default hover:text-black'>Music & Podcast Production</div>
-
-                                <div className='p-2 bg-blue dark:bg-green text-white rounded-md max-w-fit m-1  hover:bg-yellow dark:hover:bg-yellow cursor-default hover:text-black'>Photography</div>
-
-                                <div className='p-2 bg-blue dark:bg-green text-white rounded-md max-w-fit m-1  hover:bg-yellow dark:hover:bg-yellow cursor-default hover:text-black'>Adobe Photoshop</div>
-
-                            </div>
-                            {/* <div className='flex'>
-                                <div className='flex-5 p-10 bg-white dark:bg-slategray'>
-                                    <span className='font-normal text-xl tracking-widest'>CURRENT PROJECT: <span className='text-blue dark:text-green'> SO WHAT?</span></span>
-
-                                    <p className='mt-3 font-roboto font-light'>
-                                    SO WHAT? is an application that summarizes important historical events, people & places into an easy-to-digest format that provides users with a topical overview of anything that piques their interest.
-                                    </p>
-                                </div>
-                                <div className='flex bg-red w-smrightspace 915px:w-medrightspace dark:bg-darkgray'>
-                                    
-                                </div>
-                            </div> */}
+                            <CoreProf />
+                        </div>
                     </div>
                 </div>
-                {/* <div className='flex-5 lg:flex-1'>
-                    <div className='lg:hidden p-10 pb-0 text-5xl  font-light font-roboto text-blue dark:text-lightgray'>
-                        ABOUT
-                    </div>
-                    <div className='bg-white p-10 pt-9 pb-0 font-roboto font-light first-line:uppercase first-line:tracking-widest
-                    first-letter:text-5xl first-letter:font-normal
-                    first-letter:mr-3 first-letter:float-left text-justify dark:bg-slategray dark:text-lightgray'>
-                    <p>I am a software engineer in the New York City area that's been developing web applications as a personal interest for 20+ years. <span className='bg-yellow dark:text-white dark:bg-purple'>In an effort to finally make it my professional career, I recently completed a full-stack development bootcamp.</span> This is a representation of the work I've produced since that time.</p> 
-                    </div>
-                </div> */}
+
+                {/* MOBILE & DESKTOP CONTENT BODY */}
 
                 <div className='md:hidden md:flex-5 915px:block 915px:flex-1 border-r-100 border-red dark:bg-darkergray dark:border-darkgray md:border-0'>
                     <div className='hidden md:block lg:hidden bg-white dark:bg-slategray p-10 pb-0 text-5xl font-light font-roboto text-blue dark:text-lightgray'>
@@ -122,78 +72,32 @@ const Content = () => {
                     <div className='bg-white p-10 px-6 450px:p-10 450px:pt-9 lg:px-10 font-roboto font-light text-base lg:text-pointninefive first-line:uppercase first-line:tracking-widest
                     first-letter:text-5xl first-letter:font-normal
                     first-letter:mr-3 first-letter:float-left text-justify dark:bg-slategray dark:text-lightgray tracking-wider'>
-                    <p>I am a software engineer in the New York City area that's been developing web applications as a personal interest for 20+ years. <span className='block mt-6  mb-6 600px:mt-0 600px:mb-0 600px:inline 600px:bg-yellow dark:text-white 600px:dark:bg-purple'><span className='bg-yellow dark:bg-purple'>In an effort to finally make it my professional career, I recently completed a full-stack development bootcamp.</span></span> This is a representation of the work I've produced since that time.</p> 
+                        <p>I am a software engineer in the New York City area that's been developing web applications as a personal interest for 20+ years. <span className='block mt-6  mb-6 600px:mt-0 600px:mb-0 600px:inline 600px:bg-yellow dark:text-white 600px:dark:bg-purple'><span className='bg-yellow dark:bg-purple'>In an effort to finally make it my professional career, I recently completed a full-stack development bootcamp.</span></span> This is a representation of the work I've produced since that time.</p> 
                     </div>
-
-
-                    {/* <div className='hidden md:flex justify-center'>
-                        <div className='border-t border-lightgray w-4/5 mt-10'></div>
-                    </div> */}
                 
                     <div className='p-6 pt-10 450px:p-10 pb-3 mt-0 450px:mt-10 md:mt-0 lg:px-10 flex bg-offgray dark:bg-darkergray md:dark:bg-darkergray'>
-                        <span className='font-normal text-xl tracking-widest'>CORE PROFICIENCIES <span className='text-blue dark:text-green'> + ADDL. SKILLS</span></span>
+                        <span className='font-normal text-xl tracking-widest'>
+                            CORE PROFICIENCIES <span className='text-blue dark:text-green'> + ADDL. SKILLS</span>
+                        </span>
                     </div>
 
                     <div className='flex flex-wrap p-6 pb-10 450px:p-10 pt-0 md:mb-0 text-sm md:text-xs lg:px-10 1150px:text-sm bg-offgray dark:bg-darkergray md:dark:bg-darkergray tracking-wider'>
-                            <div className='p-2 bg-lightgray dark: text-slategray rounded-md max-w-fit h-fit m-1 hover:bg-yellow cursor-default'>JavaScript</div>
-
-                            <div className='p-2 bg-lightgray dark: text-slategray rounded-md max-w-fit h-fit m-1  hover:bg-yellow cursor-default'>React.js</div>
-
-                            <div className='p-2 bg-lightgray dark: text-slategray rounded-md max-w-fit h-fit m-1  hover:bg-yellow cursor-default'>Redux.js</div>
-
-                            <div className='p-2 bg-lightgray dark: text-slategray rounded-md max-w-fit h-fit m-1  hover:bg-yellow cursor-default'>Node.js</div>
-
-                            <div className='p-2 bg-lightgray dark: text-slategray rounded-md max-w-fit h-fit m-1  hover:bg-yellow cursor-default'>Express.js</div>
-
-                            <div className='p-2 bg-lightgray dark: text-slategray rounded-md max-w-fit h-fit m-1  hover:bg-yellow cursor-default'>React Router</div>
-
-                            <div className='p-2 bg-lightgray dark: text-slategray rounded-md max-w-fit h-fit m-1  hover:bg-yellow cursor-default'>PostgreSQL</div>
-
-                            <div className='p-2 bg-lightgray dark: text-slategray rounded-md max-w-fit h-fit m-1  hover:bg-yellow cursor-default'>REST API</div>
-
-                            <div className='p-2 bg-lightgray dark: text-slategray rounded-md max-w-fit h-fit m-1  hover:bg-yellow cursor-default'>GIT</div>
-
-                            <div className='p-2 bg-lightgray dark: text-slategray rounded-md max-w-fit h-fit m-1  hover:bg-yellow cursor-default'>CSS</div>
-
-                            <div className='p-2 bg-lightgray dark: text-slategray rounded-md max-w-fit h-fit m-1  hover:bg-yellow cursor-default'>Tailwind</div>
-
-                            <div className='p-2 bg-lightgray dark: text-slategray rounded-md max-w-fit h-fit m-1  hover:bg-yellow cursor-default'>React-Parallax</div>
-
-                            <div className='p-2 bg-lightgray dark: text-slategray rounded-md max-w-fit h-fit m-1  hover:bg-yellow cursor-default'>Material-UI</div>
-
-                            <div className='p-2 bg-lightgray dark: text-slategray rounded-md max-w-fit h-fit m-1  hover:bg-yellow cursor-default'>Responsive Design</div>
-
-                            <div className='p-2 bg-blue dark:bg-green text-white rounded-md max-w-fit h-fit m-1  hover:bg-yellow dark:hover:bg-yellow cursor-default hover:text-black'>Bitcoin Education</div>
-
-                            <div className='p-2 bg-blue dark:bg-green text-white rounded-md max-w-fit h-fit m-1  hover:bg-yellow dark:hover:bg-yellow cursor-default hover:text-black'>Audio Engineering</div>
-
-                            <div className='p-2 bg-blue dark:bg-green text-white rounded-md max-w-fit h-fit m-1  hover:bg-yellow dark:hover:bg-yellow cursor-default hover:text-black'>Music & Podcast Production</div>
-
-                            <div className='p-2 bg-blue dark:bg-green text-white rounded-md max-w-fit h-fit m-1  hover:bg-yellow dark:hover:bg-yellow cursor-default hover:text-black'>Photography</div>
-
-                            <div className='p-2 bg-blue dark:bg-green text-white rounded-md max-w-fit h-fit m-1  hover:bg-yellow dark:hover:bg-yellow cursor-default hover:text-black'>Adobe Photoshop</div>
-
-                        </div>
-
-                        {/* <div className='p-6 450px:p-10 450px:pt-0'>
-                            <span className='font-normal text-xl tracking-widest'>CURRENT PROJECT: <span className='text-blue dark:text-green'> SO WHAT?</span></span>
-
-                            <p className='mt-3 mb-10 md:mb-20 font-roboto font-light'>
-                            SO WHAT? is an application that summarizes important historical events, people & places into an easy-to-digest format that provides users with a topical overview of anything that piques their interest.
-                            </p>
-                        </div> */}
-
+                        <CoreProf />
+                    </div>
                 </div>
+
+                {/* DESKTOP HEADSHOT */}
+
                 <div className='hidden 915px:flex w-smrightspace 915px:w-medrightspace 
-                1150px:w-rightspace
-                1150px:flex-initial justify-center bg-red p-10 dark:bg-darkgray'>
+                1150px:w-rightspace 1150px:flex-initial justify-center bg-red p-10 dark:bg-darkgray'>
                     <div className='text-white text-5xl'>
                         <img className='1150px:w-pic 2xl:w-bigpic rounded-md' src={ headshot } alt='headshot'/>
-
-                        <Link to='https://www.linkedin.com/in/rsariego/' title='LinkedIn Profile' target='_blank'><i className="fa-brands fa-linkedin mt-4 hover:text-black dark:hover:text-yellow"></i></Link>
-
-                        <Link to='https://github.com/nopicklesplease' title='Github Profile' target='_blank'><i className="fa-brands fa-github mt-4 ml-4 hover:text-black dark:hover:text-yellow"></i></Link>
-
+                        <Link to='https://www.linkedin.com/in/rsariego/' title='LinkedIn Profile' target='_blank'>
+                            <i className="fa-brands fa-linkedin mt-4 hover:text-black dark:hover:text-yellow"></i>
+                        </Link>
+                        <Link to='https://github.com/nopicklesplease' title='Github Profile' target='_blank'>
+                            <i className="fa-brands fa-github mt-4 ml-4 hover:text-black dark:hover:text-yellow"></i>
+                        </Link>
                     </div>
                 </div>
             </div>

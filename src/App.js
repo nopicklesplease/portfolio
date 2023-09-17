@@ -7,9 +7,9 @@ function App() {
   return (
     <div>
       <ParallaxProvider>
-      <Routes>
-        <Route path='/' element={ <Home /> } />
-      </Routes>
+        <Routes>
+          <Route path='/' element={ <Home /> } />
+        </Routes>
       </ParallaxProvider>
     </div>
   );
