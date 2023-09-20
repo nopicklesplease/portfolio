@@ -37,7 +37,7 @@ const Work = () => {
             {/* MOBILE WORK BODY */}    
 
             <div className={`md:hidden flex-column h-full ${(theme) && 'dark'}`}>
-                <div className='flex justify-center font-roboto bg-yellow dark:bg-darkgray w-full dark:bg-green'>
+                <div className='flex justify-center font-roboto bg-yellow dark:bg-darkgray w-full dark:bg-purple'>
                     <div className='text-black text-sm'>
                         <Parallax
                             opacity={[0, 1, 'easeOutBack']}
@@ -130,7 +130,7 @@ const Work = () => {
                         </div>
                         <div className='flex justify-center font-roboto bg-darkred dark:bg-darkgray w-full dark:bg-rightoffgray'>
                             <div className='text-white text-sm'>
-                                <div className='bg-blue p-10 dark:bg-purple'>
+                                <div className='bg-blue p-10 dark:bg-green'>
                                     <Parallax
                                         opacity={[0, 1, 'easeOutBack']}
                                         startScroll={2225}
@@ -169,7 +169,7 @@ const Work = () => {
                         </div> 
                     </div>
 
-                    <div className='flex justify-center font-roboto bg-yellow pt-10 dark:bg-darkgray w-full dark:bg-green'>
+                    <div className='flex justify-center font-roboto bg-yellow pt-10 dark:bg-darkgray w-full dark:bg-purple'>
                         <div className='text-white'>
                             <Parallax
                                 opacity={[0, 1, 'easeOutBack']}
@@ -177,7 +177,7 @@ const Work = () => {
                                 endScroll={3650}
                                 shouldAlwaysCompleteAnimation={true}
                             >
-                                <p className='text-4xl text-slategray dark:bg-green dark:text-white tracking-widest font-light px-10 mb-10'>
+                                <p className='text-4xl text-slategray dark:bg-purple dark:text-white tracking-widest font-light px-10 mb-10'>
                                     <Link to='http://just-a-calculator.onrender.com' title='Launch Just-A-Calculator' target='_blank'>JUST A CALCULATOR <span><i className="fa-solid fa-up-right-from-square ml-2 text-xl"></i></span>
                                     </Link>
                                 </p>
@@ -260,7 +260,7 @@ const Work = () => {
                         </div>
                         <div className='flex justify-center font-roboto bg-darkred dark:bg-darkgray w-full dark:bg-rightoffgray'>
                             <div className='text-white text-sm'>
-                                <div className='bg-blue p-10 dark:bg-purple'>
+                                <div className='bg-blue p-10 dark:bg-green'>
                                     <Parallax
                                         opacity={[0, 1, 'easeOutBack']}
                                         startScroll={4100}
@@ -360,7 +360,7 @@ const Work = () => {
                                 </Link>
                             </Parallax>
                         </div>
-                        <div className='flex justify-center font-roboto bg-yellow pt-10 dark:bg-darkgray w-smrightspace 915px:w-medrightspace 1150px:w-rightspace dark:bg-green'>
+                        <div className='flex justify-center font-roboto bg-yellow pt-10 dark:bg-darkgray w-smrightspace 915px:w-medrightspace 1150px:w-rightspace dark:bg-purple'>
                             <div className='text-black dark:text-lightergray text-sm'>
                                 <Parallax
                                     opacity={[0, 1, 'easeOutBack']}
@@ -410,7 +410,7 @@ const Work = () => {
                                 </Parallax>
                             </div>
 
-                            <div className='bg-blue p-10 mb-1 dark:bg-purple h-full'>
+                            <div className='bg-blue p-10 mb-1 dark:bg-green h-full'>
                                 <Parallax
                                     opacity={[0, 1, 'easeOutBack']}
                                     startScroll={750}
@@ -491,9 +491,9 @@ const Work = () => {
                             </Link>
                         </Parallax>
                     </div>
-                    <div className='flex justify-center font-roboto bg-blue dark:bg-purple w-smrightspace 915px:w-medrightspace 1150px:w-rightspace'>
+                    <div className='flex justify-center font-roboto bg-blue dark:bg-green w-smrightspace 915px:w-medrightspace 1150px:w-rightspace'>
                         <div className='text-white text-sm'>
-                            <p className='bg-yellow text-2xl 1150px:text-3xl text-slategray dark:bg-green dark:text-white tracking-widest font-light p-10'>
+                            <p className='bg-yellow text-2xl 1150px:text-3xl text-slategray dark:bg-purple dark:text-white tracking-widest font-light p-10'>
                                 <Parallax
                                     opacity={[0, 1, 'easeOutBack']}
                                     startScroll={1075}
@@ -542,7 +542,7 @@ const Work = () => {
                                 </Parallax>
                             </div>
 
-                            <div className='bg-blue p-10 mb-1 dark:bg-purple'>
+                            <div className='bg-blue p-10 mb-1 dark:bg-green'>
                                 <Parallax
                                     opacity={[0, 1, 'easeOutBack']}
                                     startScroll={1825}

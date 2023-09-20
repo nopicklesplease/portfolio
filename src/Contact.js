@@ -5,7 +5,6 @@ import { styled } from '@mui/material/styles';
 import { Link } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
 import SuccessfulEmail from './SuccessfulEmail';
-import * as Scroll from 'react-scroll';
 import { Parallax } from 'react-scroll-parallax';
 
 const Contact = () => {
@@ -70,7 +69,7 @@ const Contact = () => {
 
             {/* MOBILE CONTACT HEADER */}
 
-            <div className='md:hidden flex justify-center font-roboto bg-yellow dark:bg-darkgray w-full dark:bg-green'>
+            <div className='md:hidden flex justify-center font-roboto bg-yellow dark:bg-darkgray w-full dark:bg-purple'>
                 <div className='text-black text-sm'>
                     <p className='text-4xl text-slategray dark:text-white tracking-widest font-light p-10'>
                         CONTACT
@@ -132,7 +131,7 @@ const Contact = () => {
             {/* DESKTOP CONTACT SUBHEADER */}
 
             <div className='hidden 915px:block flex-column h-auto bg-red dark:bg-darkgray w-smrightspace 915px:w-medrightspace 1150px:w-rightspace'>
-                <div className='p-10 bg-yellow dark:bg-green font-roboto text-base text-black dark:text-white font-light leading-6 tracking-wide'>
+                <div className='p-10 bg-yellow dark:bg-purple font-roboto text-base text-black dark:text-white font-light leading-6 tracking-wide'>
                     <p>Open to all Front-End Development opportunities.</p> 
                     <p className='pt-6'>
                         If you're interested in my work, please use this form to contact me and I'll respond promptly.
