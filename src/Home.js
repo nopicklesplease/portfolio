@@ -5,7 +5,6 @@ import Content from './Content';
 import Work from './Work';
 import Contact from './Contact';
 import Footer from './Footer';
-import SuccessfulEmail from './SuccessfulEmail';
 
 const Home = () => {
 

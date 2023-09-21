@@ -30,8 +30,6 @@ const Work = () => {
         };
       }, [width]);
 
-      console.log(width);
-
     const serenadeLink = 'http://serenade-ai-playlists.onrender.com';
     const calcLink = 'http://just-a-calculator.onrender.com';
 
