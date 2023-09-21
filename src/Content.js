@@ -1,8 +1,10 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
 import headshot from './headshot.jpeg';
 import CoreProf from './CoreProf';
+import Headshot from './Headshot';
+import CoreProfHeader from './CoreProfHeader';
+import About from './About';
 
 const Content = () => {
 
@@ -24,35 +26,25 @@ const Content = () => {
 
                 <div className='hidden md:block md:flex-column 915px:hidden'>
                     <div className='flex h-auto'>
-                        <div className='flex-1 dark:bg-slategray'>
+                        <div className='flex-1 bg-white dark:bg-slategray'>
                             <div className='915px:hidden p-10 pb-0 text-5xl font-light font-roboto bg-white dark:bg-slategray text-blue dark:text-lightgray'>
                                 ABOUT
                             </div>
                             <div className='bg-white p-10 pt-9 font-roboto font-light first-line:uppercase first-line:tracking-widest
                             first-letter:text-5xl first-letter:font-normal
                             first-letter:mr-3 first-letter:float-left text-justify dark:bg-slategray dark:text-lightgray'>
-                            <p>I am a software engineer in the New York City area that's been developing web applications as a personal interest for 20+ years. <span className='bg-yellow dark:text-white dark:bg-purple'>In an effort to finally make it my professional career, I recently completed a full-stack development bootcamp.</span> This is a representation of the work I've produced since that time.</p>
+                                <About />
                             </div>
                         </div>
                         <div className='flex w-smrightspace'>
                             <div className='flex w-smrightspace 915px:w-medrightspace justify-center bg-red p-10 dark:bg-darkgray'>
-                                <div className='text-white text-5xl'>
-                                    <img className='lg:w-pic rounded-md' src={ headshot } alt='headshot'/>
-                                    <Link to='https://www.linkedin.com/in/rsariego/' title='LinkedIn Profile' target='_blank'>
-                                        <i className="fa-brands fa-linkedin mt-4 hover:text-yellow"></i>
-                                    </Link>
-                                    <Link to='https://github.com/nopicklesplease' title='Github Profile' target='_blank'>
-                                        <i className="fa-brands fa-github mt-4 ml-4 hover:text-yellow"></i>
-                                    </Link>
-                                </div>
+                                <Headshot />
                             </div>
                         </div>
                     </div>
                     <div className='bg-offgray dark:bg-darkergray'>
                         <div className='p-10 pb-3 flex'>
-                            <span className='font-normal text-xl tracking-widest'>
-                                CORE PROFICIENCIES <span className='text-blue dark:text-green'> + ADDL. SKILLS</span>
-                            </span>
+                            <CoreProfHeader />
                         </div>
                         <div className='flex flex-wrap p-10 pt-0 text-sm'>
                             <CoreProf />
@@ -69,19 +61,17 @@ const Content = () => {
                     <div>
                         <img className='md:hidden 1150px:w-pic' src={ headshot } alt='headshot'/>
                     </div>
-                    <div className='bg-white p-10 px-6 450px:p-10 450px:pt-9 lg:px-10 font-roboto font-light text-base lg:text-pointninefive first-line:uppercase first-line:tracking-widest
+                    <div className='bg-white p-10 px-6 450px:p-10 450px:pt-9 md:px-10 font-roboto font-light text-base lg:text-pointninefive first-line:uppercase first-line:tracking-widest
                     first-letter:text-5xl first-letter:font-normal
                     first-letter:mr-3 first-letter:float-left text-justify dark:bg-slategray dark:text-lightgray tracking-wider'>
-                        <p>I am a software engineer in the New York City area that's been developing web applications as a personal interest for 20+ years. <span className='block mt-6  mb-6 600px:mt-0 600px:mb-0 600px:inline 600px:bg-yellow dark:text-white 600px:dark:bg-purple'><span className='bg-yellow dark:bg-purple'>In an effort to finally make it my professional career, I recently completed a full-stack development bootcamp.</span></span> This is a representation of the work I've produced since that time.</p> 
+                        <About />
                     </div>
                 
-                    <div className='p-6 pt-10 450px:p-10 pb-3 mt-0 450px:mt-10 md:mt-0 lg:px-10 flex bg-offgray dark:bg-darkergray md:dark:bg-darkergray'>
-                        <span className='font-normal text-xl tracking-widest'>
-                            CORE PROFICIENCIES <span className='text-blue dark:text-green'> + ADDL. SKILLS</span>
-                        </span>
+                    <div className='p-6 pt-10 450px:p-10 pb-3 mt-0 450px:mt-10 md:mt-0 md:px-10 flex bg-offgray dark:bg-darkergray md:dark:bg-darkergray'>
+                        <CoreProfHeader />
                     </div>
 
-                    <div className='flex flex-wrap p-6 pb-10 450px:p-10 pt-0 md:mb-0 text-sm md:text-xs lg:px-10 1150px:text-sm bg-offgray dark:bg-darkergray md:dark:bg-darkergray tracking-wider'>
+                    <div className='flex flex-wrap p-6 pb-10 450px:p-10 pt-0 md:mb-0 text-sm md:text-xs md:px-10 1150px:text-sm bg-offgray dark:bg-darkergray md:dark:bg-darkergray tracking-wider'>
                         <CoreProf />
                     </div>
                 </div>
@@ -90,15 +80,7 @@ const Content = () => {
 
                 <div className='hidden 915px:flex w-smrightspace 915px:w-medrightspace 
                 1150px:w-rightspace 1150px:flex-initial justify-center bg-red p-10 dark:bg-darkgray'>
-                    <div className='text-white text-5xl'>
-                        <img className='1150px:w-pic 2xl:w-bigpic rounded-md' src={ headshot } alt='headshot'/>
-                        <Link to='https://www.linkedin.com/in/rsariego/' title='LinkedIn Profile' target='_blank'>
-                            <i className="fa-brands fa-linkedin mt-4 hover:text-black dark:hover:text-yellow"></i>
-                        </Link>
-                        <Link to='https://github.com/nopicklesplease' title='Github Profile' target='_blank'>
-                            <i className="fa-brands fa-github mt-4 ml-4 hover:text-black dark:hover:text-yellow"></i>
-                        </Link>
-                    </div>
+                    <Headshot />
                 </div>
             </div>
         </div>

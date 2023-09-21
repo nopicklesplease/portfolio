@@ -108,7 +108,7 @@ const Contact = () => {
                             <div className='flex justify-center'>
                                 <SaveButtonStyled
                                     sx={{
-                                        backgroundColor: `${theme ? '#8b5ea2' : 'black'}`,
+                                        backgroundColor: `${theme ? '#454545' : 'black'}`,
                                         color: `${theme ? 'white' : 'white'}`,
                                         width: '45%',
                                         typography: {
