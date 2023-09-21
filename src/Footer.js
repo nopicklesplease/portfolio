@@ -21,7 +21,7 @@ const Footer = () => {
                     RYAN S.
                 </div>
                 <div className='pt-3 font-roboto font-light text-sm tracking-widest flex-column'>
-                    <p>Open to all Front-End Development opportunities. If you're interested in my work, please contact me and I'll respond promptly.</p>
+                    <p>Open to all development opportunities. If you're interested in my work, please contact me and I'll respond promptly.</p>
                     <p className='flex justify-end pt-6'>
                         <i className="fa-regular fa-copyright mr-2"></i> 2023
                     </p>

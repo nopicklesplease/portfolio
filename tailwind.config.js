@@ -75,7 +75,8 @@ module.exports = {
       fontSize:{
         'header': '12rem',
         'pointninefive': '.95rem',
-        'airHeader': '4rem'
+        'airHeader': '4rem',
+        'desktopHeader': '5.25rem'
       }
     },
     fontFamily: {

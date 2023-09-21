@@ -132,7 +132,7 @@ const Contact = () => {
 
             <div className='hidden 915px:block flex-column h-auto bg-red dark:bg-darkgray w-smrightspace 915px:w-medrightspace 1150px:w-rightspace'>
                 <div className='p-10 bg-yellow dark:bg-purple font-roboto text-base text-black dark:text-white font-light leading-6 tracking-wide'>
-                    <p>Open to all Front-End Development opportunities.</p> 
+                    <p>Open to all development opportunities.</p> 
                     <p className='pt-6'>
                         If you're interested in my work, please use this form to contact me and I'll respond promptly.
                     </p>
