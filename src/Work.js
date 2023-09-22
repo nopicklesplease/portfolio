@@ -1,19 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import SerenadeFinal1 from './Mockups/Serenade-Final1.png';
-import SerenadeFinal2 from './Mockups/Serenade-Final2.png';
-import SerenadeFinal3 from './Mockups/Serenade-Final3.png';
-import SerenadeFinal4 from './Mockups/Serenade-Final4.png';
 import CalcFinal1 from './Mockups/Calc-Final1.png';
 import CalcFinal2 from './Mockups/Calc-Final2.png';
 import CalcFinal3 from './Mockups/Calc-Final3.png';
 import CalcFinal4 from './Mockups/Calc-Final4.png';
 import { Parallax } from 'react-scroll-parallax';
+import SerenadeOverview from './SerenadeOverview';
+import SerenadePngMobile from './SerenadePngMobile';
 import SerenadeTools from './SerenadeTools';
 import CalcTools from './CalcTools';
-import SerenadeOverview from './SerenadeOverview';
 import CalcOverview from './CalcOverview';
+import SerenadeLaunch from './SerenadeLaunch';
+import SerenadeTitle from './SerenadeTitle';
+import SerenadePngDesktop from './SerenadePngDesktop';
+
 
 const Work = () => {
 
@@ -30,7 +31,6 @@ const Work = () => {
         };
       }, [width]);
 
-    const serenadeLink = 'http://serenade-ai-playlists.onrender.com';
     const calcLink = 'http://just-a-calculator.onrender.com';
 
     return(
@@ -47,10 +47,9 @@ const Work = () => {
                             endScroll={1725}
                             shouldAlwaysCompleteAnimation={true}
                         >
-                            <p className='text-4xl text-slategray dark:text-white  tracking-widest font-light p-10'>
-                                <Link to={ serenadeLink } title='Launch Serenade' target='_blank'>SERENADE <span><i className="fa-solid fa-up-right-from-square ml-2 text-xl"></i></span>
-                                </Link>
-                            </p>
+                            
+                            <SerenadeTitle />
+                            
                         </Parallax>
                     </div>
                 </div>
@@ -68,9 +67,9 @@ const Work = () => {
                                 <SerenadeOverview />
 
                                 <p className='text-lg tracking-widest mb-4'>
-                                    <Link to='http://serenade-ai-playlists.onrender.com' title='Launch Serenade' target='_blank'>
-                                        <span className='bg-black p-3 text-white rounded cursor-pointer'>LAUNCH PROJECT</span>
-                                    </Link>
+
+                                    <SerenadeLaunch />
+
                                 </p>
                             </Parallax>
                         </div>
@@ -78,40 +77,11 @@ const Work = () => {
                 </div>
             
                 <div className='flex-column'>
-                    <div className='flex-column'>
-                        <div className='flex-5 h-auto bg-white p-6 pt-8 font-roboto font-light pr-10 dark:bg-darkergray w-full overflow-hidden'>
-                            <Parallax
-                                translateX={['-400px', '0px']}
-                                startScroll={0}
-                                endScroll={1975}
-                                shouldAlwaysCompleteAnimation={true}
-                            >
-                                <Link to={ serenadeLink } title='Launch Serenade' target='_blank'>
-                                    <img className='mb-12 mt-4' alt='Serenade' src={ SerenadeFinal1 }/>
-                                </Link>
-                            </Parallax>
+                    
+                    <div>
 
-                            <Parallax
-                                translateX={['400px', '0px']}
-                                startScroll={0}
-                                endScroll={1975}
-                                shouldAlwaysCompleteAnimation={true}
-                            >
-                                <Link to={ serenadeLink } title='Launch Serenade' target='_blank'>
-                                    <img className='mb-12' alt='Serenade' src={ SerenadeFinal2 }/>
-                                </Link>
-                            </Parallax>
-                            <Parallax
-                                translateX={['-400px', '0px']}
-                                startScroll={0}
-                                endScroll={1975}
-                                shouldAlwaysCompleteAnimation={true}
-                            >
-                                <Link to={ serenadeLink } title='Launch Serenade' target='_blank'>
-                                    <img className='mb-6 mt-2 1150px:hidden' alt='Serenade' src={ SerenadeFinal3 }/>
-                                </Link>
-                            </Parallax>
-                        </div>
+                        <SerenadePngMobile />
+
                         <div className='flex justify-center font-roboto bg-darkred dark:bg-darkgray w-full dark:bg-rightoffgray'>
                             <div className='text-white text-sm'>
                                 <div className='bg-blue p-10 dark:bg-green'>
@@ -123,7 +93,9 @@ const Work = () => {
                                     >
                                         <p className='text-xl mb-3 tracking-widest'>TOOLS USED</p>
                                         <div className='flex flex-wrap text-sm tracking-wider pb-2'>
+
                                             <SerenadeTools />
+
                                         </div>
                                     </Parallax>
                                 </div>
@@ -240,52 +212,9 @@ const Work = () => {
                 </div>
                 <div className='flex-column w-full'>
                     <div className='flex'>
-                        <div className='flex-5 h-auto bg-white p-6 pt-8 font-roboto font-light pr-10 dark:bg-darkergray 915px:dark:bg-slategray w-full overflow-hidden'>
-                            <Parallax
-                                translateX={['-400px', '0px']}
-                                opacity={[0, 1, 'easeOutBack']}
-                                startScroll={0}
-                                endScroll={450}
-                                shouldAlwaysCompleteAnimation={true}
-                            >
-                                <Link to={ serenadeLink } title='Launch Serenade' target='_blank'>
-                                    <img className='mb-12 mt-2' alt='Serenade' src={ SerenadeFinal1 }/>
-                                </Link>
-                            </Parallax>
-                            <Parallax
-                                translateX={['400px', '0px']}
-                                opacity={[0, 1, 'easeOutBack']}
-                                startScroll={0}
-                                endScroll={450}
-                                shouldAlwaysCompleteAnimation={true}
-                            >
-                                <Link to={ serenadeLink } title='Launch Serenade' target='_blank'>
-                                    <img className='mb-12 1150px:mb-6' alt='Serenade' src={ SerenadeFinal2 }/>
-                                </Link>
-                            </Parallax>
-                            <Parallax
-                                translateX={['-400px', '0px']}
-                                opacity={[0, 1, 'easeOutBack']}
-                                startScroll={0}
-                                endScroll={450}
-                                shouldAlwaysCompleteAnimation={true}
-                            >
-                                <Link to={ serenadeLink } title='Launch Serenade' target='_blank'>
-                                    <img className='mb-12 mt-2 1150px:hidden' alt='Serenade' src={ SerenadeFinal3 }/>
-                                </Link>
-                            </Parallax>
-                            <Parallax
-                                translateX={['400px', '0px']}
-                                opacity={[0, 1, 'easeOutBack']}
-                                startScroll={0}
-                                endScroll={450}
-                                shouldAlwaysCompleteAnimation={true}
-                            >
-                                <Link to={ serenadeLink } title='Launch Serenade' target='_blank'>
-                                    <img className='mb-6 880px:hidden' alt='Serenade' src={ SerenadeFinal4 }/>
-                                </Link>
-                            </Parallax>
-                        </div>
+                        
+                        <SerenadePngDesktop />
+
                         <div className='flex justify-center font-roboto bg-yellow pt-10 dark:bg-darkgray w-smrightspace 915px:w-medrightspace 1150px:w-rightspace dark:bg-purple'>
                             <div className='text-black dark:text-lightergray text-sm'>
                                 <Parallax
@@ -294,9 +223,9 @@ const Work = () => {
                                     endScroll={800}
                                     shouldAlwaysCompleteAnimation={true}
                                 >
-                                    <p className='text-2xl lg:text-3xl 1150px:text-4xl tracking-widest dark:text-white font-light px-10 mb-10'>
-                                        <Link to='http://serenade-ai-playlists.onrender.com' title='Launch Serenade' target='_blank' className='hover:bg-black hover:text-white'>SERENADE <span><i className="fa-solid fa-up-right-from-square ml-2 text-xl"></i></span></Link>
-                                    </p>
+
+                                    <SerenadeTitle />
+
                                 </Parallax>
                                 <div className='bg-offgray p-10 dark:bg-rightoffgray'>
                                 <Parallax
@@ -310,9 +239,9 @@ const Work = () => {
 
                                     <div className='flex justify-start pb-3'>
                                         <p className='text-base  tracking-widest'>
-                                            <Link to='http://serenade-ai-playlists.onrender.com' title='Launch Serenade' target='_blank'>
-                                                <span className='bg-black  text-white p-3 rounded hover:bg-yellow hover:text-black cursor-pointer'>LAUNCH PROJECT</span>
-                                            </Link>
+
+                                            <SerenadeLaunch />
+
                                         </p>
                                     </div>
                                 </Parallax>
@@ -327,13 +256,16 @@ const Work = () => {
                                 >
                                     <p className='text-lg text-white mb-3 tracking-widest'>TOOLS USED</p>
                                     <div className='flex flex-wrap text-xs 1150px:text-sm tracking-wider'>
+
                                         <SerenadeTools />
+
                                     </div>
                                 </Parallax>
                             </div>
                         </div>
                     </div> 
                 </div>
+                
                 <div className='flex'>
                     <div className='flex-1 h-full bg-white p-6 pt-10 font-roboto font-light pr-10 dark:bg-slategray w-full h-auto overflow-hidden'>
                         <Parallax
