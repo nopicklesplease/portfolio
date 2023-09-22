@@ -29,9 +29,9 @@ module.exports = {
       },
       spacing:{
         'abouttop': '95px',
-        'work': '55.5px',
+        'work': '55px',
         'worktop': '89px',
-        'contact': '103.6px',
+        'contact': '103.1px',
         'contacttop': '145px',
         'themepb600': '17px',
         'themepb500': '15px',
