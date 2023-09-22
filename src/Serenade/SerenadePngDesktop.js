@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Parallax } from 'react-scroll-parallax';
-import SerenadeFinal1 from './Mockups/Serenade-Final1.png';
-import SerenadeFinal2 from './Mockups/Serenade-Final2.png';
-import SerenadeFinal3 from './Mockups/Serenade-Final3.png';
-import SerenadeFinal4 from './Mockups/Serenade-Final4.png';
+import SerenadeFinal1 from '../Mockups/Serenade-Final1.png';
+import SerenadeFinal2 from '../Mockups/Serenade-Final2.png';
+import SerenadeFinal3 from '../Mockups/Serenade-Final3.png';
+import SerenadeFinal4 from '../Mockups/Serenade-Final4.png';
 import SerenadeLink from './SerenadeLink';
 
 const SerenadePngDesktop = () => {
