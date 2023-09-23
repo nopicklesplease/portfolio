@@ -20,6 +20,8 @@ const CalcTools = () => {
             <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 cursor-default'>Vanilla CSS</div>
 
             <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 cursor-default'>Material-UI</div>
+
+            <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 cursor-default'>Responsive Design</div>
         </>
     )
 }
