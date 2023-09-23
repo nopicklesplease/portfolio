@@ -74,7 +74,6 @@ const Work = () => {
                 </div>
             
                 <div className='flex-column'>
-                    
                     <div>
 
                         <SerenadePngMobile />

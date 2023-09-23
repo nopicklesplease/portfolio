@@ -9,7 +9,7 @@ import SerenadeLink from './SerenadeLink';
 const SerenadePngMobile = () => {
 
     return (
-        <div className='flex-5 h-auto bg-white p-6 pt-8 font-roboto font-light pr-10 dark:bg-darkergray w-full overflow-hidden'>
+        <div className='flex-5 h-auto bg-white p-6 pt-8 font-roboto font-light pr-10 dark:bg-slategray w-full overflow-hidden'>
             <Parallax
                 translateX={['-400px', '0px']}
                 startScroll={0}
