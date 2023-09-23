@@ -79,7 +79,7 @@ const Contact = () => {
 
             {/* CONTACT FORM */}
             
-            <div className='flex-1 bg-offgray p-10 font-roboto font-light text-justify dark:bg-slategray md:pb-96'>
+            <div className='flex-1 bg-offgray p-10 font-roboto font-light text-justify dark:bg-slategray md:dark:bg-darkergray md:pb-96'>
                 {(emailSuccess) ? 
                     <>
                         <SuccessfulEmail />
