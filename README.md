@@ -4,13 +4,6 @@ A representation of the work I've completed during & since the time I finished a
 </br>
 </br>
 
-### Installation
-
-```
-npm i
-npm start
-```
-
 ### Technology Stack
 
 <p display='inline'>
