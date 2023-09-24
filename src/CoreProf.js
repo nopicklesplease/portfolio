@@ -13,11 +13,15 @@ const CoreProf = () => {
 
             <div className='p-2 bg-lightgray dark:text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>Express.js</div>
 
+            <div className='p-2 bg-lightgray dark:text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>Sequelize</div>
+
             <div className='p-2 bg-lightgray dark:text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>React Router</div>
 
             <div className='p-2 bg-lightgray dark:text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>PostgreSQL</div>
 
             <div className='p-2 bg-lightgray dark:text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>RESTful API</div>
+
+            <div className='p-2 bg-lightgray dark:text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>Postman</div>
 
             <div className='p-2 bg-lightgray dark:text-slategray rounded-md max-w-fit m-1 hover:bg-yellow cursor-default'>GIT</div>
 

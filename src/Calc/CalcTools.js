@@ -11,6 +11,12 @@ const CalcTools = () => {
 
             <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 cursor-default'>Node.js</div>
 
+            <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 cursor-default'>Express.js</div>
+
+            <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 cursor-default'>PostgreSQL</div>
+
+            <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 cursor-default'>Sequelize</div>
+
             <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 cursor-default'>React Router</div>
 
             <div className='p-2 bg-white dark: text-slategray rounded-md max-w-fit m-1 cursor-default'>CoinMarketCap API</div>
