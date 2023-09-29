@@ -4,7 +4,7 @@ const CoreProf = () => {
 
     const profs = ['JavaScript', 'React.js', 'Redux.js', 'Node.js', 'Express.js', 'Sequelize', 'React Router', 'PostgreSQL', 'RESTful API', 'Postman', 'GIT', 'Tailwind', 'React-Parallax', 'Material-UI', 'Responsive Design']
 
-    const skills = ['Bitcoin Education', 'Audio Engineering', 'Music & Podcast Production', 'Photography', 'Adobe Photoshop']
+    const skills = ['Figma', 'Adobe Photoshop', 'Bitcoin Education', 'Audio Engineering', 'Music & Podcast Production', 'Photography']
 
     return(
         <>
