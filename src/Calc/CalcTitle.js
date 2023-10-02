@@ -4,7 +4,7 @@ import CalcLink from './CalcLink';
 
 const CalcTitle = () => {
     return(
-        <Link to={ CalcLink } title='Launch Just-A-Calculator' target='_blank' className='hover:bg-black hover:text-white'>
+        <Link to={ CalcLink } title='Launch Just-A-Calculator' target='_blank' className='hover:bg-black hover:text-white focus:outline-black'>
             JUST A CALCULATOR <span><i className="fa-solid fa-up-right-from-square ml-2 text-xl"></i></span>
         </Link>
     )

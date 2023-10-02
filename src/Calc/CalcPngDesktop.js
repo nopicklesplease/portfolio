@@ -16,7 +16,7 @@ const CalcPngDesktop = () => {
                 endScroll={1500}
                 shouldAlwaysCompleteAnimation={true}
             >
-                <Link to={ CalcLink } title='Launch Just-A-Calculator' target='_blank'>
+                <Link tabindex='-1' to={ CalcLink } title='Launch Just-A-Calculator' target='_blank'>
                     <img className='mb-12 mt-2' alt='Launch Just-A-Calculator' src={ CalcFinal2 }/>
                 </Link>
             </Parallax>
@@ -26,7 +26,7 @@ const CalcPngDesktop = () => {
                 endScroll={1500}
                 shouldAlwaysCompleteAnimation={true}
             >
-                <Link to={ CalcLink } title='Launch Just-A-Calculator' target='_blank'>
+                <Link tabindex='-1' to={ CalcLink } title='Launch Just-A-Calculator' target='_blank'>
                     <img className='mb-12 1150px:mb-6' alt='Launch Just-A-Calculator' src={ CalcFinal1 }/>
                 </Link>
             </Parallax>
@@ -36,7 +36,7 @@ const CalcPngDesktop = () => {
                 endScroll={1500}
                 shouldAlwaysCompleteAnimation={true}
             >
-                <Link to={ CalcLink } title='Launch Just-A-Calculator' target='_blank'>
+                <Link tabindex='-1' to={ CalcLink } title='Launch Just-A-Calculator' target='_blank'>
                     <img className='mb-12 880px:mb-6 1150px:hidden' alt='Launch Just-A-Calculator' src={ CalcFinal3 }/>
                 </Link>
             </Parallax>
@@ -46,7 +46,7 @@ const CalcPngDesktop = () => {
                 endScroll={1500}
                 shouldAlwaysCompleteAnimation={true}
             >
-                <Link to={ CalcLink } title='Launch Just-A-Calculator' target='_blank'>
+                <Link tabindex='-1' to={ CalcLink } title='Launch Just-A-Calculator' target='_blank'>
                     <img className='mb-6 880px:hidden' alt='Launch Just-A-Calculator' src={ CalcFinal4 }/>
                 </Link>
             </Parallax>

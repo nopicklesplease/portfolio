@@ -107,7 +107,7 @@ const Work = () => {
                                 endScroll={3650}
                                 shouldAlwaysCompleteAnimation={true}
                             >
-                                <p className='text-4xl text-slategray md:bg-yellow md:text-2xl 1150px:text-3xl dark:bg-purple dark:text-white tracking-widest font-light px-10 mb-10 md:p-10 md:mb-0'>
+                                <p className='text-3xl text-slategray 380px:text-4xl md:bg-yellow md:text-2xl 1150px:text-3xl dark:bg-purple dark:text-white tracking-widest font-light px-10 mb-10 md:p-10 md:mb-0'>
 
                                     <CalcTitle />
 

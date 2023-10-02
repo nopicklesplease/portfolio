@@ -12,6 +12,9 @@ const Contact = () => {
     const [emailSuccess, setEmailSuccess] = useState(false);
     const theme = useSelector((state) => state.switchTheme.active);
     const [width, setWidth] = useState(window.innerWidth);
+    const [fromName, setFromName] = useState('');
+    const [replyTo, setReplyTo] = useState('');
+    const [message, setMessage] = useState('');
 
     useEffect(() => {
         const handleResize = () => {
@@ -38,10 +41,13 @@ const Contact = () => {
         emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, process.env.REACT_APP_PUBKEY)
         .then((result) => {
             setEmailSuccess(true);
+            setFromName('');
+            setReplyTo('');
+            setMessage('');
             console.log(result.text);
             setTimeout(() => {
                 setEmailSuccess(false)
-            }, 10000)
+            }, 8000)
         }, (error) => {
             console.log(error.text);
         });
@@ -79,7 +85,7 @@ const Contact = () => {
 
             {/* CONTACT FORM */}
             
-            <div className='flex-1 bg-offgray p-10 font-roboto font-light text-justify dark:bg-slategray md:dark:bg-darkergray md:pb-96'>
+            <div className='flex-1 bg-offgray px-10 py-16 font-roboto font-light text-justify dark:bg-slategray md:dark:bg-darkergray md:pb-96'>
                 {(emailSuccess) ? 
                     <>
                         <SuccessfulEmail />
@@ -91,23 +97,27 @@ const Contact = () => {
                                 NAME
                             </div>
                             <div>
-                                <input className='text-black rounded p-2 w-full outline-0 mb-8 dark:bg-lightgray dark:bg-white' name='from_name' placeholder='Enter your name' />
+                                <input className='text-black rounded p-2 w-full outline-0 mb-8 dark:bg-lightgray dark:bg-white' name='from_name' placeholder='Enter your name' onChange={ev => setFromName(ev.target.value)}/>
                             </div>
                             <div className='mb-2 tracking-widest'>
                                 EMAIL ADDRESS
                             </div>
                             <div>
-                                <input className='text-black rounded p-2 w-full outline-0 mb-8 dark:bg-lightgray dark:bg-white' name='reply_to' placeholder='Enter your email address' />
+                                <input className='text-black rounded p-2 w-full outline-0 mb-8 dark:bg-lightgray dark:bg-white' name='reply_to' placeholder='Enter your email address' onChange={ev => setReplyTo(ev.target.value)} type='email'/>
                             </div>
                             <div className='mb-2 tracking-widest'>
                                 MESSAGE
                             </div>
                             <div>
-                                <textarea className='text-black rounded p-2 w-full h-32 outline-0 mb-8 dark:bg-lightgray dark:bg-white' name='message' placeholder='Write your message' />
+                                <textarea className='text-black rounded p-2 w-full h-32 outline-0 mb-8 dark:bg-lightgray dark:bg-white' name='message' placeholder='Write your message' onChange={ev => setMessage(ev.target.value)}/>
                             </div>
                             <div className='flex justify-center'>
                                 <SaveButtonStyled
                                     sx={{
+                                        "&.Mui-disabled": {
+                                            background: "#eaeaea",
+                                            color: "#c0c0c0"
+                                        },
                                         backgroundColor: `${theme ? '#454545' : 'black'}`,
                                         color: `${theme ? 'white' : 'white'}`,
                                         width: '45%',
@@ -115,10 +125,11 @@ const Contact = () => {
                                             fontFamily: 'Roboto',
                                             fontSize: 16,
                                             fontWeight: '300'
-                                        }
+                                        },
                                     }}
                                     type='submit'
                                     variant='contained' 
+                                    disabled={!fromName || !replyTo || !message}
                                 >
                                     Submit
                                 </SaveButtonStyled>
@@ -139,10 +150,10 @@ const Contact = () => {
                 </div>
                 <div className='flex text-offgray w-full dark:bg-darkgray p-10'>
                     <p className='text-5xl'>
-                        <Link to='https://www.linkedin.com/in/rsariego/' title='LinkedIn Profile' target='_blank'>
-                            <i className="fa-brands fa-linkedin hover:text-black dark:hover:text-yellow"></i>
+                        <Link tabindex='0' className='focus:outline-black' to='https://www.linkedin.com/in/rsariego/' title='LinkedIn Profile' target='_blank'>
+                            <i className="fa-brands fa-linkedin hover:text-black dark:hover:text-yellow focus:outline-black"></i>
                         </Link>
-                        <Link to='https://github.com/nopicklesplease' title='Github Profile' target='_blank'>
+                        <Link tabindex='0' className='focus:outline-black' to='https://github.com/nopicklesplease' title='Github Profile' target='_blank'>
                             <i className="fa-brands fa-github ml-4 hover:text-black dark:hover:text-yellow"></i>
                         </Link> 
                     </p>

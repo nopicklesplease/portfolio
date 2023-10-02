@@ -29,9 +29,9 @@ module.exports = {
       },
       spacing:{
         'abouttop': '95px',
-        'work': '55px',
+        'work': '55.5px',
         'worktop': '89px',
-        'contact': '103.1px',
+        'contact': '103.6px',
         'contacttop': '145px',
         'themepb600': '17px',
         'themepb500': '15px',
@@ -65,6 +65,7 @@ module.exports = {
         '880px': '880px',
         '790px': '790px',
         '600px': '600px',
+        '380px': '380px',
       },
       flex:{
         '2': '2 2 0%',

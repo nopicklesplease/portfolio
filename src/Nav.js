@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { toggleTheme } from './store/theme';
-import { Link } from 'react-scroll';
+import * as Scroll from 'react-scroll';
 import Resume from './Ryan-S-Resume.pdf';
+import { scrollToBottom } from 'react-scroll/modules/mixins/animate-scroll';
 
 const Nav = () => {
 
@@ -21,6 +22,8 @@ const Nav = () => {
 
     const dispatch = useDispatch();
 
+    const Link = Scroll.Link;
+
     return(
         <div className={`${(theme) && 'dark'} sticky top-0 pt-4 md:pt-10 z-50 bg-white dark:bg-slategray`}>
             <div className='flex-column md:flex border-b-8 border-b-black pb-4 m-0 items-end font-roboto dark:border-b-white'>
@@ -32,14 +35,14 @@ const Nav = () => {
                 </div>
 
                 <div className='flex items-end w-full md:w-auto md:block xl:flex pt-2 px-4 md:px-0'>
-                    <div className='hidden w-56 pb-2 md:w-auto md:flex md:pb-4 md:items-center xl:mr-14 xl:pb-2 md:justify-end'>
+                    <div className='hidden w-56 pb-2 md:w-auto md:flex md:pb-4 md:items-center xl:mr-14 xl:pb-2 md:justify-end focus:outline-black'>
                         {(theme) ?
                             <div className='flex items-center'> 
-                                <div className='flex font-tech font-light text-xs pr-1'>DARK MODE</div> <i onClick={ () => dispatch(toggleTheme())} className="fa-solid fa-moon fa-lg ml-3 cursor-pointer text-yellow dark:hover:text-white"></i>
+                            <div className='flex font-tech font-light text-xs pr-1'>DARK MODE</div> <i tabindex='0' onClick={ () => dispatch(toggleTheme())} className="fa-solid flex fa-moon fa-lg ml-3 cursor-pointer text-yellow dark:hover:text-white focus:outline-black"></i>
                             </div>
                         :
                             <div className='flex items-center'>
-                                <div className='flex font-tech font-light text-xs pr-1'>LIGHT MODE</div> <i onClick={ () => dispatch(toggleTheme())} className="fa-solid flex fa-sun fa-lg ml-1.5 text-orange cursor-pointer hover:text-black"></i>
+                                <div className='flex font-tech font-light text-xs pr-1'>LIGHT MODE</div> <i tabindex='0' onClick={ () => dispatch(toggleTheme())} className="fa-solid flex fa-sun fa-lg ml-1.5 text-orange cursor-pointer hover:text-black focus:outline-black"></i>
                             </div>
                         }
                     </div>
@@ -74,22 +77,22 @@ const Nav = () => {
                             }
                         </div>
                         <div>
-                            <Link activeClass={`${theme ? 'dark-active' : 'active'}`} className={`p-1 cursor-pointer hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black`} to="about" spy={true} smooth={true} offset={-200} duration={800}>
+                            <Link tabindex='0' activeClass={`${theme ? 'dark-active' : 'active'}`} className={`p-1 cursor-pointer hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black focus:outline-black`} to="about" spy={true} smooth={true} offset={-200} isDynamic={true} duration={800}>
                                 ABOUT
                             </Link>
                         </div>
                         <div>
-                            <Link activeClass={`${theme ? 'dark-active' : 'active'}`} className={`p-1 cursor-pointer hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black`} to="work" spy={true} smooth={true} offset={-147} duration={800}>
+                            <Link tabindex='0' activeClass={`${theme ? 'dark-active' : 'active'}`} className={`p-1 cursor-pointer hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black focus:outline-black`} to="work" spy={true} smooth={true} offset={-147} isDynamic={true} duration={800}>
                                 WORK
                             </Link>
                         </div>
                         <div>
-                            <Link activeClass={`${theme ? 'dark-active' : 'active'}`} className={`p-1 cursor-pointer hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black`} to="contact" spy={true} smooth={true} offset={-145} duration={900}>
+                            <Link tabindex='0' activeClass={`${theme ? 'dark-active' : 'active'}`} className={`p-1 cursor-pointer hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black focus:outline-black`} to="contact" spy={true} smooth={true} offset={-145} isDynamic={true} duration={900}>
                                 CONTACT
                             </Link>
                         </div>
                         <div>
-                            <a href={ Resume } className={`p-1 cursor-pointer hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black`} download>RÉSUMÉ</a>
+                            <a tabindex='0' href={ Resume } className={`p-1 cursor-pointer hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black focus:outline-black`} download>RÉSUMÉ</a>
                         </div>
                     </div>
                 </div>

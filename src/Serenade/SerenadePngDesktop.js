@@ -18,7 +18,7 @@ const SerenadePngDesktop = () => {
                 endScroll={450}
                 shouldAlwaysCompleteAnimation={true}
             >
-                <Link to={ SerenadeLink } title='Launch Serenade' target='_blank'>
+                <Link tabindex='-1' to={ SerenadeLink } title='Launch Serenade' target='_blank'>
                     <img className='mb-12 mt-2' alt='Serenade' src={ SerenadeFinal1 }/>
                 </Link>
             </Parallax>
@@ -29,7 +29,7 @@ const SerenadePngDesktop = () => {
                 endScroll={450}
                 shouldAlwaysCompleteAnimation={true}
             >
-                <Link to={ SerenadeLink } title='Launch Serenade' target='_blank'>
+                <Link tabindex='-1' to={ SerenadeLink } title='Launch Serenade' target='_blank'>
                     <img className='mb-12 1150px:mb-6' alt='Serenade' src={ SerenadeFinal2 }/>
                 </Link>
             </Parallax>
@@ -40,7 +40,7 @@ const SerenadePngDesktop = () => {
                 endScroll={450}
                 shouldAlwaysCompleteAnimation={true}
             >
-                <Link to={ SerenadeLink } title='Launch Serenade' target='_blank'>
+                <Link tabindex='-1' to={ SerenadeLink } title='Launch Serenade' target='_blank'>
                     <img className='mb-12 mt-2 1150px:hidden' alt='Serenade' src={ SerenadeFinal3 }/>
                 </Link>
             </Parallax>
@@ -51,7 +51,7 @@ const SerenadePngDesktop = () => {
                 endScroll={450}
                 shouldAlwaysCompleteAnimation={true}
             >
-                <Link to={ SerenadeLink } title='Launch Serenade' target='_blank'>
+                <Link tabindex='-1' to={ SerenadeLink } title='Launch Serenade' target='_blank'>
                     <img className='mb-6 880px:hidden' alt='Serenade' src={ SerenadeFinal4 }/>
                 </Link>
             </Parallax>
