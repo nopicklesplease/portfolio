@@ -17,7 +17,7 @@ const Content = () => {
                 {/* TABLET CONTENT SIDE TITLE */}
 
                 <div className='lg:flex-initial bg-blue dark:bg-purple border-r-50 border-yellow dark:border-green'>
-                        <div className='lg:transform lg:-rotate-90 lg:-ml-16 lg:-mr-16 lg:pr-4 lg:align-middle lg:mt-abouttop lg:pt-1 text-white text-6xl font-roboto font-extralight tracking-wide w-50 lg:w-auto'>
+                        <div className='lg:transform lg:-rotate-90 lg:-ml-16 lg:-mr-16 lg:pr-4 lg:align-middle lg:mt-abouttop lg:pt-1 text-white text-6xl font-roboto font-extralight tracking-wide w-50 lg:w-aboutwidth'>
                             <p className='hidden lg:flex'>ABOUT</p> 
                         </div>
                 </div>

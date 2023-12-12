@@ -49,12 +49,13 @@ module.exports = {
         'content': '100%',
         '50': '9px',
         '290px': '290px',
+        'aboutwidth': '210.5px',
       },
       height:{
         'contactheight': '560px',
       },  
       borderWidth: {
-        '50': '9px',
+        '50': '10px',
         '100': '18px',
       },
       screens:{
